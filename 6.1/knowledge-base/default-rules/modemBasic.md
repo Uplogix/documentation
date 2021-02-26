@@ -61,7 +61,7 @@ This rule looks for multiple responses that may indicate a problem with the atta
 
 * NO DIALTONE - the modem was unable to detect a dialtone when dialing
 * NO LINE - the modem was unable to detect a line when dialing
-* `1\.40\s+OK` - ??
+* `1\.40\s+OK` - this response indicates a problem with the line voltage (bad line)
 
 Any of the above responses are good indications that out-of-band may fail when initiated. Use this rule to get notified of problems and fix them before a network outage.
 
