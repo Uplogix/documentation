@@ -1,0 +1,4 @@
+<!-- 5.5 -->
+<!-- Description: Visio Stencils for Uplogix products. -->
+
+Uplogix provides Visio stencils for our products for use in your network planning. You can download the latest version of the stencils here: [uplogix.com/docs/pdf/visio/](https://uplogix.com/docs/pdf/visio/).
