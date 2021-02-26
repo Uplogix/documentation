@@ -68,3 +68,49 @@ Once the UCC has restarted, access the web interface using a browser and examine
 # Renewing
 
 Let's Encrypt certificates are only valid for 90 days. You can renew them manually or through a cron job.
+
+## Manually
+
+To renew the certificate manually, simply run the **/uplogix/embassy/scripts/acmeCertificate.sh** script again.
+
+```
+[root@UplogixControlCenter ~]# /uplogix/embassy/scripts/acmeCertificate.sh www
+Initializing crypto.
+Generating new 2048-bit key pair.
+Parsing account key...
+Parsing CSR...
+Found domains: hostname.example.com
+Getting directory...
+```
+
+## Automatically
+
+You can automatically renew the certificate through the use of a script and cron.
+
+Create a script in /root called renewCert.sh and add the following lines.
+
+```
+[root@UplogixControlCenter ~]# cat renewCert.sh 
+#!/bin/bash
+/uplogix/embassy/scripts/acmeCertificate.sh www
+```
+
+Make the script executable with the **chmod** command.
+
+```
+[root@UplogixControlCenter ~]# chmod +x renewCert.sh 
+```
+
+Run **crontab -e** and add the following line:
+
+```
+0 5 */90 * * /root/renewCert.sh > /dev/null 2>&1
+```
+
+You can verify the cron job has been added with **crontab -l**.
+
+```
+[root@UplogixControlCenter ~]# crontab -l
+0 5 */90 * * /root/renewCert.sh > /dev/null 2>&1
+```
+
