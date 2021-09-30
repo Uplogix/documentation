@@ -14,7 +14,7 @@ LMS offerings: All
 # Syntax 
 
 ```
-show device changes [â€œuserIDâ€]
+show device changes ["userID"]
 ```
 
 Use the optional userID parameter to view changes made by a specific user.

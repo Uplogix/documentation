@@ -17,10 +17,10 @@ The Uplogix Control Center uses SMTP email to send reports, alerts and SMS messa
 
 ##  Control Center CLI Configuration
 
-Create the SSL certificates according to your organizationâ€™s requirements. Then, import the individual certificates into the Control Center. Each certificate must individually imported to be trusted.  The example below shows the process with Google mail servers.
+Create the SSL certificates according to your organization's requirements. Then, import the individual certificates into the Control Center. Each certificate must individually imported to be trusted.  The example below shows the process with Google mail servers.
 
 ### Log into the Control Center CLI 
-Log into the Control Centerâ€™s command line and [become root](http://uplogix.com/docs/control-center-user-guide/managing-the-control-center/becoming-root).
+Log into the Control Center's command line and [become root](http://uplogix.com/docs/control-center-user-guide/managing-the-control-center/becoming-root).
 
 ### Obtain Certificates from the Host
 
@@ -107,7 +107,7 @@ Send the **CTRL-C** command to break out of the openssl command. Copy the yellow
 
 ```
 [root@vUCC]# vi google.pem
-Press the letter â€˜iâ€™ to insert new text
+Press the letter â€˜i' to insert new text
 ```
  
 Paste the highlighted text from, "----BEGIN CERTIFICATE -----" to, "-----END CERTIFICATE-----".
@@ -119,7 +119,7 @@ Hit [ESCAPE], and then type ZZ to save the file. You should return to the comman
 [root@vUCC-Eval ~]#
 ```
 
-### Import the serverâ€™s public key
+### Import the server's public key
 
 Import the certificate file into the certificate store using the utility
 
@@ -132,6 +132,6 @@ Adding 64.233.176.108:587
 [root@UCC]#
 ```
 
-> **NOTE:** If a load-balanced server environment has many hosts servicing mail with individual host certificates, the serverâ€™s CA certificate must be imported.
+> **NOTE:** If a load-balanced server environment has many hosts servicing mail with individual host certificates, the server's CA certificate must be imported.
 
 The Control Center should now be configured to forward email to the SMTP smarthost.  Log into the browser interface of the Control Center as an administrative user. Send a test email to validate the configuration.

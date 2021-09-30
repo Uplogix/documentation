@@ -49,9 +49,9 @@ After the setting is modified, the full list of settings is displayed again, wit
 |4|Device configuration push method|Defines the method the Local Manager will use to push configuration information to the managed device. Options: TFTP, console, **xmodem**, or FTP|
 |5|Alternative device configuration push method|Defines a secondary method the Local Manager will use to push configuration information to the managed device if the primary method fails. Options: **TFTP**, console, xmodem, or FTP|
 |6|Device configuration push retries|Number of retry attempts the Local Manager will make to push a configuration to a managed device. Options: Integer value|
-|7|Automatic configuration rollback|Enable, disable or change SurgicalRollbackâ„¢ settings. Options: **manual**, disabled, or automatic|
-|8|Count delay before automatic configuration rollback|Set the delay (in seconds) the Local Manager will wait before initiating SurgicalRollbackâ„¢ if that feature has been set to run automatically. Options: Integer value|
-|9|Issue 'write memory' after configuration rollback|Define if the Local Manager will perform a â€˜write memoryâ€™ on a device after a configuration has been rolled back. Options: **True** or False|
+|7|Automatic configuration rollback|Enable, disable or change SurgicalRollback settings. Options: **manual**, disabled, or automatic|
+|8|Count delay before automatic configuration rollback|Set the delay (in seconds) the Local Manager will wait before initiating SurgicalRollback if that feature has been set to run automatically. Options: Integer value|
+|9|Issue 'write memory' after configuration rollback|Define if the Local Manager will perform a â€˜write memory' on a device after a configuration has been rolled back. Options: **True** or False|
 |10|Verify OS upgrade|Define if the Local Manager will verify the managed device successfully upgraded. Options: **True** or False|
 |11|Use manual boot during upgrade, if applicable|Define if the Local Manager will manually boot the managed device during the course of a scheduled upgrade. Options: **True** or False|
 |12|OS image push method|Defines the method the Local Manager will use to push an OS image to the managed device. Options: **TFTP**, ymodem, xmodem, or FTP|

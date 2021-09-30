@@ -28,10 +28,10 @@ Modem, Port:
 suspend < off | all | automated | recovery > [-duration {0..120}] 
 ```
 
-- **all** â€“ Suspends all data collection and automated processes for the port.
-- **automated** â€“ Suspends all but recovery-oriented processes such as configuration rollback and ROMmon detection.
-- **recovery** â€“ Suspends only automated recovery and config rollback. Data collection and alerting will continue 
-- **-duration** â€“ Set the suspend duration in minutes. Default is 60 minutes.
+- **all** - Suspends all data collection and automated processes for the port.
+- **automated** - Suspends all but recovery-oriented processes such as configuration rollback and ROMmon detection.
+- **recovery** - Suspends only automated recovery and config rollback. Data collection and alerting will continue 
+- **-duration** - Set the suspend duration in minutes. Default is 60 minutes.
 
 # Usage  
 

@@ -18,7 +18,7 @@ LMS offerings: All
 show pingstats [-all | -n <#>]
 ```
 
-**-all **â€“ All ping results
+**-all **- All ping results
 **-n <#>** - Maximum number of ping results
 
 # Usage 

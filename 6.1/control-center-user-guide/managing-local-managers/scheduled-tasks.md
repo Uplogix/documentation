@@ -33,7 +33,7 @@ Access the Schedule page by clicking *Schedule* on the navigation bar.
 To create a new filter, select **Filters** from the contextual left navigation on the Schedule tab. 
 
 ![Uplogix Control Center - Schedule Filters](http://uplogix.com/support/docs/img/6.0/uplogix-control-center-schedule-filters-empty.png)
-â€ƒ
+
 Click *Add* to create a new filter, or click an existing filter to edit it.
 
 Enter a name and a description for the filter. The name of the filter cannot be changed once it is created, though the filter can be deleted and recreated under a new name.
@@ -67,7 +67,7 @@ Once task filters have been defined, tasks can be scheduled from the Scheduled T
 > By default, the only tasks shown on the Scheduled Tasks List are tasks that have not yet been completed. To see all tasks, expand the *Search* section and select *Include completed*.
  
 ![Uplogix Control Center - Scheduled Tasks](http://uplogix.com/support/docs/img/6.0/uplogix-control-center-schedule-tasks-empty.png)
-â€ƒ
+
 Available task filters are shown in the Filter list. Choose the appropriate filter from the list. If the filter is not listed, click Cancel and create a new filter (see the previous section).
  
 ![Uplogix Control Center - Scheduled Tasks - Filters](http://uplogix.com/support/docs/img/6.0/uplogix-control-center-schedule-tasks-filter.png)
@@ -111,7 +111,7 @@ The list of tasks available depends on the filter. If the filter specifies manag
 |PPP	|Schedule the Local Manager to initiate Outband (out-of-band) communication.|
 |Pull SFTP	|Pull various files from device to Local Manager port file system utilizing secure FTP.|
 |Pull TFTP	|Pull various files from device to Local Manager port file system utilizing FTP.|
-|Push Config	|Push a new configuration onto a device by specifying the type of file and version. These options refer to files located on the Local Manager, in the portâ€™s file archive. Also, specify whether the device should be rebooted after the new configuration is loaded.|
+|Push Config	|Push a new configuration onto a device by specifying the type of file and version. These options refer to files located on the Local Manager, in the port's file archive. Also, specify whether the device should be rebooted after the new configuration is loaded.|
 |Push OS	|As with configurations, operating system images can be pushed onto a device.|
 |Push SFTP	|Push various files to device from Local Manager port file system utilizing secure FTP.|
 |Push TFTP	|Push various files to device from Local Manager port file system utilizing FTP.|

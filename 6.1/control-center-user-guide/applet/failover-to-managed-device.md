@@ -36,7 +36,7 @@ The following example walks through the process of configuring SSH Applet Failov
 
 ## Determine the SSH Fingerprint for the Managed Device
 
-Part of enabling SSH Applet failover to the managed device involves configuring the Local Manager with the SSH fingerprint of the managed device. Initiate an SSH session to the managed device via a terminal session or application such as PuTTY. The managed device fingerprint will display with a question asking whether to continue connecting. This assumes the PC/workstation does not have the managed deviceâ€™s RSA key in its known host file.  If the fingerprint is not presented with a question asking whether to continue, then edit the SSH known host file on your PC/workstation to remove the entry for the managed device.  Here is an example using a Linux, Unix or Mac terminal session:
+Part of enabling SSH Applet failover to the managed device involves configuring the Local Manager with the SSH fingerprint of the managed device. Initiate an SSH session to the managed device via a terminal session or application such as PuTTY. The managed device fingerprint will display with a question asking whether to continue connecting. This assumes the PC/workstation does not have the managed device's RSA key in its known host file.  If the fingerprint is not presented with a question asking whether to continue, then edit the SSH known host file on your PC/workstation to remove the entry for the managed device.  Here is an example using a Linux, Unix or Mac terminal session:
 
 ```
 /Users/admin > ssh admin@192.0.2.100

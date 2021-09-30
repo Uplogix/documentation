@@ -4,7 +4,7 @@
 
 In most cases, you will not need to set the date and time. To ensure accurate reporting and to coordinate activities across multiple time zones, Uplogix Local Managers use Coordinated Universal Time (UTC); the time is set at the factory.
 
-If the system is configured to work with an Uplogix Control Center, by default it uses the date and time from the Uplogix Control Centerâ€™s NTP server.
+If the system is configured to work with an Uplogix Control Center, by default it uses the date and time from the Uplogix Control Center's NTP server.
 
 The date and time settings can be adjusted manually, or the appliance can be configured to use a separate Network Time Protocol (NTP) server.
 
@@ -20,7 +20,7 @@ System time is    11/12/2019 20:21:43 UTC
 
 > The date and time cannot be set from the Control Center.
 
-To override time and date settings from the Uplogix Control Center, or to specify an NTP server of your own, use the interactive **config system ntp** command to set the NTP serverâ€™s IP address and optionally add a secondary server in case the primary server fails. 
+To override time and date settings from the Uplogix Control Center, or to specify an NTP server of your own, use the interactive **config system ntp** command to set the NTP server's IP address and optionally add a secondary server in case the primary server fails. 
 
 ```
 [admin@UplogixLM]# config system ntp

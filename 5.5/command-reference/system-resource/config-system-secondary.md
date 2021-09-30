@@ -50,7 +50,7 @@ Do you want to commit these changes? (y/n):
 
 4.2 - This command was introduced
 
-4.3 â€“ Capture option added 
+4.3 - Capture option added 
 
 # Related commands 
 

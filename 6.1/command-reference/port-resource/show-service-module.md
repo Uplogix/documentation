@@ -16,9 +16,9 @@ LMS offerings: All
 # Syntax 
 
 ```
-show service-module <â€œinterface nameâ€> [-n <#>]
+show service-module <"interface name"> [-n <#>]
 ```
-Use the optional **â€“n** parameter with an integer to specify the number of records to display.
+Use the optional **-n** parameter with an integer to specify the number of records to display.
 
 #Usage 
 

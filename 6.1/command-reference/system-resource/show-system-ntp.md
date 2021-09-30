@@ -1,6 +1,6 @@
 <!-- 5.4 -->
 
-Displays the Uplogix Local Managerâ€™s network time protocol configuration.
+Displays the Uplogix Local Manager's network time protocol configuration.
 
 # Command availability 
 

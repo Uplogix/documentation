@@ -11,7 +11,7 @@ Requirements for using this capability are:
 
 # Configure Number and Domain Settings
 
-Using the **config answer** editor, set the Local Managerâ€™s phone number with the **number** subcommand, and use the **domain** subcommand to set the service providerâ€™s SMS domain name. The Uplogix Control Center uses these parameters to construct a valid SMS email address, to which it can send the **ppp on** message to establish contact.
+Using the **config answer** editor, set the Local Manager's phone number with the **number** subcommand, and use the **domain** subcommand to set the service provider's SMS domain name. The Uplogix Control Center uses these parameters to construct a valid SMS email address, to which it can send the **ppp on** message to establish contact.
 
 ```
 [admin@UplogixLM (modem)]# config answer
@@ -54,4 +54,4 @@ It can be edited to generate alerts or take additional actions.
 > The SMS monitor must be running for the SMS-initiated PPP feature to work.
 
 # Activate PPP via SMS
-Once the Local Manager has been configured, you can initiate a PPP connection by scheduling an â€œSMS Messageâ€ task from the Local Manager Summary page on the Control Center. The message will need to be delivered via email, turned into an SMS message, received by the Iridium modem, and noticed by the Local Manager before the PPP connection will be turned on. It may take an additional 30 seconds for heartbeats to resume over the out-of-band link.
+Once the Local Manager has been configured, you can initiate a PPP connection by scheduling an "SMS Message" task from the Local Manager Summary page on the Control Center. The message will need to be delivered via email, turned into an SMS message, received by the Iridium modem, and noticed by the Local Manager before the PPP connection will be turned on. It may take an additional 30 seconds for heartbeats to resume over the out-of-band link.

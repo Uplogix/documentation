@@ -15,7 +15,7 @@ LMS offerings: Advanced
 # Syntax 
 
 ```
-config slv http [no] <â€œtestnameâ€>
+config slv http [no] <"testname">
 
 ```
 

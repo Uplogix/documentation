@@ -11,7 +11,7 @@ This guide contains instructions for configuring an Uplogix Control Center to se
 
 <div class='ucc' />Administration > Server Settings > SNMP</div>
 
-To configure the Uplogix Control Center to send SNMP traps to a Tivoli Netcool instance, navigate to the Administration tab in your Control Centerâ€™s GUI. Under Server Settings, open the SNMP Settings section. Click the Use SNMP check box, enter the IP address or hostname of your Tivoli Netcool instance in the Primary Host Name section. If your Tivoli Netcool instance is configured to listen for traps on a port other then 162, change the port from the default of 162. Finally, enter the read community you would like to use for the SNMP traps.
+To configure the Uplogix Control Center to send SNMP traps to a Tivoli Netcool instance, navigate to the Administration tab in your Control Center's GUI. Under Server Settings, open the SNMP Settings section. Click the Use SNMP check box, enter the IP address or hostname of your Tivoli Netcool instance in the Primary Host Name section. If your Tivoli Netcool instance is configured to listen for traps on a port other then 162, change the port from the default of 162. Finally, enter the read community you would like to use for the SNMP traps.
 
 ![Uplogix Control Center SNMP Settings](http://uplogix.com/support/docs/img/6.0/ucc-snmp-settings.png)
 
@@ -23,7 +23,7 @@ To install the MTTRAPD rules file for on your Tivoli Netcool instance, copy the 
 
 # Customizing the MTTRAPD Rules File on Tivoli Netcool
 
-To change the severity of incoming traps in Tivoli Netcool, edit the mttrapd.rules file and change the each trapâ€™s Severity field to the severity level appropriate to the eventâ€™s importance (see table one below as an example).
+To change the severity of incoming traps in Tivoli Netcool, edit the mttrapd.rules file and change the each trap's Severity field to the severity level appropriate to the event's importance (see table one below as an example).
 
 ![Uplogix Control Center SNMP Settings](http://uplogix.com/support/docs/img/5.4/uplogix_control_center_snmp_settings_mib.jpg)
 

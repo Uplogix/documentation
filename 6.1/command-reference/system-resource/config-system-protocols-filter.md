@@ -18,9 +18,9 @@ config system protocols filter
 
 # Subcommands 
 
-**[no] allow [â€œip|ipv6 address/subnet maskâ€]**
+**[no] allow ["ip|ipv6 address/subnet mask"]**
 
-**[no] deny [â€œip|ipv6 address/subnet maskâ€]**
+**[no] deny ["ip|ipv6 address/subnet mask"]**
 
 **show**
 
@@ -59,7 +59,7 @@ Specifically denied addresses are filtered from those specifically allowed. The 
 
 3.4 - This command was introduced
 
-4.3 â€“ Added IPv6 filters
+4.3 - Added IPv6 filters
 
 # Related commands 
 

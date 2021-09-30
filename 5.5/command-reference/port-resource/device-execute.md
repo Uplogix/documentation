@@ -25,7 +25,7 @@ The &lt;command to execute&gt; must be a valid command.
 # Usage 
 
 ```
-[admin@UplogixLM (port1/1)]# device execute S â€“d 5
+[admin@UplogixLM (port1/1)]# device execute S -d 5
 running-config saved to archive as current.
 SIA@PL0116 @P
 >

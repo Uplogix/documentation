@@ -37,7 +37,7 @@ This rule examines the value of *modem.response*, which is populated by the AT+C
 To only alert when the signal quality drops to zero, use:
 
 ```
-NOT modem.response matches â€œCSQ:[1-5]â€:2i
+NOT modem.response matches "CSQ:[1-5]":2i
 ```
 
 The :2i argument indicates that the appliance should wait for two intervals of CSQ less than 1 before generating an alarm.
@@ -71,7 +71,7 @@ Use the **config monitor modem** command to start using these rules. Additional 
 
 # Displaying Signal Quality on Front Panel (u5000)
 
-Using the action writeStatus command, you can have the current CSQ value displayed on the LMâ€™s front LCD screen. This can be useful for onsite personnel who donâ€™t have access to the CLI.
+Using the action writeStatus command, you can have the current CSQ value displayed on the LM's front LCD screen. This can be useful for onsite personnel who don't have access to the CLI.
 
 Create the following rules on your Control Center or Local Manager:
 

@@ -11,7 +11,7 @@ The purpose of this document is to detail the installation and configuration of 
 
 The Local Manager must have a route to the Telnet interface of the Hughes over the LAN.
 
-To configure the virtual port for the Hughes, run the following commands on the system level of the Uplogix CLI, replacing 192.168.0.1 with the IP address of the Hughes, and 1953 with the TCP port of the Hughesâ€™ Telnet interface.
+To configure the virtual port for the Hughes, run the following commands on the system level of the Uplogix CLI, replacing 192.168.0.1 with the IP address of the Hughes, and 1953 with the TCP port of the Hughes' Telnet interface.
 
 ```
 [admin@UplogixLM]# config system slot 4

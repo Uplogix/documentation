@@ -19,13 +19,13 @@ LMS offerings: All
 # Syntax 
 
 ```
-show log rule [-c] [-i <â€œinterfaceâ€>] [-m <â€œemailâ€>] [-n <#>] [-r <â€œruleâ€>]
+show log rule [-c] [-i <"interface">] [-m <"email">] [-n <#>] [-r <"rule">]
 ```
 **-c** - Show only chassis rule events.
-**-i <â€œinterfaceâ€>** - Show only rule events for a particular interface.
-**-m <â€œemailâ€>** - Email address to send the report.
+**-i <"interface">** - Show only rule events for a particular interface.
+**-m <"email">** - Email address to send the report.
 **-n <#>** - Maximum number of messages to show.
-**-r <â€œruleâ€> **- Show only rule events for the specified rule.
+**-r <"rule"> **- Show only rule events for the specified rule.
 
 # Usage 
 

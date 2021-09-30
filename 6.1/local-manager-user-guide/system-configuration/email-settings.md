@@ -1,7 +1,7 @@
 # Overview
 Local Managers can be configured to notify administrators of certain situations by email.
 
-The systemâ€™s mail system supports separate email servers for use in and out of band. IP addresses are used in place of hostnames to minimize dependence on DNS servers. SSL connections and SMTP authentication are both supported.
+The system's mail system supports separate email servers for use in and out of band. IP addresses are used in place of hostnames to minimize dependence on DNS servers. SSL connections and SMTP authentication are both supported.
 
 <div class='ucc' />Inventory > Local Manager Summary > System > Email</div>
 
@@ -62,7 +62,7 @@ Send log report to <support@uplogix.com>? (y/n) [y]: y
 Bug report sent to support@uplogix.com
 ```
 
-Use the **â€“m [email address]** argument to send a log report. If the email settings are incorrect, an error message will be displayed.
+Use the **-m [email address]** argument to send a log report. If the email settings are incorrect, an error message will be displayed.
 
 ```
 [admin@UplogixLM]# show log system -m djones@uplogix.com

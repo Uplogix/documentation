@@ -6,9 +6,9 @@ This document provides a list of Uplogix Local Manager Syslog messages and their
 
 # Syslog 
 
-Syslog messages can be sourced from the Local Managerâ€™s context as well as from a device port.  Each area can be configured to log to a different server, facility, and UDP port. Uplogix Local Manager specific logs are sourced as the Local Managerâ€™s facility. 
+Syslog messages can be sourced from the Local Manager's context as well as from a device port.  Each area can be configured to log to a different server, facility, and UDP port. Uplogix Local Manager specific logs are sourced as the Local Manager's facility. 
 
-Device logs are collected from the console or buffered log and sent as the device portâ€™s facility.  All Syslog messages are sourced from the Local Managerâ€™s IP address.  
+Device logs are collected from the console or buffered log and sent as the device port's facility.  All Syslog messages are sourced from the Local Manager's IP address.  
 
 ## Local Manager
  
@@ -23,7 +23,7 @@ Jan  31 22:21:30 local3: Host: hwvpn8; WARNING: Terminal is locked. (rbuilder)
 
 ## Device
 
-Each device port can be configured to send device log messages collected from the deviceâ€™s console port to a specific host. The **config device logging** command from the deviceâ€™s port is used to specify these settings:
+Each device port can be configured to send device log messages collected from the device's console port to a specific host. The **config device logging** command from the device's port is used to specify these settings:
 
 ```
 Jan  31 22:29:20 local4: Host: hwvpn8 189243: *Jan 24 15:37:57.978 UTC: %SEC-6-IPACCESSLOGP: list from_internet denied udp 203.0.113.75(137) (FastEthernet4 50e5.49b8.a010) -> 203.0.113.255(137), 4 packets
@@ -45,9 +45,9 @@ This is a list of available Syslog messages as of Local Manager version 5.2.  Al
 	* 4 - Warning
 	* 5 - Notice
 	* 6 - Info
-	* 7 â€“ Debugging
-* Equivalent SNMP Event â€“ Each Local Manger Syslog can additionally be sent as an SNMP trap using the MIB definitions listed here.  See the MIB reference for more detail about this.
-* Message â€“ This is a text field. The Local Management software or rule authors may append additional information to these messages.
+	* 7 - Debugging
+* Equivalent SNMP Event - Each Local Manger Syslog can additionally be sent as an SNMP trap using the MIB definitions listed here.  See the MIB reference for more detail about this.
+* Message - This is a text field. The Local Management software or rule authors may append additional information to these messages.
 
 # Uplogix Syslog Protocols
 

@@ -33,4 +33,4 @@ Once the operating system policy has been saved, the Control Center will begin s
 
 # Standard operating system recovery
 
-In most cases, the operating system policy will result in alarm when managed deviceâ€™s operating system does not match the standard. In the case of Cisco equipment running IOS or IOS-XE software, the Uplogix can be configured to automatically recover the managed device to the defined operating system standard.
+In most cases, the operating system policy will result in alarm when managed device's operating system does not match the standard. In the case of Cisco equipment running IOS or IOS-XE software, the Uplogix can be configured to automatically recover the managed device to the defined operating system standard.

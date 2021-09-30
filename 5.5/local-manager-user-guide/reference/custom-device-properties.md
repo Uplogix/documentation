@@ -23,12 +23,12 @@ The following custom device properties are available for configuration on the Lo
 | forwardIpAddress | Set IP address for forwarding inbound UDP packets.
 | readCommunity | Configuration information specific to ND SatCom.
 | writeCommunity | Configuration information specific to ND SatCom.
-| Enhanced_CommandPrompt | Define an enhanced driverâ€™s command prompt.
-| Enhanced_PasswordPrompt | Define an enhanced driverâ€™s password prompt.
-| Enhanced_LoginPrompt | Define an enhanced driverâ€™s login prompt.
-| Enhanced_LogoutCommand | Define an enhanced driverâ€™s logout command.
-| Enhanced_TimeoutSeconds | Define an enhanced driverâ€™s timeout duration in seconds.
-| Enhanced_WakeupCommand | Define an enhanced driverâ€™s command to wake up a managed device.
+| Enhanced_CommandPrompt | Define an enhanced driver's command prompt.
+| Enhanced_PasswordPrompt | Define an enhanced driver's password prompt.
+| Enhanced_LoginPrompt | Define an enhanced driver's login prompt.
+| Enhanced_LogoutCommand | Define an enhanced driver's logout command.
+| Enhanced_TimeoutSeconds | Define an enhanced driver's timeout duration in seconds.
+| Enhanced_WakeupCommand | Define an enhanced driver's command to wake up a managed device.
 | safedelay | Define a delay period for use after a command is run.
 | safeDebug | For use on Sea Tel devices, define for extra log messages on the console during Push OS.
 | _powerOnValidationTimeout | Defines a time in milliseconds for the system to wait before checking CTS and DSR during a power on or power cycle operation.

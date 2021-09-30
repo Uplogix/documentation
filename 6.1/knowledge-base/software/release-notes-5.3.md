@@ -14,11 +14,11 @@ Uplogix now offers an internal LTE modem for the 500 and 5000 platforms that is 
 
 **New Feature:** Support for MRV LX Series Switched Power Controllers
 
-The Uplogix Local Manager now supports advanced management of MRVâ€™s LX series switched power controllers.
+The Uplogix Local Manager now supports advanced management of MRV's LX series switched power controllers.
 
 **Improvement:** More Efficient Configuration Backup For Cisco Devices
 
-The advanced Cisco device driver now calculates the checksum of configuration files on Cisco devices during a configuration backup operations to determine if the device configuration is different than the current configuration stored on the Local Manager â€“ time is not wasted backing up the configuration if it is the same.
+The advanced Cisco device driver now calculates the checksum of configuration files on Cisco devices during a configuration backup operations to determine if the device configuration is different than the current configuration stored on the Local Manager - time is not wasted backing up the configuration if it is the same.
 
 ## Issues Addressed in This Release
 
@@ -42,7 +42,7 @@ Advanced Cisco IOS/IOS-XE Driver Fixes and Improvements
 Advanced Cisco NX-OS Driver Fixes and Improvements
 
 * Fixed an issue that caused a longer Nexus 7K Dual Supervisor OS upgrade operation to timeout before it was complete.
-* Fixed an issue that can cause the state of the Uplogix port connected to the console port of the new active/old standby Nexus 7K supervisor to be listed as â€œunknownâ€ after an NX-OS upgrade.
+* Fixed an issue that can cause the state of the Uplogix port connected to the console port of the new active/old standby Nexus 7K supervisor to be listed as "unknown" after an NX-OS upgrade.
 * Fixed an issue that caused pushing a startup-config to a Cisco Nexus switch via TFTP over a dedicated Ethernet connection to fail.
 * Fixed an issue that can cause the Local Manager to report a failure while updating a Cisco Nexus switch running configuration when the configuration update was successful.
 * Fixed an issue that could cause an OS policy alarm on a Cisco Nexus switch when the standard OS matches the current OS.
@@ -50,7 +50,7 @@ Advanced Cisco NX-OS Driver Fixes and Improvements
 
 A SSH pass through session to a managed device via the UCC CLI Applet (blue CLI button at port level) will not timeout if port forwarding is active.
 
-Fixed an uncommon issue that can cause a Local Manager syncing its time with the UCC (rather than using NTP) to report that itâ€™s clock is out of sync with the UCC. 
+Fixed an uncommon issue that can cause a Local Manager syncing its time with the UCC (rather than using NTP) to report that it's clock is out of sync with the UCC. 
 
 Fixed an issue that prevented the configuration of multiple secure virtual ports to Avocent Universal Management Gateway devices.
 
@@ -68,9 +68,9 @@ The Administration section of the UCC now provides a deployment overview page th
 
 **Improvement:**  Users Can Now Export User Session Logs, Device Configuration Files, Show Tech and POST Output 
 
-User session logs are a complete log of everything a user does when logged into a Local Manager or passing through it to manage a connected device â€“ this information is accessed in the â€˜Session Logsâ€™ section of the Local Manager summary page. In addition to being viewable for auditing purposes, session logs can now be exported as well.
+User session logs are a complete log of everything a user does when logged into a Local Manager or passing through it to manage a connected device - this information is accessed in the â€˜Session Logs' section of the Local Manager summary page. In addition to being viewable for auditing purposes, session logs can now be exported as well.
 
-Users can also now export a running configuration, a startup configuration, and the output of the â€˜show techâ€™ command or the Power On Self Test (POST) log for the case where these artifacts are available on the Local Manager ports.
+Users can also now export a running configuration, a startup configuration, and the output of the â€˜show tech' command or the Power On Self Test (POST) log for the case where these artifacts are available on the Local Manager ports.
 
 **Improvement:**  Port Forwarding Defaults Local Port Selection to Forwarded Port If Available 
 

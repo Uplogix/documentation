@@ -6,7 +6,7 @@ In addition to modems, the Local Manager can use its secondary Ethernet port as 
 
 # Usage Notes
 
-* The secondary network must not conflict with the applianceâ€™s primary and dedicated networks. 
+* The secondary network must not conflict with the appliance's primary and dedicated networks. 
 * The secondary Ethernet interface is turned off during in-band operation. The interface will not respond to pings until the out of band connection is enabled.
 * Dial-in access via the modem is available through the **config answer** command. Dial-up PPP via the modem is disabled in this mode.
 
@@ -90,7 +90,7 @@ Secondary network Local Address is 172.30.52.111
 Out of Band is turned on.
 ```
 
-The message *Secondary Ethernet Adapter is down* refers to the adapterâ€™s status prior to running outband on. If PPP is already up, the following message will be displayed.
+The message *Secondary Ethernet Adapter is down* refers to the adapter's status prior to running outband on. If PPP is already up, the following message will be displayed.
 
 ```
 [admin@UplogixLM (modem)]# outband on

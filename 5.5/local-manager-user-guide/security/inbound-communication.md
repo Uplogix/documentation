@@ -9,8 +9,8 @@ Secure Shell version 2 is the default user method of communicating with the Loca
 Client SSH applications can be used to access the Local Manager directly. Supported clients include:
 
 - PuTTY
-- SSHÂ® Tectiaâ„¢
-- VanDykeÂ® SecureCRTÂ®
+- SSH&#8482; Tectia
+- VanDyke&#8482; SecureCRT&#8482;
 - SSHTerm for Windows
 - OpenSSH
 
@@ -20,17 +20,17 @@ The Local Manager can use Secure Copy (SCP) to copy files to and from a server. 
 
 # FTP
 
-The Local Managerâ€™s FTP client is used by the **copy** command, export, archive, and backup. FTP is much less secure than SCP and should be used only in completely trusted networks.
+The Local Manager's FTP client is used by the **copy** command, export, archive, and backup. FTP is much less secure than SCP and should be used only in completely trusted networks.
 
-The Local Managerâ€™s FTP server is used to transfer files to network devices that support it on TCP port 21. The Local Manager limits connections to specific IP addresses documented as device management IP addresses. The FTP server is only available during automated file transfer operations or if manually initiated during terminal pass-through. The server process is automatically terminated to limit possible security exposure.
+The Local Manager's FTP server is used to transfer files to network devices that support it on TCP port 21. The Local Manager limits connections to specific IP addresses documented as device management IP addresses. The FTP server is only available during automated file transfer operations or if manually initiated during terminal pass-through. The server process is automatically terminated to limit possible security exposure.
 
 # TFTP
 
-Like the FTP server, the Local Managerâ€™s TFTP server is available only during automated file transfers between network devices and the Local Manager and on manual activation on UDP Port 69. **It is not limited to IP addresses**; it limits possible security exposure by specifically naming files.
+Like the FTP server, the Local Manager's TFTP server is available only during automated file transfers between network devices and the Local Manager and on manual activation on UDP Port 69. **It is not limited to IP addresses**; it limits possible security exposure by specifically naming files.
 
 # SFTP
 
-Like the FTP server, the Local Managerâ€™s SFTP server is available only during automated file transfers between network devices and the Local Manager and on manual activation. **It is not limited to IP addresses**.
+Like the FTP server, the Local Manager's SFTP server is available only during automated file transfers between network devices and the Local Manager and on manual activation. **It is not limited to IP addresses**.
 
 # Telnet access
 
@@ -38,7 +38,7 @@ Like the FTP server, the Local Managerâ€™s SFTP server is available only du
 
 # Modem access
 
-Optional modem teletype (TTY) access is available if configured to provide single user dial-in access to the command line with support for encryption. Uplogix recommends using the Local Managerâ€™s outbound PPP/VPN service to reduce the security risks associated with dial-in modems.
+Optional modem teletype (TTY) access is available if configured to provide single user dial-in access to the command line with support for encryption. Uplogix recommends using the Local Manager's outbound PPP/VPN service to reduce the security risks associated with dial-in modems.
 
 By default, the modem does not answer incoming calls.
 
@@ -48,4 +48,4 @@ An on-board RS-232 and mini USB console port is available for local access to th
 
 # The connect command
 
-When logged in to a Local Manager, use the **connect** command to connect to another Local Managerâ€™s command line interface. While the protocol uses SSH, this command limits connectivity to only Local Managers, reducing overall security risk. Like all commands, this feature is limited to users authorized to execute it.
+When logged in to a Local Manager, use the **connect** command to connect to another Local Manager's command line interface. While the protocol uses SSH, this command limits connectivity to only Local Managers, reducing overall security risk. Like all commands, this feature is limited to users authorized to execute it.

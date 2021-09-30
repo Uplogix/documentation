@@ -1,6 +1,6 @@
 <!-- 5.4 -->
 
-Displays the Uplogix Local Managerâ€™s current email notification and server settings. These are used to send alert messages to subscribed users.
+Displays the Uplogix Local Manager's current email notification and server settings. These are used to send alert messages to subscribed users.
 
 # Command availability 
 

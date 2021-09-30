@@ -60,7 +60,7 @@ Issue the **terminal binary** command to start a terminal session with the ACU. 
 ```
 
 At this point, you should see Intellian command codes in your terminal session.>
-â€ƒ
+
 # Configuring the Arbitrator (Mediator)
 
 The Intellian Arbitrator is designed to switch RF communications between two Intellian ACUs. The Arbitrator is configured exactly as the ACU and uses similar cabling.  
@@ -73,7 +73,7 @@ Through a feature called Terminal Mirror, Uplogix can provide ACU access to the 
 
 ## V-Series PC Controller access
 
-Terminal Mirror can be used with the Uplogix CLI Applet or a Secure Shell (SSH) client. The Terminal Mirror feature is designed to forward information via the Intellian ACU or Arbitrator through the Uplogix Local Manager to the technicianâ€™s PC on a local TCP port. The application then connects to the user workstation â€œlocalhostâ€ (127.0.0.1) and port to manage the unit.
+Terminal Mirror can be used with the Uplogix CLI Applet or a Secure Shell (SSH) client. The Terminal Mirror feature is designed to forward information via the Intellian ACU or Arbitrator through the Uplogix Local Manager to the technician's PC on a local TCP port. The application then connects to the user workstation "localhost" (127.0.0.1) and port to manage the unit.
 
 From the Uplogix Control Center, log into the Local Manager using SSH or Uplogix CLI Applet and navigate to the port where the Intellian ACU is connected. The CLI button uses secure shell. The Dial button (visible if configured) will used the Remote Application Server (RAS) to dial into the appliance.
 

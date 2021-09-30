@@ -1,6 +1,6 @@
 <!-- 5.4 -->
 
-Displays a deviceâ€™s make, model, OS, and other information. The information collected and displayed depends on what is configured on the resource. This command displays a subset of the information available from the **show all** command.
+Displays a device's make, model, OS, and other information. The information collected and displayed depends on what is configured on the resource. This command displays a subset of the information available from the **show all** command.
 
 # Command availability 
 

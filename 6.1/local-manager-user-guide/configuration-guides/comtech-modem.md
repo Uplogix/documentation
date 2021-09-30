@@ -107,7 +107,7 @@ To begin working with the Configuration Editor, navigate to the configured Comte
 [admin@UplogixLM (port1/2)]# edit running-config <option>
 ```
 
-In this instance, weâ€™ve elected to edit the current configuration. However, you can choose to edit the previous configuration or any of the archive configurations stored on the Uplogix appliance with the same command. 
+In this instance, we've elected to edit the current configuration. However, you can choose to edit the previous configuration or any of the archive configurations stored on the Uplogix appliance with the same command. 
 
 ```
 [admin@UplogixLM (port1/2)]# edit running-config ?
@@ -187,7 +187,7 @@ Entering the full parameter name without value will display the possible paramet
 Tx FEC Code Rate=Rate 1/1 (Uncoded or No FEC)
 ```
 
-Help text is specific to modem type. Entering the name of a parameter that does not exist will result in a â€œno such parameterâ€ response.
+Help text is specific to modem type. Entering the name of a parameter that does not exist will result in a "no such parameter" response.
 
 ```
 [comtech] alpha?
@@ -203,7 +203,7 @@ To set the value, enter the parameter name with value as shown in the example be
 The TX FEC Rate has now been set to 3/4.
 ```
 
-If a user attempts to set a parameter to a value not possible for the parameter, the appliance will respond with â€œInvalid input valueâ€, display the set of possible parameter values and the current parameter value. In the example below, the user attempted to set the TX FEC Code Rate to 8 which is not a possible value for this parameter. 
+If a user attempts to set a parameter to a value not possible for the parameter, the appliance will respond with "Invalid input value", display the set of possible parameter values and the current parameter value. In the example below, the user attempted to set the TX FEC Code Rate to 8 which is not a possible value for this parameter. 
 
 ```
 [comtech] tx fec code rate=8
@@ -281,7 +281,7 @@ EBA=01.9
 To push a candidate file to the modem, begin by reviewing the configuration to ensure all parameters are set correctly using the **show running-config** command. This command displays the device's current configuration. Using the -t extension displays the configuration in a terse format.
 
 ```
-[admin@UplogixLM (port1/2)]# show running-config candidate â€“t
+[admin@UplogixLM (port1/2)]# show running-config candidate -t
 Tx Interface Type = RS422
 Tx Framing Mode = Unframed
 Tx FEC Type = None (uncoded) with differential enconding ON
@@ -416,7 +416,7 @@ Rx Interface Type = RS422
 Rx Framing Mode = Unframed
 Rx FEC Type = Viterbi
 Rx Modulation Type = QPSK
--- Output abbreviated in this example â€“
+-- Output abbreviated in this example -
 ```
 
 # Rolling Back to a Previous Configuration
@@ -461,7 +461,7 @@ Transmit ESC Type = 64k data channel
 Rx Interface Type = RS422
 Rx Framing Mode = Unframed
 Rx FEC Type = Viterbi
--- Output abbreviated in this example â€“
+-- Output abbreviated in this example -
 ```
 
 Once you have verified the configuration is acceptable, you are ready to push the file to the modem using the command **push running-config <configuration name>**. The push commands allow you to write a previously saved configuration to a device. The example below shows rolling back to the previous configuration version.
@@ -506,7 +506,7 @@ For further details and instructions for your Comtech EF Data satellite modem, p
 
 # Configuring Uplogix monitors
 
-Uplogix monitors collect chassis and interface data from supported network devices. There are two monitors that have been implemented for the Comtech EF Data modem: chassis and remotestate. Once the modem has been initialized using the **config init** command, these monitors will be created with a 30 second interval. Both monitors can be run with two options: -n <count> to display multiple chronological values, and â€œ-tâ€ which will add an elapsed time value to the results.
+Uplogix monitors collect chassis and interface data from supported network devices. There are two monitors that have been implemented for the Comtech EF Data modem: chassis and remotestate. Once the modem has been initialized using the **config init** command, these monitors will be created with a 30 second interval. Both monitors can be run with two options: -n <count> to display multiple chronological values, and "-t" which will add an elapsed time value to the results.
 
 ```
 [admin@UplogixLM (port1/2)]# show chassis -n 4 -t

@@ -10,11 +10,11 @@ The purpose of this document is to detail the installation and configuration of 
 
 # Physical Connection
 
-Connect a free serial port on the Local Manager to the Brocadeâ€™s RS-232 console management port with a standard Cat-5 cable.
+Connect a free serial port on the Local Manager to the Brocade's RS-232 console management port with a standard Cat-5 cable.
 
 # Recommended Configuration
 
-For proactive monitoring of the Brocadeâ€™s status and to ensure the availability of backup configurations it is recommended that:
+For proactive monitoring of the Brocade's status and to ensure the availability of backup configurations it is recommended that:
 
 * the Local Manager serial port connected to the Brocade is configured as *enhanced* via the **config init** command
 * automatic backup of the configuration is scheduled 
@@ -26,7 +26,7 @@ The Local Manager will use the enhanced driver to log into the Brocade and run c
 
 If a super user account can not be provided, use the brocadeEnable rule (below) to give the Local Manager super user access so that automation can be performed.
  
-To configure the Local Manager for connection to a Brocade, navigate to the port that the Brocade is connected to, run the command **config init**, and follow the prompts as below (substituting your Brocadeâ€™s IP address for 203.0.113.16):
+To configure the Local Manager for connection to a Brocade, navigate to the port that the Brocade is connected to, run the command **config init**, and follow the prompts as below (substituting your Brocade's IP address for 203.0.113.16):
 
 ```
 [admin@UplogixLM (port1/5)]# config init
@@ -67,9 +67,9 @@ The default console settings for the Brocade are 9600 bit rate, 8 serial data bi
 
 ## Backup Configuration 
 
-The Local Manager can save a local copy of the Brocadeâ€™s startup and running configurations. Up to twenty-four backup images can be saved on the LMâ€™s file system for use in restoring a configuration or pushing a configuration to a replacement Brocade. The file can be transferred to the LM via TFTP.
+The Local Manager can save a local copy of the Brocade's startup and running configurations. Up to twenty-four backup images can be saved on the LM's file system for use in restoring a configuration or pushing a configuration to a replacement Brocade. The file can be transferred to the LM via TFTP.
 
-To manually save the Brocadeâ€™s configuration to the LM, navigate to the port that the Brocade is connected to and run the one of the following commands, substituting the LMâ€™s IP address for 10.0.1.2:
+To manually save the Brocade's configuration to the LM, navigate to the port that the Brocade is connected to and run the one of the following commands, substituting the LM's IP address for 10.0.1.2:
 
 ```
 pull tftp "copy startup-config tftp 10.0.1.2 startupConfig.txt" startupConfig.txt startup-config current
@@ -94,7 +94,7 @@ Received runningConfig.txt (576 bytes)
 MD5: 3d045c2a788d14c879c161fdd9b061c2  
 ```
 
-These files can also be saved during a terminal session by using ~t to activate the Local Managerâ€™s TFTP server and running the copy commands manually. 
+These files can also be saved during a terminal session by using ~t to activate the Local Manager's TFTP server and running the copy commands manually. 
 
 ## Automatic Configuration Backup
 
@@ -120,25 +120,25 @@ First, navigate to the port the Brocade is connected to, and stage the file to b
 [admin@UplogixLM (port1/4)]# copy running-config previous candidate
 ```
 
-Next, run the following command, substituting the LMâ€™s IP address for 10.0.1.2:
+Next, run the following command, substituting the LM's IP address for 10.0.1.2:
 
 ```
 push tftp "copy tftp running-config 10.0.1.2 runningConfig.txt" runningConfig.txt running-config current
 ```
 
-To push a stored startup-configuration to the Brocade, stage the running configuration as a candidate, and run the following command, substituting the LMâ€™s IP address for 10.0.1.2: 
+To push a stored startup-configuration to the Brocade, stage the running configuration as a candidate, and run the following command, substituting the LM's IP address for 10.0.1.2: 
 
 ```
 push tftp "copy tftp startup-config 10.0.1.2 startupConfig.txt" startupConfig.txt startup-config current
 ```
   
-These files can also be pushed during a terminal session by using ~t to activate the Local Managerâ€™s TFTP server and running the copy commands manually. 
+These files can also be pushed during a terminal session by using ~t to activate the Local Manager's TFTP server and running the copy commands manually. 
 
 # Allowing Brocade Automation
 
 ## Brocade Enable Rule
 
-If a super user level account cannot be provided to the enhanced driver, automation will not work. The following rule runs the enable command and enters a password in order to allow automation. Combine the enable rule with other rules when the chassis monitor is scheduled (ie â€“ config monitor chassis brocadeEnable | brocadeConsoleCheckRules | brocadeCpuCheckRules). 
+If a super user level account cannot be provided to the enhanced driver, automation will not work. The following rule runs the enable command and enters a password in order to allow automation. Combine the enable rule with other rules when the chassis monitor is scheduled (ie - config monitor chassis brocadeEnable | brocadeConsoleCheckRules | brocadeCpuCheckRules). 
 
 To load the brocadeEnable rule on the Local Manager, copy and paste the following into the CLI on the system resource. Replace PASSWORD with the enable password for the Brocade.
 
@@ -158,7 +158,7 @@ To schedule the rule, run the command:
 config monitor chassis brocadeEnable
 ```
 
-To schedule it with other rules, combine the rules with the â€œ|â€ character:
+To schedule it with other rules, combine the rules with the "|" character:
 
 ``` 
 config monitor chassis brocadeEnable | brocadeConsoleCheck| brocadeCpuCheck
@@ -167,7 +167,7 @@ config monitor chassis brocadeEnable | brocadeConsoleCheck| brocadeCpuCheck
 # Monitoring Brocade Status
 ## Brocade Console Check Ruleset
 
-The Local Manager can be configured to monitor the status of a Brocade using the brocadeConsoleCheckRules rule set. The LM will check to see if the Brocadeâ€™s command prompt is available, and send an alarm if it is not.
+The Local Manager can be configured to monitor the status of a Brocade using the brocadeConsoleCheckRules rule set. The LM will check to see if the Brocade's command prompt is available, and send an alarm if it is not.
  
 To load the brocadeConsoleCheckRules rule set on the LM, copy and paste the following into the LM at the system level:
 
@@ -225,9 +225,9 @@ config monitor chassis brocadeEnable | brocadeConsoleCheckRules | brocadeCpuChec
 
 ## Brocade CPU Check Ruleset
 
-The Local Manager can be configured to monitor the CPU utilization of a Brocade using the brocadeCpuCheckRulesrule set. The LM will check the Brocadeâ€™s current CPU utilization, and send an alarm if it exceeds %80. 
+The Local Manager can be configured to monitor the CPU utilization of a Brocade using the brocadeCpuCheckRulesrule set. The LM will check the Brocade's current CPU utilization, and send an alarm if it exceeds %80. 
 
-The alarm threshold can be adjusted by changing the value from 80 to whatever level is desired in the line â€œcompare-value monitor brocadeCpu1 > 80â€ in the brocadeCpuHigh rule, below. 
+The alarm threshold can be adjusted by changing the value from 80 to whatever level is desired in the line "compare-value monitor brocadeCpu1 > 80" in the brocadeCpuHigh rule, below. 
 
 To load the brocadeCpuCheckRules rule set on the LM, copy and paste the following into the LM at the system level:
 

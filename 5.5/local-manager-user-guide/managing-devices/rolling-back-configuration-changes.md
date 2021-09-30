@@ -1,6 +1,6 @@
 <!-- 5.4 -->
 
-Some manual configuration changes to an operational device can cause it to drop the command	line connection. You can undo the changes from a terminal session without reapplying the entire running configuration, either with the automatic  SurgicalRollbackâ„¢ feature or with a manually initiated rollback.
+Some manual configuration changes to an operational device can cause it to drop the command	line connection. You can undo the changes from a terminal session without reapplying the entire running configuration, either with the automatic  SurgicalRollback feature or with a manually initiated rollback.
 
 Both rollback features return the device to the state immediately before the changes, reducing time to recovery as well as the time needed for contingency planning.
 
@@ -8,15 +8,15 @@ When using the **terminal** command or a terminal pass-through session to access
 
 The **config settings** command specifies rollback transfer methods (XMODEM, TFTP, FTP).
 
-The rollback capability is only available when using a terminal session from the Local Manager to access the device (note: changes made to a device via a SSH session to the managed device that bypasses the Local Manager cannot be rolled back). This feature can only roll back changes from the most recent terminal session. Entering and exiting the device via the terminal command constitutes a session. For example, if you access the device using the terminal command, change the hostname, and exit the terminal session; then terminal in again, issue a show version command and exit, you will not be able to use either automatic SurgicalRollbackâ„¢ or manually initiated rollback to undo the hostname change, as it was not done during the most recent session.
+The rollback capability is only available when using a terminal session from the Local Manager to access the device (note: changes made to a device via a SSH session to the managed device that bypasses the Local Manager cannot be rolled back). This feature can only roll back changes from the most recent terminal session. Entering and exiting the device via the terminal command constitutes a session. For example, if you access the device using the terminal command, change the hostname, and exit the terminal session; then terminal in again, issue a show version command and exit, you will not be able to use either automatic SurgicalRollback or manually initiated rollback to undo the hostname change, as it was not done during the most recent session.
 
 >Scheduled tasks and monitors do not affect rollback.
 
-# Undoing changes automatically with SurgicalRollbackâ„¢ 
+# Undoing changes automatically with SurgicalRollback 
 
-SurgicalRollbackâ„¢ is the default behavior when ending a terminal session. If the Local Manager notes configuration changes during a terminal session, it displays the changes along with a message warning that your changes will be rolled back if you donâ€™t commit the changes. The Local Manager prompts you to commit your changes, postpone rollback, or roll back the changes immediately. If you do not respond within 75 seconds, the rollback takes place by default. During the countdown to rollback, the Local Manager sends the ASCII bell character each time it refreshes the countdown display, to provide an audio cue that rollback is about to start.
+SurgicalRollback is the default behavior when ending a terminal session. If the Local Manager notes configuration changes during a terminal session, it displays the changes along with a message warning that your changes will be rolled back if you don't commit the changes. The Local Manager prompts you to commit your changes, postpone rollback, or roll back the changes immediately. If you do not respond within 75 seconds, the rollback takes place by default. During the countdown to rollback, the Local Manager sends the ASCII bell character each time it refreshes the countdown display, to provide an audio cue that rollback is about to start.
 
-If you need more time to review the list of changes, you can delay SurgicalRollbackâ„¢ by typing **p** to postpone the process for the number of seconds that you specify.
+If you need more time to review the list of changes, you can delay SurgicalRollback by typing **p** to postpone the process for the number of seconds that you specify.
 
 The following example shows a configuration change and the difference document that the Local Manager creates.
 
@@ -47,7 +47,7 @@ Any changes to the device's running-config will be restored in 75 seconds.
 
 In the example above, after return to the command line, the Local Manager identifies configuration changes listed and begins a countdown to automated configuration rollback.
 
-Lines that are removed are prefixed with the **â€“** character.
+Lines that are removed are prefixed with the **-** character.
 
 Lines that are added are prefixed with a **+** character.
 

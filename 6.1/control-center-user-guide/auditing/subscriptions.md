@@ -61,7 +61,7 @@ By default, alerts are emailed to subscribed users every two minutes while they 
 Limit the number of alerts that a user receives with the Alert Options settings on the Alert Subscriptions page.
  
 ![Uplogix Control Center - Alert Options](http://uplogix.com/support/docs/img/5.4/uplogix-control-center-alert-options.png)
-â€ƒ
+
 *Alert Options* specify the times, days, and frequency when alerts may be emailed to this user. The limit options are as follows. Leave the wildcard * character in the fields you do not wish to restrict.
 
 |Option	|Description|

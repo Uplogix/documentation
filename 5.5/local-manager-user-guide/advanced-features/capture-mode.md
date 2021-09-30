@@ -40,7 +40,7 @@ A variety of options are available to filter captured packets.
  - Source capture src 192.0.2.1
  - Destination capture destination 192.0.2.253
  - Frame Size capture greater 512, capture less 128
- - Bytes Per Frame capture â€“size 32
+ - Bytes Per Frame capture -size 32
 
 # Viewing Captured Packets
 
@@ -69,7 +69,7 @@ length
 fdelay 15
 ```
 
-To export the capture file in pcap format, use the **show capture â€“pcap** command and pipe it to SCP, FTP, or Email.
+To export the capture file in pcap format, use the **show capture -pcap** command and pipe it to SCP, FTP, or Email.
 
 To export via SCP, use the following syntax:
 
@@ -91,4 +91,4 @@ copy succeeded
 
 In the above example, the capture file will be attached to the email with the filename uplogixlm.cap1. The file can then be viewed in any third party application capable of reading pcap files (Wireshark, etc.).
 
-To export the capture file in plain text with SCP, FTP, or Email, simply omit the â€“pcap option.
+To export the capture file in plain text with SCP, FTP, or Email, simply omit the -pcap option.

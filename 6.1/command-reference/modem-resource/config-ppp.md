@@ -47,7 +47,7 @@ If the ppp server requires Challenge Handshake Authentication Protocol (CHAP) yo
 
 # History 
 
-3.0 â€“ Revised to support RSAÂ® SecurIDÂ® hardware authentication.
+3.0 - Revised to support RSA&#8482; SecurID&#8482; hardware authentication.
 
 # Related commands 
 

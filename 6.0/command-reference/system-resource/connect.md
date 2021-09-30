@@ -13,7 +13,7 @@ LMS offerings: All
 # Syntax 
 
 ```
-connect [â€œuser@â€] <â€œip/ipv6 addressâ€> [â€œportâ€]
+connect ["user@"] <"ip/ipv6 address"> ["port"]
 ```
 
 # Usage 

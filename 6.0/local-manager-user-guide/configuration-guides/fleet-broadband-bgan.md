@@ -15,7 +15,7 @@ This guide is for trained, qualified network support technicians responsible for
 
 # Physical connection
 
-Both FBB and BGAN terminals have an Ethernet interface which is cabled to the Local Managerâ€™s GE-1 port. Depending on installation preference, this connection can be made either directly between the Local Manager and terminal or through a LAN switch. 
+Both FBB and BGAN terminals have an Ethernet interface which is cabled to the Local Manager's GE-1 port. Depending on installation preference, this connection can be made either directly between the Local Manager and terminal or through a LAN switch. 
 
 # Out of band configuration
 
@@ -46,14 +46,14 @@ The example above assumes DHCP assignment of an IP address to the Local Manager.
 
 # Port forwarding
 
-If the FBB and BGAN terminals provide the Local Manager a private IP address, port forwarding must be performed on the terminal to allow an SSH session to terminate on the Local Managerâ€™s private IP address from the user workstation. This configuration will most likely be completed using the terminalâ€™s web interface. The Local Manager is set to accept SSH sessions on TCP port 22 by default.
+If the FBB and BGAN terminals provide the Local Manager a private IP address, port forwarding must be performed on the terminal to allow an SSH session to terminate on the Local Manager's private IP address from the user workstation. This configuration will most likely be completed using the terminal's web interface. The Local Manager is set to accept SSH sessions on TCP port 22 by default.
 
-1.	Configure the terminal to forward TCP port 22 packets to the Local Managerâ€™s private IP address.
+1.	Configure the terminal to forward TCP port 22 packets to the Local Manager's private IP address.
 2.	If possible, configure the terminal to reserve the IP address for the Local Manager MAC address.
 
 # Address redirection
 
-The Control Center will display IP addresses reported by the Local Managers. To connect over SSH from the userâ€™s workstation Terminal Applet to a NAT(ted) IP address, the Control Center Applet must be directed to ignore the reported IP and use the terminalâ€™s routable address. This is done using System Properties to override SSH values.  Below, the Local Manager is using an OOB path and circled is the private IP address as well as the IP address to use for SSH when the Local Manager is OOB. 
+The Control Center will display IP addresses reported by the Local Managers. To connect over SSH from the user's workstation Terminal Applet to a NAT(ted) IP address, the Control Center Applet must be directed to ignore the reported IP and use the terminal's routable address. This is done using System Properties to override SSH values.  Below, the Local Manager is using an OOB path and circled is the private IP address as well as the IP address to use for SSH when the Local Manager is OOB. 
 
 ![](http://uplogix.com/support/docs/img/configuration-guides/fleet-image011.png)
  
@@ -66,7 +66,7 @@ Property choices include:
 * sshPortOob: If Port Address Translation is in use between User Workstation and Local Manager, in Out of Band mode, the configured SSH TCP port number is stored in this property
 * sshIpv6Oob: The IPv6 address that the Terminal Applet will connect to when accessing the Local Manager from the User Workstation or SOCKS proxy in Out of Band mode
 
-If the terminalâ€™s in-band WAN IP address changes (for example, if using DHCP), then you may be able to use Dynamic Domain Name Service (DDNS) from a workstation using the same routable address. In such a case you would configure the sshIpOOB override to be the qualified hostname set up with your DDNS provider. 
+If the terminal's in-band WAN IP address changes (for example, if using DHCP), then you may be able to use Dynamic Domain Name Service (DDNS) from a workstation using the same routable address. In such a case you would configure the sshIpOOB override to be the qualified hostname set up with your DDNS provider. 
 
 ![](http://uplogix.com/support/docs/img/configuration-guides/fleet-image013.png)
 

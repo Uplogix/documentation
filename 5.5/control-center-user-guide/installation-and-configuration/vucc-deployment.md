@@ -33,9 +33,9 @@ The default resource allocation has been thoroughly tested to support deployment
 | Deployment Size |	Storage	| Memory	| CPUs (2+ GhHz) |
 | - | - | - | - |
 | 1000+ |	825 GB	| 8 GB	| 8 cores| 
-| 250 â€“ 999	| ~650 GB	| 8 GB	| 8 cores |
-| 100 â€“ 249 	| ~550 GB	| 4 GB\*	| 4 cores |
-| 1 â€“ 99	| ~450 GB	| 4 GB\*	| 2 cores |
+| 250 - 999	| ~650 GB	| 8 GB	| 8 cores |
+| 100 - 249 	| ~550 GB	| 4 GB\*	| 4 cores |
+| 1 - 99	| ~450 GB	| 4 GB\*	| 2 cores |
 | Evaluation vUCC	| ~65 GB	| 1 GB\* | 2 cores |
 
 * Using less than the default 8 GB for memory requires software changes.
@@ -50,7 +50,7 @@ SSDs are recommended for maximum performance, though SAS drives can be used in s
 
 ## Memory
 
-If less than 8 GB is allocated for memory, you will need to update the Control Centerâ€™s memory configuration.
+If less than 8 GB is allocated for memory, you will need to update the Control Center's memory configuration.
 
 1. 	Enter **vi /etc/sysconfig/embassy.overrides**
 2. 	Move the cursor over the number 8 on the line which reads **RAM=8**

@@ -70,11 +70,11 @@ Do you want to commit these changes? (y/n):
 
 3.3 - Added IPsec support.
 
-3.5 â€“ Added Netscreen VPN endpoint
+3.5 - Added Netscreen VPN endpoint
 
-4.1 â€“ Added DES option
+4.1 - Added DES option
 
-4.5 â€“ Added additional key exchange types for IKE and PFS
+4.5 - Added additional key exchange types for IKE and PFS
 
 # Related commands 
 

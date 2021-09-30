@@ -4,7 +4,7 @@ A common issue with network devices is that they become unresponsive. A device c
 
  - The device is powered up.
  - The cable is connected and the serial console is active (i.e., serial handshaking is still occurring).
- - The Local Manager detects that the deviceâ€™s console has been operating for at least four intervals but is no longer responding to requests.
+ - The Local Manager detects that the device's console has been operating for at least four intervals but is no longer responding to requests.
 
 Often the fastest way to recover an unresponsive device is to cycle power.
 

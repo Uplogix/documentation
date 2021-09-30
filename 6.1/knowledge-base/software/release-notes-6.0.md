@@ -32,7 +32,7 @@ An OS image can be pushed to the master switch in a booted and operational Cisco
 
 ## Other Changes and Issues Addressed in This Release
 
-* LCD panel now correctly notes â€œLOCKED BY OOBâ€ when a Local Manager is actively using PPP for its own management connectivity.
+* LCD panel now correctly notes "LOCKED BY OOB" when a Local Manager is actively using PPP for its own management connectivity.
 * Addressed SACK panic issue. Local Managers no longer accept packets which try to force an MSS > 512.
 * Enhanced Virtual Local Manager performance on KVM by configuring a virtual hardware RNG device.
 * Several SSH vulnerabilities and exploits were addressed.
@@ -40,7 +40,7 @@ An OS image can be pushed to the master switch in a booted and operational Cisco
 * If an LTE modem becomes unresponsive, a reset of the modem will be executed.
 * Fixed an issue where decompression of ZIP files could lose track of, and fail to verify, destination directories.
 * Fixed an issue where configuring an IP protocol filter with a *deny all* entry would work incorrectly with IPv6.
-* Fixed issue where issuing a **config system route** while outband was active could result in a network â€œbounceâ€ and spoilage of an active PPP session.
+* Fixed issue where issuing a **config system route** while outband was active could result in a network "bounce" and spoilage of an active PPP session.
 * Improved the booting reliability and predictability of Uplogix 500 Local Managers.
 * Fixed an issue where configuration import and export would silently fail when outband was active.
 * Fixed an issue where dedicated Ethernet port MAC addresses would be incorrectly defined.
@@ -49,9 +49,9 @@ An OS image can be pushed to the master switch in a booted and operational Cisco
 * Local Managers now support custom port numbers for SCP, FTP, HTTP with all file transfer commands.
 * Cleaned up and enhanced the general display of information pulled from managed power controllers.
 * The <span class='font-weight-bold'>show session * | grep</span> command no longer hangs when parsing very large amounts of text (i.e., no longer results in possibly hundreds of screens of text)
-* Added SSH Key Exchange options of â€œECDHâ€ and â€œECDH+GCMâ€ to SSH configuration parameters.
+* Added SSH Key Exchange options of "ECDH" and "ECDH+GCM" to SSH configuration parameters.
 * Failures arising as a result of the use of command **outband cycle heartbeat** now contain a more robust set of diagnostic information.
-* Improved the **show buffer** commandâ€™s handling of non-ASCII characters.
+* Improved the **show buffer** command's handling of non-ASCII characters.
 * Enhanced readability and helpfulness of SCP server setup help text.
 * VPN no longer attempts to connect indefinitely if there is an existing tunnel. It will now cease trying gracefully.
 * Improved the login prompt regex parsing for the Enhanced driver.
@@ -90,16 +90,16 @@ Two primary aspects were addressed: overall look-and-feel and functional improve
 
 ### Improvement: Graphical Display of Local Manager Provisioning
 
-On a given Local Managerâ€™s summary page, the graphical representation of the way it is provisioned with regards to expansion and transport modules is now accurately displayed. The static model image displayed in previous releases has been removed.
+On a given Local Manager's summary page, the graphical representation of the way it is provisioned with regards to expansion and transport modules is now accurately displayed. The static model image displayed in previous releases has been removed.
 
 ## Other Changes and Issues Addressed in This Release
 
-* Corrected an issue where a standby UCCâ€™s database can become â€œout-of-sync" as the result of a 100% loaded CPU, causing the associated recovery script to become â€œstuckâ€, necessitating a restart of the database.
+* Corrected an issue where a standby UCC's database can become "out-of-sync" as the result of a 100% loaded CPU, causing the associated recovery script to become "stuck", necessitating a restart of the database.
 * Improved the ability of the Dashboard screen to handle very large amounts of entries (thousands).
 * Strengthened support of SOCKS5 proxy in the Terminal Application.
 * Content-Security-Policy and Referrer-Policy have been fully implemented.
-* â€œDownloadâ€ button is no longer actionable when there are no inventory session logs to download.
-* Added a â€œCreate Filterâ€ button on the Deployment Overview page.  The resulting filter can be used to easily schedule upgrades against a specific Uplogix version regardless of Inventory group association.
+* "Download" button is no longer actionable when there are no inventory session logs to download.
+* Added a "Create Filter" button on the Deployment Overview page.  The resulting filter can be used to easily schedule upgrades against a specific Uplogix version regardless of Inventory group association.
 * Added a report to display the IMEI number for each managed modem, sorted by Local Manager name and then Serial number.
 * On the Network Protocols Settings page, protocols which are considered less secure and risky, but which might be nonetheless needed due to legacy requirements, are more clearly displayed.
 * Enhanced the flexibility and consistency of the Terminal Application when connecting to a broader array of third-party device modems.
@@ -107,7 +107,7 @@ On a given Local Managerâ€™s summary page, the graphical representation of 
 * Improved the handling of Control Center window size adjustments to more effectively display large amounts of information.
 * A general email alert message can now be easily configured to be sent to all active users.
 * Addressed the relevant following Common Vulnerabilities and Exposures (CVEs):
- * CVE-2018-12126/12127/12130/11091: The â€œZombieLoadâ€ issue.
+ * CVE-2018-12126/12127/12130/11091: The "ZombieLoad" issue.
  * CVE-2018-8014
  * CVE-2019-17055
  * CVE-2019-17133

@@ -1,6 +1,6 @@
 <!-- 5.4 -->
 
-Undo the last change to the deviceâ€™s configuration.
+Undo the last change to the device's configuration.
 
 # Command availability
 

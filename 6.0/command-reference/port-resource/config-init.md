@@ -28,21 +28,21 @@ The following settings are presented for the port resource.
 
 Ethernet-dependent settings are not available from the Uplogix 430 Local Manager.
 
-**description** (optional) â€“ Used to identify the device if no hostname is found. The first word of the description will be used as the device's hostname, and will be displayed on the front panel as it scrolls information.
+**description** (optional) - Used to identify the device if no hostname is found. The first word of the description will be used as the device's hostname, and will be displayed on the front panel as it scrolls information.
 
 > **Note**: Some symbol characters, such as the ~ and \ characters, are not shown correctly on the front panel display.
 
-**make** (required) â€“ Type ? to see a list of supported devices. If your device is not listed, enter native.
+**make** (required) - Type ? to see a list of supported devices. If your device is not listed, enter native.
 
-**model** (optional) â€“ Automatically discovered during assimilation of supported devices.
+**model** (optional) - Automatically discovered during assimilation of supported devices.
 
-**os** (required in most cases) â€“ Type **?** to see a list of supported OS types. This list is filtered based on the make.
+**os** (required in most cases) - Type **?** to see a list of supported OS types. This list is filtered based on the make.
 
-**os version** (optional) â€“ Automatically discovered during assimilation of supported devices.
+**os version** (optional) - Automatically discovered during assimilation of supported devices.
 
-**management IP** â€“ Required if Ethernet-based functionality is desired. This is the regular IP address of the device and not related to the dedicated Ethernet between the Uplogix Local Manager and the device.
+**management IP** - Required if Ethernet-based functionality is desired. This is the regular IP address of the device and not related to the dedicated Ethernet between the Uplogix Local Manager and the device.
 
-**configure dedicated Ethernet port?** â€“ Required if dedicated Ethernet functionality is desired. This network must be unique across all device ports on the Local Manager. 
+**configure dedicated Ethernet port?** - Required if dedicated Ethernet functionality is desired. This network must be unique across all device ports on the Local Manager. 
 
 > **Note**: If you configure a dedicated Ethernet port on a switch, set the switch to use DHCP or configure the STP portfast feature on the layer 2 interface to improve performance.
 
@@ -50,21 +50,21 @@ Ethernet-dependent settings are not available from the Uplogix 430 Local Manager
 
 > **Note**: If you configure the device to use DHCP, ensure that the Local Manager is configured to serve DHCP addresses to managed devices. Use the config system protocols DHCP command to do change the default of 169.254.100.
 
-**dedicated device IP** (optional) â€“ IP address of the deviceâ€™s Ethernet interface.
+**dedicated device IP** (optional) - IP address of the device's Ethernet interface.
 
-**dedicated port IP** (optional) â€“ IP address of the portâ€™s Ethernet interface.
+**dedicated port IP** (optional) - IP address of the port's Ethernet interface.
 
-**dedicated netmask** (optional) â€“ Subnet mask for the dedicated Ethernet. Each port must be on its own subnet.
+**dedicated netmask** (optional) - Subnet mask for the dedicated Ethernet. Each port must be on its own subnet.
 
-**speed/duplex** (optional) â€“ Defaults to auto but can be changed to suit your network.
+**speed/duplex** (optional) - Defaults to auto but can be changed to suit your network.
 
-**console username** â€“ Depends on the login process of the device. 
+**console username** - Depends on the login process of the device. 
 
-**console password** â€“ Depends on the login process of the device. 
+**console password** - Depends on the login process of the device. 
 
-**enable username** â€“ Depends on the enable process of the device. 
+**enable username** - Depends on the enable process of the device. 
 
-**enable password** â€“ Depends on the enable process of the device. 
+**enable password** - Depends on the enable process of the device. 
 
 **Secondary Console username** (Cisco only - optional free text field) 
 
@@ -74,13 +74,13 @@ Ethernet-dependent settings are not available from the Uplogix 430 Local Manager
 
 **Secondary Enable password** (Cisco only - optional free text field) 
 
-**serial bit rate** (optional) â€“ Defaults to 9600.
+**serial bit rate** (optional) - Defaults to 9600.
 
-**serial data bit** (optional) â€“ Defaults to 8.
+**serial data bit** (optional) - Defaults to 8.
 
-**serial parity** (optional) â€“ Defaults to none.
+**serial parity** (optional) - Defaults to none.
 
-**serial stop bit** (optional) â€“ Defaults to 1.
+**serial stop bit** (optional) - Defaults to 1.
 
 **serial flow control** (optional) - Defaults to none.
 
@@ -171,7 +171,7 @@ Done.
 
 3.2 - Changed make generic to native. Added secondary console and enable credentials for Cisco devices.
 
-3.4 â€“ Added the ability to allow the device to receive a DHCP address from the Local Manager.
+3.4 - Added the ability to allow the device to receive a DHCP address from the Local Manager.
 
 # Related commands 
 

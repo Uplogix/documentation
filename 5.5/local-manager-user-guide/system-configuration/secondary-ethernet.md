@@ -2,12 +2,12 @@
 
 <div class='ucc' />Inventory > Local Manager Summary >Â Network > Secondary Ethernet</div>
 
-The Local Managerâ€™s secondary Ethernet port can operate in one of four modes:
+The Local Manager's secondary Ethernet port can operate in one of four modes:
 
-* **Bonded** â€” Use this default mode to join the Secondary Ethernet interface with the front management interface to form a single logical network interface. This mode is most useful for failover scenarios.
-* **Capture** â€” Use this mode to enable the capture of network traffic for troubleshooting purposes.
-* **DHCPServer** â€” Use this mode to enable WAN Traffic Failover and out-of-band connection sharing.  This enables a local router to route traffic through the Local Manager and over the cellular out-of-band connection when the WAN link fails - see the WAN Traffic Failover feature for more details.
-* **Outband** â€” Use this mode to configure a secondary management network to be used as an out-of-band channel.
+* **Bonded** &mdash; Use this default mode to join the Secondary Ethernet interface with the front management interface to form a single logical network interface. This mode is most useful for failover scenarios.
+* **Capture** &mdash; Use this mode to enable the capture of network traffic for troubleshooting purposes.
+* **DHCPServer** &mdash; Use this mode to enable WAN Traffic Failover and out-of-band connection sharing.  This enables a local router to route traffic through the Local Manager and over the cellular out-of-band connection when the WAN link fails - see the WAN Traffic Failover feature for more details.
+* **Outband** &mdash; Use this mode to configure a secondary management network to be used as an out-of-band channel.
 
 # Physical Connection
 
@@ -43,7 +43,7 @@ This mode allows the capture and review of network traffic via the secondary Eth
 
 ## Usage Notes
 
-* The directly connected switch must be configured to send traffic to the Local Managerâ€™s secondary Ethernet port.
+* The directly connected switch must be configured to send traffic to the Local Manager's secondary Ethernet port.
 * The maximum size of the capture file is 5MB. Traffic capture will automatically stop when this limit is reached.
 
 ## System Configuration
@@ -90,7 +90,7 @@ A variety of options for the **capture** command are available to filter capture
 | Source	| capture src 192.168.1.1
 | Destination | capture destination 192.168.1.253
 | Frame Size | capture greater 512, capture less 128
-| Bytes Per Frame | capture â€“size 1514
+| Bytes Per Frame | capture -size 1514
 
 ## Viewing Captured Packets
 
@@ -112,7 +112,7 @@ fdelay 15
 fdelay 15
 ```
 
-To export the capture file in pcap format, use the **show capture â€“pcap** command and pipe it to SCP, FTP, or E-mail.
+To export the capture file in pcap format, use the **show capture -pcap** command and pipe it to SCP, FTP, or E-mail.
 
 ```
 [admin@UplogixLM]# show capture -pcap | scp uplogix@203.0.113.5:u5000.cap1
@@ -133,7 +133,7 @@ copy succeeded
 
 In the above example, the capture file will be attached to the email with the filename u5000.cap1. You can then view this file in any third party application capable of reading pcap files like Wireshark, etc.
 
-To export the capture file in plain text with SCP, FTP, or E-mail, simply omit the â€“ pcap option.
+To export the capture file in plain text with SCP, FTP, or E-mail, simply omit the - pcap option.
 
 # DHCPServer Mode
 
@@ -143,7 +143,7 @@ This mode allows the secondary Ethernet interface to operate as a WAN Traffic Fa
 
 * The routed interface that is connected to the secondary Ethernet port should be configured to use DHCP in order to get an IP address from the Local Manager secondary Ethernet port.
 * The Local Manager PPP settings must be configured to *Enable Out-of-Band Sharing (y/n)* before the secondary Ethernet interface can be configured to *Forward traffic over Out-of-Band Connection (y/n)*.  To configure PPP settings, run **config ppp** from the modem resource.
-* When configuring this mode, leave the *DHCP MAC Address Filter* field blank if you want the Local Manager to offer an IP address to whatever device makes a request (safe when directly connecting the router routed interface to the Local Manager's secondary Ethernet interface).  If you want the Local Manager to only respond to DHCP requests from a specific device or type of device, enter a full MAC address or MAC address prefix for the device that will be routing traffic to the Local Manager WAN Traffic Failover interface â€“ this prevents the Local Manager from becoming a generic DHCP server to other devices for the case where another device might attempt to DHCP an IP address..
+* When configuring this mode, leave the *DHCP MAC Address Filter* field blank if you want the Local Manager to offer an IP address to whatever device makes a request (safe when directly connecting the router routed interface to the Local Manager's secondary Ethernet interface).  If you want the Local Manager to only respond to DHCP requests from a specific device or type of device, enter a full MAC address or MAC address prefix for the device that will be routing traffic to the Local Manager WAN Traffic Failover interface - this prevents the Local Manager from becoming a generic DHCP server to other devices for the case where another device might attempt to DHCP an IP address..
 
 
 ## System Configuration

@@ -2,11 +2,11 @@
 
 This feature enables access to network services running on the dedicated or management IP addresses of a managed device. Multiple users on multiple workstations can use SSH Port Forwarding concurrently.
 
-Certain privileges are required to edit or view a portâ€™s forward configuration.
+Certain privileges are required to edit or view a port's forward configuration.
 
-* **show protocols forward** â€” Views the forwarding settings.
-* **config protocols forward** â€” Configures the forwarding settings.
-* **forward** â€” Allows the user to open an SSH session with a tunnel to the forwarded port.
+* **show protocols forward** &mdash; Views the forwarding settings.
+* **config protocols forward** &mdash; Configures the forwarding settings.
+* **forward** &mdash; Allows the user to open an SSH session with a tunnel to the forwarded port.
 
 The Local Manager will attempt to forward incoming TCP traffic regardless of whether the destination is configured properly or not. Ensure the managed device is configured to listen on the port specified.
 
@@ -14,7 +14,7 @@ Complete the following steps to configure SSH port forwarding for your managed d
 
 # Configure IP Addresses
 
-The managed deviceâ€™s management or dedicated IP address must be configured on the Uplogix device. This can be configured using **config init** or **config info**.
+The managed device's management or dedicated IP address must be configured on the Uplogix device. This can be configured using **config init** or **config info**.
 
 ```
 [admin@UplogixLM (port1/1)]# config init
@@ -56,13 +56,13 @@ exit
 
 Enables forwarding to the management IP address and the port specified. The no prefix will remove the forward.
 
-Example: To enable traffic forwarding to port 80 on the managed deviceâ€™s management IP address, use management 80.
+Example: To enable traffic forwarding to port 80 on the managed device's management IP address, use management 80.
 
 **[no] dedicated {port}**
 
 Enables forwarding to the dedicated IP address and the port specified. The no prefix will remove the forward.
 
-Example: To enable traffic forwarding to port 80 on the managed deviceâ€™s dedicated IP address, use dedicated 80.
+Example: To enable traffic forwarding to port 80 on the managed device's dedicated IP address, use dedicated 80.
 
 **[no] events**
 
@@ -82,7 +82,7 @@ Exits the configuration editor.
 
 When connecting with an SSH client, you can specify an IP address or hostname and a port to create a tunnel. With forwarding enabled, the Uplogix device will allowing incoming users to establish a tunnel for which they have the forward privilege.
 
-Hostnames will take the form of portx_y. For example, â€œport 1/1â€ will be specified as â€œport1_1â€ when creating the tunnel. This hostname will point to whichever IP address is configured for forwarding, either management or dedicated. If both addresses are configured for forwarding, an IP address should be used to avoid ambiguity.
+Hostnames will take the form of portx_y. For example, "port 1/1" will be specified as "port1_1" when creating the tunnel. This hostname will point to whichever IP address is configured for forwarding, either management or dedicated. If both addresses are configured for forwarding, an IP address should be used to avoid ambiguity.
 
 # SSH Client Examples
 
@@ -90,16 +90,16 @@ Below are examples of how to set up this feature using OpenSSH and PuTTY. For an
 
 ## OpenSSH (Linux/Unix)
 
-The ssh command on most Linux platforms provides for port forwarding with the â€“L option. For example, if port 1/3 is forwarding port 80 on its dedicated IP address and you want to map it locally to port 1080, use the following command:
+The ssh command on most Linux platforms provides for port forwarding with the -L option. For example, if port 1/3 is forwarding port 80 on its dedicated IP address and you want to map it locally to port 1080, use the following command:
 
 ```
-ssh â€“L 1080:port1_3:80 username@uplogixlocalmanager
+ssh -L 1080:port1_3:80 username@uplogixlocalmanager
 ```
 
 An IP address can also be used:
 
 ```
-ssh â€“L 1080:192.0.2.40:80 username@uplogixlocalmanager
+ssh -L 1080:192.0.2.40:80 username@uplogixlocalmanager
 ```
 
 ## PuTTY
@@ -110,7 +110,7 @@ Open PuTTY, enter an IP address (1), and then select Tunnels under Category > SS
 
 Configure port forwarding with the following options:
 
-(1) Source Port: A local port on the userâ€™s workstation to forward the remote port to. For example, to make the remote port 80 appear locally as 1080, use 1080 as the source port.
+(1) Source Port: A local port on the user's workstation to forward the remote port to. For example, to make the remote port 80 appear locally as 1080, use 1080 as the source port.
 
 (2) Destination: A combination of the destination hostname (or IP address) and the remote port. For example, to create a tunnel to port 80 on port 1/1, use port1_1:80. If you would like to specify the IP address, use 192.0.2.1:80 (where 192.x.x.x is the management or dedicated IP address of the managed device).
 

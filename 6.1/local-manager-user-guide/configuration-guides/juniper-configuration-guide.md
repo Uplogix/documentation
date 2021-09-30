@@ -5,12 +5,12 @@ Supports Juniper switches and routers running JunOS version 11 or higher with th
 
 #Physical Connection
 
-Connect a free serial port on the Uplogix to the Juniperâ€™s RS-232 console management port with a standard Cat-5 cable.
+Connect a free serial port on the Uplogix to the Juniper's RS-232 console management port with a standard Cat-5 cable.
 
 
 #Configuring the Port
 
-To configure the Uplogix LM for connection to a Juniper device, navigate to the port that the Juniper is connected to, run the command **config init**, and follow the prompts as below (substituting your Juniperâ€™s IP address for 203.0.113.16):
+To configure the Uplogix LM for connection to a Juniper device, navigate to the port that the Juniper is connected to, run the command **config init**, and follow the prompts as below (substituting your Juniper's IP address for 203.0.113.16):
 
 > **Important**: The Uplogix advanced driver for JunOS will not work with the **root** console username. To properly configure a Juniper device you must provide a user account that automatically has a "cli" shell, as opposed to a "csh" shell that the root user has.
 

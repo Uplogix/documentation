@@ -1,19 +1,19 @@
 # Overview 
 <div class='ucc' />Inventory > Local Manager (or Group) Summary Page > Network > Protocols</div>
 
-Terminal pass-through is available on the port and modem resources and is enabled on a device-by-device basis. This feature allows an SSH session to be opened directly to the device, passing through the Local Manager, while retaining the Local Managerâ€™s rollback capabilities, session logging, and authorization checking.
+Terminal pass-through is available on the port and modem resources and is enabled on a device-by-device basis. This feature allows an SSH session to be opened directly to the device, passing through the Local Manager, while retaining the Local Manager's rollback capabilities, session logging, and authorization checking.
 
 To configure terminal pass-through, navigate to the desired resource and use the **config protocols pass-through** command to specify either SSH or Telnet and optionally, the TCP port number. Command syntax is:
 
 ```
-config protocols pass-through <enable | disable> <telnet | ssh> [â€œport numberâ€]
+config protocols pass-through <enable | disable> <telnet | ssh> ["port number"]
 
 [admin@UplogixLM (port1/1)]# config protocols pass-through enable ssh
 Pass-through port will be 2101.
 SSH port change will take place after the next system restart.
 ```
 
-By default, device ports map to TCP ports starting at 2001. Alternate TCP ports (1023 â€“ 9999) may be specified if desired.
+By default, device ports map to TCP ports starting at 2001. Alternate TCP ports (1023 - 9999) may be specified if desired.
 
 > This setting takes effect after you restart the Local Manager.
 

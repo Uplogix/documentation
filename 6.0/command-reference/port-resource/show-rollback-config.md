@@ -1,6 +1,6 @@
 <!-- 5.4 -->
 
-Displays the transactional rollback contents that would be applied to the deviceâ€™s running configuration if the rollback config command were called.
+Displays the transactional rollback contents that would be applied to the device's running configuration if the rollback config command were called.
 
 # Command availability 
 

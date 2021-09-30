@@ -2,7 +2,7 @@
 This article describes the deploying of an Uplogix Virtual Control Center to an ESXI environment running 6.7 or earlier. Before following these instructions, please be sure you have read the requirements detailed in [Deploying a Virtual Control Center](https://uplogix.com/docs/control-center-user-guide/installation-and-configuration/vucc-deployment).
 # Deploying via Web Browser
 
-There is a known issue deploying and exporting â€œlargeâ€ VMs with the ESXi web client in early versions of 6.5 and 6.7.  If you try to deploy the Control Center VM using a browser and it fails about half way through, we recommend using the command line VMware OVF Tool. This tool is actively maintained and supports ESXi 6.5 and 6.7.  You can download it from VMware (https://www.vmware.com/support/developer/ovf/).  This deployment issue appears to be fixed in ESXi 6.7.0 Update 1.  Please contact Uplogix Support if you have any question about using the OVF Tool.
+There is a known issue deploying and exporting "large" VMs with the ESXi web client in early versions of 6.5 and 6.7.  If you try to deploy the Control Center VM using a browser and it fails about half way through, we recommend using the command line VMware OVF Tool. This tool is actively maintained and supports ESXi 6.5 and 6.7.  You can download it from VMware (https://www.vmware.com/support/developer/ovf/).  This deployment issue appears to be fixed in ESXi 6.7.0 Update 1.  Please contact Uplogix Support if you have any question about using the OVF Tool.
 
 # Deployment
 
@@ -51,7 +51,7 @@ Ensure **Power on after deployment** is **not** selected.  Click Finish to begin
 The progress bar is not very accurate with its time estimation.  Since the vUCC has 6 VMDKs (disks) inside the OVA, you will frequently see an estimate like *5 minutes remaining*, but then it will move on to the next disk and say the same estimate for remaining time.  Typical deployment times vary from 25 minutes (SSD RAID 10) to 3 hours (SAS RAID 5).  The deployment time is heavily dependent on the speed of the VMware host datastore and may increase when a datastore is heavily shared by other VMs.  Network speed is also a factor and we recommend you use a gigabit link.
 
 ![Deployment Time](http://uplogix.com/support/docs/img/5.4/vucc/image008.png) 
-â€ƒ
+
 Once the deployment has completed successfully, click **Close**.
 
 ![Deployment Time](http://uplogix.com/support/docs/img/5.4/vucc/image009.png)
@@ -74,7 +74,7 @@ If you need to edit any of the deployment settings, right-click on the VM's name
 
 # Power On
 
-Once the settings have been configured, power on the VM.  You can do this by right-clicking the VM name again or using the green â€œplayâ€ icon.
+Once the settings have been configured, power on the VM.  You can do this by right-clicking the VM name again or using the green "play" icon.
 
 ![Power On](http://uplogix.com/support/docs/img/5.4/vucc/image013.png)
 
@@ -96,7 +96,7 @@ If running the VM with anything other than 8 GB of RAM, the memory settings for 
 
 # IP Configuration
 
-After powering the VM on, click the **Console** tab.  Once the vUCC has finished booting, log in as user *emsadmin* with password *password*.  You may miss the login prompt as information about the database writes to the console.  If you see *Database â€œUPLOGIXâ€ warm started*, hit enter once and you will be presented with the login prompt.
+After powering the VM on, click the **Console** tab.  Once the vUCC has finished booting, log in as user *emsadmin* with password *password*.  You may miss the login prompt as information about the database writes to the console.  If you see *Database "UPLOGIX" warm started*, hit enter once and you will be presented with the login prompt.
 
 To configure static IP addresses for the vUCC and to complete the provisioning process, please continue to [Provisioning](https://uplogix.com/docs/control-center-user-guide/installation-and-configuration/provisioning).
 

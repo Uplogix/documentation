@@ -1,6 +1,6 @@
 <!-- 5.4 -->
 
-Displays the Uplogix Local Managerâ€™s current date.
+Displays the Uplogix Local Manager's current date.
 
 # Command availability 
 
@@ -30,7 +30,7 @@ All screens show the current date and time in the upper right. UTC is used.
 
 # History 
 
-1.3 - Userâ€™s time zone offset added.
+1.3 - User's time zone offset added.
 
 # Related commands 
 

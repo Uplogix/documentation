@@ -2,7 +2,7 @@
 
 Displays information about current and recent alarms.
 
-Time is offset by userâ€™s time zone offset, listed as common abbreviation (such as CDT, US Central Daylight Saving Time) or relative to UTC. Alarms lasting a day are listed as their date.
+Time is offset by user's time zone offset, listed as common abbreviation (such as CDT, US Central Daylight Saving Time) or relative to UTC. Alarms lasting a day are listed as their date.
 
 Once an alarm triggers, it silences automatically in 6 minutes. An asterisk denotes no alarm in the past 2 minutes.
 
@@ -28,10 +28,10 @@ LMS offerings: All
 show alarms [-all | -cleared | -n | -v]
 ```
 
-**-all** â€“ displays alarms that are no longer current but have not been rolled off
-**-v** â€“ displays detailed alarms information
-**-cleared** â€“ display alarms that have already been cleared
-**-n [#]** â€“ display up to the specified number of alarms
+**-all** - displays alarms that are no longer current but have not been rolled off
+**-v** - displays detailed alarms information
+**-cleared** - display alarms that have already been cleared
+**-n [#]** - display up to the specified number of alarms
 
 # Usage 
 

@@ -20,9 +20,9 @@ LMS offerings: All
 show events [-g] [-n <#>] [-v]
 ```
 
-**-g** â€“ Show latitude and longitude (only available on ports connected to supported GPS devices).
-**-n <#>** â€“ Specify maximum number of events.
-**-v** â€“ Use multiple lines
+**-g** - Show latitude and longitude (only available on ports connected to supported GPS devices).
+**-n <#>** - Specify maximum number of events.
+**-v** - Use multiple lines
 
 # Usage 
 

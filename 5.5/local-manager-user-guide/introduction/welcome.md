@@ -32,7 +32,7 @@ Following all cautions and warnings will ensure your own safety and protect the 
 
 Read and understand the following instructions before using the Local Manager:
 
-* Use three wire electrical extension cords with a current rating equal to or greater than the Local Managerâ€™s current rating.
+* Use three wire electrical extension cords with a current rating equal to or greater than the Local Manager's current rating.
 * Always disconnect the Local Manager from power before cleaning and servicing.
 * Do not spray liquids directly onto the Local Manager when cleaning. Always apply the liquid first to a static free cloth.
 * Do not immerse the Local Manager in any liquid or place any liquids on it.

@@ -21,7 +21,7 @@ LMS offerings: All
 # Syntax 
 
 ```
-config monitors <â€œobjectâ€> <â€œinstanceNameâ€> [â€œruleListâ€] [:â€œdelayâ€]
+config monitors <"object"> <"instanceName"> ["ruleList"] [:"delay"]
 
 ```
 
@@ -46,7 +46,7 @@ The instanceName is used with the interface object; it specifies an interface on
 
 **ruleList** - Optional; accepts rules and rulesets. Separate rules and rulesets by commas and pipes (|).
 
-â€œ**delay**â€ - Specify a time in seconds between executions. Default time is 30 seconds. 
+"**delay**" - Specify a time in seconds between executions. Default time is 30 seconds. 
 
 # Usage 
 

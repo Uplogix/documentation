@@ -2,7 +2,7 @@
 
 Interactive command to provision 802.1Q tagged interfaces on the Uplogix management interface.  Named subinterfaces are associated with VLAN id, IP addresses and gateways, and specific IP routes directed through its gateway.
 
-Standard switch configuration should be trunk mode with native VLAN set for Local Manger â€œManagementâ€ IP address.  
+Standard switch configuration should be trunk mode with native VLAN set for Local Manger "Management" IP address.  
 
 Routes set override default routes but are overridden by static routes set on the management IP address.
  

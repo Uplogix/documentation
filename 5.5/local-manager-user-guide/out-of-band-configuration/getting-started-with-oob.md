@@ -1,6 +1,6 @@
 <!-- 5.4 -->
 
-<div class='ucc' />Inventory > Local Manager Summary >Â Out-of-Band > Setup Wizard</div>
+<div class='ucc' />Inventory > Local Manager Summary > Out-of-Band > Setup Wizard</div>
 
 # Overview
 
@@ -56,7 +56,7 @@ Based on the *make* provided, the Local Manager will automatically suggest a bau
 
 # Configuring a virtual modem
 
-The Local Manager can be configured to connect to an external modem over Ethernet â€“ this is achieved by configuring a virtual modem (supported on the 500 and 5000 platforms only). A virtual modem will override an embedded modem when configured. Use the **config system slot modem** command to configure a virtual modem. 
+The Local Manager can be configured to connect to an external modem over Ethernet - this is achieved by configuring a virtual modem (supported on the 500 and 5000 platforms only). A virtual modem will override an embedded modem when configured. Use the **config system slot modem** command to configure a virtual modem. 
 
 
 > **Note: This feature is not often used.** As of LMS version 5.4.3, only Telnet works for PPP on a virtual modem port.      
@@ -71,7 +71,7 @@ Port 3 added.
 
 # Configuring for dial-in access
 
-<div class='ucc' />Inventory > Local Manager Summary >Â Out-of-Band > Modem</div>
+<div class='ucc' />Inventory > Local Manager Summary > Out-of-Band > Modem</div>
 
 > Dial-in access is not available on cellular modems.
 
@@ -139,7 +139,7 @@ The init string shown above is for use with embedded modems only. Other modems (
 
 # Configuring for dial-out access
 
-<div class='ucc' />Inventory > Local Manager Summary >Â Out-of-Band > PPP</div>
+<div class='ucc' />Inventory > Local Manager Summary > Out-of-Band > PPP</div>
 
 To enable out-of-band communication with the Local Manager, use the **config ppp** command in the modem resource to configure PPP settings.
 
@@ -225,7 +225,7 @@ Do you want to commit these changes? (y/n):
 
 # Validating dial-out access
 
-The PPP Cycle feature allows the Local Manager to bring up its out-of-band connection for a specified duration. When called from a scheduled job, this feature can regularly validate the Local Managerâ€™s out-of-band capability (modem+PPP/secondary Ethernet and VPN functionality). For devices in remote locations, the **ppp cycle** command can be used to test the end-to-end out-of-band connection by establishing the connection long enough to communicate briefly with the Control Center, and then tearing it down.
+The PPP Cycle feature allows the Local Manager to bring up its out-of-band connection for a specified duration. When called from a scheduled job, this feature can regularly validate the Local Manager's out-of-band capability (modem+PPP/secondary Ethernet and VPN functionality). For devices in remote locations, the **ppp cycle** command can be used to test the end-to-end out-of-band connection by establishing the connection long enough to communicate briefly with the Control Center, and then tearing it down.
 
 ## Requirements
 
@@ -254,7 +254,7 @@ The **ppp cycle duration** command will complete the following actions:
 * Wait one minute
 * Turn PPP off
 
-Use **ppp cycle duration** from the modem resource to execute a one-time PPP test. The device will remain out-of-band for one minute (default duration) before it disables PPP. Use the â€“d flag to change the duration in minutes.
+Use **ppp cycle duration** from the modem resource to execute a one-time PPP test. The device will remain out-of-band for one minute (default duration) before it disables PPP. Use the -d flag to change the duration in minutes.
 
 ```
 [admin@UplogixLM (modem)]# ppp cycle duration
@@ -277,7 +277,7 @@ The **ppp cycle heartbeat** command will complete the following actions:
 * Display Control Center heartbeat version for verification
 * Turn PPP off
 
-Run **ppp cycle heartbeat** from the modem resource to execute a one-time PPP test. Use the â€“m flag to specify minimal heartbeat mode (for low-bandwidth OOB connections). 
+Run **ppp cycle heartbeat** from the modem resource to execute a one-time PPP test. Use the -m flag to specify minimal heartbeat mode (for low-bandwidth OOB connections). 
 
 ```
 [admin@UplogixLM (modem)]# ppp cycle heartbeat

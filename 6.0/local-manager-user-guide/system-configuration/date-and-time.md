@@ -17,7 +17,7 @@ System time is    02/12/2020 19:26:24 UTC
 
 > The date and time cannot be set from the Control Center.
 
-To override time and date settings from the Uplogix Control Center, or to specify an NTP server of your own, use the interactive **config system ntp** command to set the NTP serverâ€™s IP address and optionally add a secondary server in case the primary server fails. 
+To override time and date settings from the Uplogix Control Center, or to specify an NTP server of your own, use the interactive **config system ntp** command to set the NTP server's IP address and optionally add a secondary server in case the primary server fails. 
 
 ```
 [admin@UplogixLM]# config system ntp

@@ -51,7 +51,7 @@ The connection between the BDU and Uplogix appliance will require:
 
 * One (1) standard Ethernet CAT5 cable, straight-through (for Iridium)
 * One (1) rolled Ethernet CAT5 cable (for GPS)
-	* A rolled cable is **REQUIRED** for proper operation with the Uplogix 5000, 500 and 430 Local Managers. If you are using an Uplogix 3200, a straight-through cable can be substituted.â€ƒ
+	* A rolled cable is **REQUIRED** for proper operation with the Uplogix 5000, 500 and 430 Local Managers. If you are using an Uplogix 3200, a straight-through cable can be substituted.
 
 ## Prepare the Above Deck Unit (ADU)
 
@@ -137,15 +137,15 @@ The right side of the BDU (marked **RS422**) connects to the Above Deck Unit (AD
 
 Use Ethernet cables to connect the Local RS-232 ports of the BDU to the Uplogix Local Manager.
  
-**BDU RS-232 LOCAL â†” LEO-PA DB-9 ADAPTER â†” UPLOGIX RS-232 MODULE** â€“ Use a straight-through Ethernet cable to connect the Local port of the BDU to the LEO-PA adapter. Plug the adapter into the RS-232 module on the Uplogix appliance.
+**BDU RS-232 LOCAL â†” LEO-PA DB-9 ADAPTER â†” UPLOGIX RS-232 MODULE** - Use a straight-through Ethernet cable to connect the Local port of the BDU to the LEO-PA adapter. Plug the adapter into the RS-232 module on the Uplogix appliance.
 
 > Note that the LEO-PA adapter is **REQUIRED** for proper operation. If the LEO-PA adapter is missing, see the wiring diagram at the end of this document.
 
-**BDU RS-232 GPS â†”UPLOGIX LOCAL MANAGER** â€“ Use a rolled (for example, a flat, blue Cisco console cable) Ethernet cable to connect the GPS port of the BDU to a free serial port on the Uplogix appliance. 
+**BDU RS-232 GPS â†”UPLOGIX LOCAL MANAGER** - Use a rolled (for example, a flat, blue Cisco console cable) Ethernet cable to connect the GPS port of the BDU to a free serial port on the Uplogix appliance. 
 
-> A straight-through cable may be used with an Uplogix 3200 if the Local Manager serial portâ€™s null-modem setting is set to **YES** or **AUTO**.
+> A straight-through cable may be used with an Uplogix 3200 if the Local Manager serial port's null-modem setting is set to **YES** or **AUTO**.
 > This connection is not required for proper operation of the LEO-I kit. However, a cable between the GPS ports on the BDU and ADU is still required.
 
 ### 3. Connect BDU to power
 
-Use the included power supply and power cord to connect the BDUâ€™s 24VDC power port to an electrical outlet. If power is configured correctly, the activity and traffic LEDs on the BDU will light up.
+Use the included power supply and power cord to connect the BDU's 24VDC power port to an electrical outlet. If power is configured correctly, the activity and traffic LEDs on the BDU will light up.

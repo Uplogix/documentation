@@ -104,7 +104,7 @@ route 2001:100:0:0:0:0:0:0/32
 
 # Delete a Subinterface
 
-Use the **config system subinterface no {subinterface_name}** command to delete specified subinterface. Here is an example that deletes a subinterface named â€œvoice.â€
+Use the **config system subinterface no {subinterface_name}** command to delete specified subinterface. Here is an example that deletes a subinterface named "voice."
 
 ```
 [admin@UplogixLM]# config system subinterface no voice

@@ -32,7 +32,7 @@ show system slot <1 | 2 | 3 | 4 |modem | powercontrol>
 
 4.4 - This command was introduced.
 
-4.5 â€“ Slot 4 option added for hardware Local Managers
+4.5 - Slot 4 option added for hardware Local Managers
 
 # Related commands 
 

@@ -12,6 +12,6 @@ Ensure that the power source:
 Ensure that the installation site meets these requirements:
 
 * Ambient temperature does not exceed 95Â° F (35Â° C)
-* The site provides at least 3 inches (8 cm) clearance beyond the applianceâ€™s ventilation openings
+* The site provides at least 3 inches (8 cm) clearance beyond the appliance's ventilation openings
 
 <div class='warning'>The unit will overheat if the site does not meet these requirements.</div>

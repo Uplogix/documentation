@@ -32,7 +32,7 @@ Pre version 5.4 software releases only support advanced power controller managem
  
 ### Improvement: Port 1/6 is No Longer Dedicated to Power Control
 
-Serial port 1/6 on the 500/5000 platforms is now a generic device management port like the rest of the serial ports on these platforms â€“ i.e. it can be configured to manage any supported device make and OS, including switched power controllers.
+Serial port 1/6 on the 500/5000 platforms is now a generic device management port like the rest of the serial ports on these platforms - i.e. it can be configured to manage any supported device make and OS, including switched power controllers.
 
 ### Improvement: Added Local Manager IP Address Variable for Generic Pull TFTP Function
  
@@ -42,10 +42,10 @@ The pullTFTP function allows users to define and schedule jobs to backup OS and 
 
 * Advanced Cisco IOS/IOS-XE Driver Fixes and Improvements:
 	* Local Manager port settings now include the SFTP protocol among the file transfer protocols that can be specified for this driver to use when backing up and restoring configuration and OS images between the Local Manager and the managed device.
-	* New functionality was added to validate the current OS referenced by the boot variable on the managed device â€“ an alarm is generated if the driver finds the referenced OS image missing from the device.
+	* New functionality was added to validate the current OS referenced by the boot variable on the managed device - an alarm is generated if the driver finds the referenced OS image missing from the device.
 	* Improved the driver to validate and free up space if possible on stacked switches during an OS upgrade.
 	* Fixed an issue that could falsely report an OS upgrade failure on stacked switches in situations where the network does not converge quickly after reloading the stack.
-	* Fixed a race condition issue that could have resulted in the driverâ€™s failure to pull the managed device running-config file after a terminal session.
+	* Fixed a race condition issue that could have resulted in the driver's failure to pull the managed device running-config file after a terminal session.
 	* Fixed an issue that could cause the driver to fail to back up the OS during a **config init** operation when using FTP to transfer the OS from a 3850 switch.
 	* Fixed an issue where the driver falsely reports that it failed to push a running-config to a 3850 with no configuration.
 	* Fixed a sporadic issue that could cause a failure during ROMMON recovery on an ISR platform.
@@ -53,7 +53,7 @@ The pullTFTP function allows users to define and schedule jobs to backup OS and 
 	* Improved our Cisco NX-OS driver to better manage Nexus 9000 platforms:
 		* Updated push OS functionality to make OS upgrades work.
 		* Fixed parsing version information.
-	* New functionality was added to validate the current OS referenced by the boot variable on the managed device â€“ an alarm will be generated if the driver finds the referenced OS image missing from the device.
+	* New functionality was added to validate the current OS referenced by the boot variable on the managed device - an alarm will be generated if the driver finds the referenced OS image missing from the device.
 	* Fixed an issue that left staged rollback configuration snippets in flash on the Nexus switch
 * The Uplogix 5000 display behavior changes with this software release.  It will be brightly lit during use and will then dim to 10% of its brightness after being idle for 15 minutes.  Pressing any key on the keypad will wake the display up to full brightness.
 * Addressed the relevant following Common Vulnerabilities and Exposures (CVEs):
@@ -65,7 +65,7 @@ The pullTFTP function allows users to define and schedule jobs to backup OS and 
 	* CVE-2016-2848: A denial of service flaw was found in the way BIND handled packets with malformed options.
 	* CVE-2016-8864: A denial of service flaw was found in the way BIND handled responses containing a DNAME answer.
 * (**5.4.1**) Advanced Cisco IOS/IOS-XE Driver Fixes and Improvements:
-	* Fixed an issue that falsely reports a missing managed device OS for the case where the Cisco IOS-XE device is running in installed mode (i.e. it uses the packages.conf file instead of a â€œ.binâ€ OS file)
+	* Fixed an issue that falsely reports a missing managed device OS for the case where the Cisco IOS-XE device is running in installed mode (i.e. it uses the packages.conf file instead of a ".bin" OS file)
 	* Fixed a detect device state issue with this driver that could interrupt the boot process after a system restart, causing this driver to then initiate an unnecessary recovery process. 
 * (**5.4.1**) Addressed the relevant following Common Vulnerabilities and Exposures (CVEs):
 	* CVE-2016-9147: A denial of service flaw was found in the way BIND handled a query response containing inconsistent DNSSEC information. A remote hacker could use this flaw to make the named process exit unexpectedly with an assertion failure via a specially crafted DNS response.
@@ -77,7 +77,7 @@ The pullTFTP function allows users to define and schedule jobs to backup OS and 
 
 ## Known Issues in This Release
 
-* The Local Manager dashboard will show an SSH-VTY virtual port as unavailable after a â€˜Replaceâ€™ operation from the UCC until a job runs on that port, a user interacts with the port or until a Local Manager restart happens.
+* The Local Manager dashboard will show an SSH-VTY virtual port as unavailable after a â€˜Replace' operation from the UCC until a job runs on that port, a user interacts with the port or until a Local Manager restart happens.
 
 # Uplogix Control Center (UCC) Updates
 
@@ -87,14 +87,14 @@ Added an SSH choice for call setup to the modem server to encrypt applet to mode
 
 ## Improvement:  Power Controller Visibility and Outlet Mapping  
 
-Now it is easy to see what device ports are connected to power controllers and what ports are mapped to power controller outlets for power control from the Local Manager device summary page. The port/device cards in the â€˜Devicesâ€™ section on the Local Manager summary page include a lightning bolt icon in the upper right corner if the device is a managed power controller and a universal power button icon is present if the managed device is mapped to one or more managed power controller outlets.
+Now it is easy to see what device ports are connected to power controllers and what ports are mapped to power controller outlets for power control from the Local Manager device summary page. The port/device cards in the â€˜Devices' section on the Local Manager summary page include a lightning bolt icon in the upper right corner if the device is a managed power controller and a universal power button icon is present if the managed device is mapped to one or more managed power controller outlets.
 
-Additionally, all power outlet to device port mappings for a given power controller are now shown at the top of the power controller port summary page in the â€˜Outletsâ€™ section. If a device is mapped to a power controller outlet, the device summary page will indicate the power controller port on the Local Manager that is providing power control for it.
+Additionally, all power outlet to device port mappings for a given power controller are now shown at the top of the power controller port summary page in the â€˜Outlets' section. If a device is mapped to a power controller outlet, the device summary page will indicate the power controller port on the Local Manager that is providing power control for it.
 
 
 ## Improvement:  Track and Display Standby UCC Synchronization State 
 
-The â€˜Install Informationâ€™ section of the UCC Administration -> Server Settings page has been updated to track and display the status of the standby UCC, allowing users to see if UCC high availability is configured, and if so, whether or not the standby UCC is in sync with the active UCC.
+The â€˜Install Information' section of the UCC Administration -> Server Settings page has been updated to track and display the status of the standby UCC, allowing users to see if UCC high availability is configured, and if so, whether or not the standby UCC is in sync with the active UCC.
 
 ## Improvement: The Uplogix Virtual Control Center Software Now Includes VM Tools 
 
@@ -107,8 +107,8 @@ Previous releases only identified down to the chassis model number for managed d
 ## Other Changes and Issues Addressed in This Release
 
 * The user interface was cleaned up to remove redundant CLI button functionality for the Local Manager and the managed devices/ports.
-* The â€˜CLIâ€™ buttons were renamed to â€˜SSHâ€™ or â€˜Terminalâ€™ based on their use.
-* The â€˜use system authâ€™ permission has been removed from the admin role that ships with the Uplogix Control Center (UCC).  When upgrading from a previous release, a new role named â€˜use_system_authâ€™ will be added and new privileges created that use this role everywhere there is a privilege that references the â€˜adminâ€™ role. This is done to guarantee systems upgrading from earlier releases behave the same.   The â€˜use system authâ€™ permission causes the system to use the credentials configured on the Local Manager port to log into a managed device when a terminal session is initiated by a user rather than making the user enter his/her own user credentials to access the managed device in the terminal session.
+* The â€˜CLI' buttons were renamed to â€˜SSH' or â€˜Terminal' based on their use.
+* The â€˜use system auth' permission has been removed from the admin role that ships with the Uplogix Control Center (UCC).  When upgrading from a previous release, a new role named â€˜use_system_auth' will be added and new privileges created that use this role everywhere there is a privilege that references the â€˜admin' role. This is done to guarantee systems upgrading from earlier releases behave the same.   The â€˜use system auth' permission causes the system to use the credentials configured on the Local Manager port to log into a managed device when a terminal session is initiated by a user rather than making the user enter his/her own user credentials to access the managed device in the terminal session.
 * Fixed a display issue in the UCC that could sporadically indicate that a Local Manager was not consistently communicating with the UCC (i.e. the Local Manager icon could flap between green and gray) for the case where the Local Manager heartbeat interval was increased to 120 seconds or greater (from the default of 30 seconds).
 * Updated the terminal app certificate to overcome problems caused by more strict security requirements in newer versions of Java that could prevent the SSH and Dial applets from working or require users to change their Java security settings.
 * Fixed an uncommon issue that can cause the SSH applet window to freeze up or go blank when a user resizes the window at just the right time as data is being output to the window from the Local Manager.

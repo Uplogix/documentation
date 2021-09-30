@@ -1,6 +1,6 @@
 <!-- 5.4 -->
 
-Displays the Uplogix Local Managerâ€™s pulse settings. Pulse determines network connectivity by sending packets to an echo host. The system brings up the dial-up outband network if the pulse fails.
+Displays the Uplogix Local Manager's pulse settings. Pulse determines network connectivity by sending packets to an echo host. The system brings up the dial-up outband network if the pulse fails.
 
 # Command availability 
 

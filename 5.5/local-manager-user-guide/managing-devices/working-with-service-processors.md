@@ -25,15 +25,15 @@ Do you want to commit these changes? (y/n): y
 
 Use the show service-processor commands to view information about the service processor:
 
-**show service-processor config** â€” Lists the current configuration of the service processor.
+**show service-processor config** &mdash; Lists the current configuration of the service processor.
 
-**show service-processor events** â€” Displays the service processor log.
+**show service-processor events** &mdash; Displays the service processor log.
 
-**show service-processor info** â€” Displays information about the service processor.
+**show service-processor info** &mdash; Displays information about the service processor.
 
-**show service-processor power** â€” States whether the service processor is powered on.
+**show service-processor power** &mdash; States whether the service processor is powered on.
 
-**show service-processor sensor** â€” Displays information from the service processor's sensors to give a low-level view of the server's health.
+**show service-processor sensor** &mdash; Displays information from the service processor's sensors to give a low-level view of the server's health.
 
 # Working with the service processor using IPMI
 

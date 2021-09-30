@@ -1,6 +1,6 @@
 <!-- 5.4 -->
 
-Opens an editor that allows you to set name/value pairs for a device on one of the systemâ€™s ports. These properties can be used by the Uplogix Control Center to generate detailed reports. To set properties for the Uplogix Local Manager, use the **config system properties** command.
+Opens an editor that allows you to set name/value pairs for a device on one of the system's ports. These properties can be used by the Uplogix Control Center to generate detailed reports. To set properties for the Uplogix Local Manager, use the **config system properties** command.
 
 # Command availability 
 
@@ -20,9 +20,9 @@ LMS offerings: All
 config properties
 ```
 
-Within the editor, properties are defined as **<â€œpropertynameâ€> <â€œvalueâ€>**.
+Within the editor, properties are defined as **<"propertyname"> <"value">**.
 
-Properties may be deleted using the command **no <â€œpropertynameâ€>**.
+Properties may be deleted using the command **no <"propertyname">**.
 
 Use the **exit** command to quit the editor.
 

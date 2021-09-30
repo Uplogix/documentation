@@ -2,7 +2,7 @@
 Configure the Control Center using one of these methods:
 
 * Connect a standard VGA monitor, a keyboard and a mouse
-* Configure using the console port by connecting your computer directly to the server using the DB-9 connector on the serverâ€™s rear panel. Supported terminal clients include: Windows HyperTerminal, ZTerm (Macintosh OS X), Minicom (Unix/Linux)
+* Configure using the console port by connecting your computer directly to the server using the DB-9 connector on the server's rear panel. Supported terminal clients include: Windows HyperTerminal, ZTerm (Macintosh OS X), Minicom (Unix/Linux)
 
 > Console default communication settings are 9600 baud, 8 data bits, 1 stop bit, no parity, and no flow control. Set your terminal emulator to use ANSI encoding for best results.
 

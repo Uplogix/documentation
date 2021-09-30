@@ -7,18 +7,18 @@ The purpose of this document is to detail the installation and configuration of 
 LMS 6.0 includes support for iDirect satellite modems including 8000, 7000, 5000, 3000, X3, X5 series standalone, and iConnex models.
 
 # Driver Features
-* Option File Management â€“ Ability to store and manage multiple versions of option files on the Uplogix appliance 
+* Option File Management - Ability to store and manage multiple versions of option files on the Uplogix appliance 
 	* Configuration change detection and automated rollback
 	* Capture extended configuration elements outside the option file
 	* Restore from corrupt option file
-* Operating System Management â€“ Store and install specific package or operating system images
-* Key Parameter Monitoring â€“ Maintaining a database of historical operational statistics	
+* Operating System Management - Store and install specific package or operating system images
+* Key Parameter Monitoring - Maintaining a database of historical operational statistics	
 	* RF Parameter Monitoring - monitor operational Radio Frequency (RF) elements
 	* Interface Monitoring - ability to monitor Ethernet and tunnel interfaces
 	* Console Message Logging - monitor console log messages
-* Capturing Raw Buffer Logs â€“ Current and previous raw interaction logs are available for review
-* Automating Actions â€“ Executing common maintenance tasks on demand or as a series of automated actions 
-	* Set latitude/longitude position â€“ Because the Uplogix uses transmit and receive pins of the iDirect console port to interact, the NMEA-183 output of a GPS antenna cannot be plugged directly into the console port and must be monitored on another Uplogix port.
+* Capturing Raw Buffer Logs - Current and previous raw interaction logs are available for review
+* Automating Actions - Executing common maintenance tasks on demand or as a series of automated actions 
+	* Set latitude/longitude position - Because the Uplogix uses transmit and receive pins of the iDirect console port to interact, the NMEA-183 output of a GPS antenna cannot be plugged directly into the console port and must be monitored on another Uplogix port.
 	* Interface on/off/cycle
 	* Reboot
 	* Power on/off/cycle
@@ -106,12 +106,12 @@ Upon login you should see the iDirect prompt.
 
 Monitors collect chassis and interface data from supported devices. The results can be used to trigger an alarm, event or to take other automated actions. There are six monitors for the iDirect modem: chassis, interface, remotestate, ping, consoleLog and terminal. 
 
-* Chassis â€“ Checks the status of the iDirect with regards to CPU usage, Falconâ€™s status, configuration errors, temperature and memory. 
-* Interface â€“ Captures information on the Ethernet and tunnel interfaces and includes RX/TX bytes, interface resets, link state, etc.
-* Remotestate â€“ Checks the status of the iDirect with regard to receive and transmit power, frequency and errors, FSD, IGroup, HDLC, CompID, receive lock, link layer, modem state, receive AGC, receive signal-to-noise ratio and receive tmdlost. 
-* Ping â€“ Executes an ICMP ping to a specified IPv4 address from the modemâ€™s context. The results can be displayed with the show pingstats command.
-* ConsoleLog â€“ Captures system error logs as they are displayed via the console. The results may be displayed with the show device syslog command.
-* Terminal â€“ Captures user interactions with the device. 
+* Chassis - Checks the status of the iDirect with regards to CPU usage, Falcon's status, configuration errors, temperature and memory. 
+* Interface - Captures information on the Ethernet and tunnel interfaces and includes RX/TX bytes, interface resets, link state, etc.
+* Remotestate - Checks the status of the iDirect with regard to receive and transmit power, frequency and errors, FSD, IGroup, HDLC, CompID, receive lock, link layer, modem state, receive AGC, receive signal-to-noise ratio and receive tmdlost. 
+* Ping - Executes an ICMP ping to a specified IPv4 address from the modem's context. The results can be displayed with the show pingstats command.
+* ConsoleLog - Captures system error logs as they are displayed via the console. The results may be displayed with the show device syslog command.
+* Terminal - Captures user interactions with the device. 
 
 When the modem is initialized using the **config init** command, the chassis and console log monitor will automatically be scheduled. 
 
@@ -133,7 +133,7 @@ The results of monitors can be viewed with the show <monitor> command with two o
 
 ## LatLong (GPS Coordinates)
 
-In maritime/mobile configurations, the Uplogix may be required to regularly supply GPS coordinates to the iDirect over the console port. In order to provide this information accurately, the Uplogix must have a source for GPS coordinates with data no more than two hours old. The Uplogix can monitor an external GPS source such as a shipâ€™s compass or dedicated GPS antenna to capture this information. 
+In maritime/mobile configurations, the Uplogix may be required to regularly supply GPS coordinates to the iDirect over the console port. In order to provide this information accurately, the Uplogix must have a source for GPS coordinates with data no more than two hours old. The Uplogix can monitor an external GPS source such as a ship's compass or dedicated GPS antenna to capture this information. 
 
 Additionally, the coordinates may be monitored from a supported antenna controller. 
 Once the coordinates are collected by the Uplogix appliance, they can then be sent to the iDirect on a configurable basis using the **config schedule** command at the port level. In the example below, the scheduled task sends the coordinates to the iDirect every 60 seconds by issuing the iDirect latlong command on the console.
@@ -198,7 +198,7 @@ Uplogix RMOS supports management of option files. The startup configuration and 
 
 The Local Manager can be used to manage the running configuration which contains the startup configuration (falcon.opt or show Option file) and also various runtime parameters. Managing a running configuration through Uplogix will use options set commands for each parameter and can rollback changes accordingly if required. 
 
-When pushing a new running configuration, reboot is available with the â€“reboot switch. The command for pushing the running configuration is **push running-config <previous|candidate|current|<user ver>> [-reboot]**
+When pushing a new running configuration, reboot is available with the -reboot switch. The command for pushing the running configuration is **push running-config <previous|candidate|current|<user ver>> [-reboot]**
 
 The Local Manager can also be used to manage the startup configuration which contains the option file (falcon.opt). When managing startup configurations through Uplogix, the appliance will utilize the Linux interface and push over the falcon.opt file rather than set the individual parameters in the Falcon interface. Pushing the startup configuration also allows an optional service level or system level reboot upon confirmation.
 

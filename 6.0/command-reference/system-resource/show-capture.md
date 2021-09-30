@@ -43,7 +43,7 @@ length
 2000.00:d0:01:c1:c4:34 pathcost 23 age 2 max 20 hello 2
 fdelay 15
 ```
-To export the capture file in pcap format, use **show capture â€“pcap** and pipe it to SCP, FTP, or Email.
+To export the capture file in pcap format, use **show capture -pcap** and pipe it to SCP, FTP, or Email.
 
 To export via SCP, use the following syntax:
 
@@ -56,7 +56,7 @@ copy succeeded
 ```
 In the above example, the capture file will be attached to the email with the filename uplogixlm.cap1. The file can then be viewed in any third party application capable of reading pcap files (Wireshark, etc.).
 
-To export the capture file in plain text with SCP, FTP, or Email, simply omit the â€“pcap option.
+To export the capture file in plain text with SCP, FTP, or Email, simply omit the -pcap option.
 
 # In the Uplogix web interface
 

@@ -6,9 +6,9 @@ The purpose of this document is to detail the installation and configuration of 
 
 Acronyms and abbreviations used in this document:
 
-* ACU â€“ Antenna Controller Unit
-* M&C â€“ Managing and Controlling 
-* BDU â€“ Below Deck Unit
+* ACU - Antenna Controller Unit
+* M&C - Managing and Controlling 
+* BDU - Below Deck Unit
 
 # Configuring the Port
 
@@ -129,8 +129,8 @@ To display monitor data, use the **show** command from the port. The command syn
 The result will display index number, time interval and mask, interface name, applied rules, and delay time.
 
 ```
-1: [Interval: 00:00:60 Mask: * * * * *] rulesMonitor gps none â€œâ€ 60
-2: [Interval: 00:00:30 Mask: * * * * *] rulesMonitor remotestate none â€œâ€ 30
+1: [Interval: 00:00:60 Mask: * * * * *] rulesMonitor gps none "" 60
+2: [Interval: 00:00:30 Mask: * * * * *] rulesMonitor remotestate none "" 30
 ```
 
 ## Displaying GPS Data

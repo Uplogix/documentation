@@ -18,11 +18,11 @@ LMS offerings: All
 show directory [-v]
 ```
 
-The **â€“v** parameter ads file size and date display.
+The **-v** parameter ads file size and date display.
 
 # Usage 
 
-Files are associated with a particular port, make, model, and OS combination. If you change a device on one of the Uplogix Local Managerâ€™s ports, the files will not be accessible from that device unless it is a similar make, model, and OS combination.
+Files are associated with a particular port, make, model, and OS combination. If you change a device on one of the Uplogix Local Manager's ports, the files will not be accessible from that device unless it is a similar make, model, and OS combination.
 
 ```
 [admin@UplogixLM (port1/3)]# show directory

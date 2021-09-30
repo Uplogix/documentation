@@ -1,6 +1,6 @@
 <!-- 5.4 -->
 
-Displays the Uplogix Local Managerâ€™s Reverse SSH tunnel status. 
+Displays the Uplogix Local Manager's Reverse SSH tunnel status. 
 
 # Command availability 
 

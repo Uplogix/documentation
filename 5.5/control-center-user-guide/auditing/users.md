@@ -38,8 +38,8 @@ Select the Principal (the user to be audited). If your account is configured to 
  
 Select the auditor's email address if more than one is available, and choose the file type that will be emailed (PDF, HTML, or CSV). Then *Subscribe* to the desired report. 
 
-- Activity reportsâ€”include all page views.
-- Change reportsâ€”include all actions that resulted in changes on the Control Center, any Local Manager under management, or any device connected to a managed Local Manager.
-- Full reportsâ€”include all information from both activity and change reports.
+- Activity reports&mdash;include all page views.
+- Change reports&mdash;include all actions that resulted in changes on the Control Center, any Local Manager under management, or any device connected to a managed Local Manager.
+- Full reports&mdash;include all information from both activity and change reports.
 
 Use the radio buttons next to the reports to select which reports to receive and click on the *Subscribe* button.  The new subscription is listed at the top of the Report Subscriptions page, and in the Report Subscriptions area of the Edit User page.

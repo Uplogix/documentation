@@ -41,7 +41,7 @@ Post complete.
 
 # History 
 
-1.1 â€“ This command was introduced; it replaces recover password.
+1.1 - This command was introduced; it replaces recover password.
 
 # Related commands 
 

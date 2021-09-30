@@ -23,7 +23,7 @@ LMS offerings: All
 # Syntax 
 
 ```
-power <on | off | cycle [â€œdelayâ€]>
+power <on | off | cycle ["delay"]>
 ```
 
 The optional delay is in seconds.

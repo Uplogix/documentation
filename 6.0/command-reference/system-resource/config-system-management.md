@@ -1,6 +1,6 @@
 <!-- 5.4 -->
 
-Interactive command to associate the Uplogix Local Manager with an Uplogix Control Center. The heartbeat uses between 1 and 20 kilobytes for communication.  This command additionally sets NTP to use the serverâ€™s address.
+Interactive command to associate the Uplogix Local Manager with an Uplogix Control Center. The heartbeat uses between 1 and 20 kilobytes for communication.  This command additionally sets NTP to use the server's address.
 
 # Command availability 
 

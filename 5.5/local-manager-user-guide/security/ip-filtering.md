@@ -6,7 +6,7 @@ By default, the Local Manager allows access from any IP address; however, access
 
 For example, specify your management subnet or your own computer and then use the **deny all** subcommand to block any IP address not explicitly allowed. This blocks all new communication with the Local Manager that is not sourced from the permitted IP address or network.
 
-The filter automatically adds defined services such as the Control Center, TACACS, RADIUS, and NTP servers, as well as each deviceâ€™s specified management or dedicated IP address to the list of allowed IP addresses.
+The filter automatically adds defined services such as the Control Center, TACACS, RADIUS, and NTP servers, as well as each device's specified management or dedicated IP address to the list of allowed IP addresses.
 
 Filters are applied during both in-band and out-of-band communications.
 

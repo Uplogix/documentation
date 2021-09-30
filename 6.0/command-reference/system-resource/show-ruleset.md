@@ -13,7 +13,7 @@ LMS offerings: All
 # Syntax 
 
 ```
-show ruleset <â€œruleset nameâ€ | *>
+show ruleset <"ruleset name" | *>
 ```
 
 Specify the name of a ruleset, or use the * character to show all rulesets defined on the system.

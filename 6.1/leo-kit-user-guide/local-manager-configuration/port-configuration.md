@@ -38,8 +38,8 @@ OK
 
 Problems:
 
-* â€œmodem in useâ€ messages
-* â€œprocess is executingâ€ messages
+* "modem in use" messages
+* "process is executing" messages
 * No communication with the modem
 
 Causes:
@@ -51,27 +51,27 @@ Causes:
 
 Use the **show serial** command to modify the current serial settings and the **config answer** command to modify the initialization string.
 
-# Unlock the modemâ€™s SIM card
+# Unlock the modem's SIM card
 
 Before the modem can access the Iridium network, it must be configured to use the installed SIM card. 
 
 If the Iridium modem has already been configured and you have successfully placed or received calls, you may skip this section.
 
-1.	Use the **terminal** command to access the modemâ€™s CLI.
-2.	To view the status of the SIM card, use the** AT+CLCK=?** command. Depending on the firmware revision of your modem, the response will be +CLCK: followed by a string of two-character values. If the SIM card is unlocked, an â€œSCâ€ value will be displayed.
-3.	If the SIM card is locked (no â€œSCâ€ listed), issue the following commands:
+1.	Use the **terminal** command to access the modem's CLI.
+2.	To view the status of the SIM card, use the** AT+CLCK=?** command. Depending on the firmware revision of your modem, the response will be +CLCK: followed by a string of two-character values. If the SIM card is unlocked, an "SC" value will be displayed.
+3.	If the SIM card is locked (no "SC" listed), issue the following commands:
 ```
-AT+CPIN=â€œ1111â€
-AT+CLCK=â€œSCâ€,0,â€œ1111â€
+AT+CPIN="1111"
+AT+CLCK="SC",0,"1111"
 ```
-4.	Run the **AT+CLCK=?** command again to verify that â€œSCâ€ is listed.
+4.	Run the **AT+CLCK=?** command again to verify that "SC" is listed.
 5.	If the SIM card will not unlock, ensure that it is properly seated and in the correct orientation.
 
 ## Verify signal quality
 
 Signal quality is vital to the reliable performance of the appliance and modem.
 
-1.	Use the **terminal** command to access the modemâ€™s CLI.
+1.	Use the **terminal** command to access the modem's CLI.
 2.	Check signal quality with the **AT+CSQ?** command.
 ```
 AT+CSQ?
@@ -81,11 +81,11 @@ OK
 3.	If the signal is below 4, check antenna placement.
 Automatic signal quality monitoring is discussed in a later section.
 
-# Disable the modemâ€™s auto-answer function
+# Disable the modem's auto-answer function
 
 The Local Manager answers incoming calls by watching for RING statements and then issuing the ATA command. If the modem is configured to answer automatically, it will interrupt this process.
 
-1.	Use the **terminal** command to access the modemâ€™s CLI.
+1.	Use the **terminal** command to access the modem's CLI.
 2.	Issue the following commands to disable auto-answer and save the configuration.
 ```
 ATS0=0
@@ -96,27 +96,27 @@ AT&W
 
 Before testing the automated features of the Uplogix appliance, ensure that the Iridium can place and receive calls.
 
-1.	Use the terminal command to access the modemâ€™s CLI.
+1.	Use the terminal command to access the modem's CLI.
 2.	Test dial-in by calling the Iridium modem with another Iridium, a RUDICS gateway, or a regular telephone. The modem should display a RING statement when the data number is dialed.
-	1.	Call from Iridium: Use the â€œatd00 + phone numberâ€ command.
-	2.	Call from RUDICS: Use the â€œatdi00 + phone numberâ€ command.
+	1.	Call from Iridium: Use the "atd00 + phone number" command.
+	2.	Call from RUDICS: Use the "atdi00 + phone number" command.
 	3.	Call from phone: Dial 011 + data phone number.
 3.	Test dial-out by calling another Iridium or a regular telephone.
-	1.	Call to Iridium: Use the â€œatd00 + phone numberâ€ command.
-	2.	Call to phone: Use the â€œatd+1 + area code and phone numberâ€ command.
+	1.	Call to Iridium: Use the "atd00 + phone number" command.
+	2.	Call to phone: Use the "atd+1 + area code and phone number" command.
 
 # Configuring for dial-in access
 
 To enable dial-in access, use the **config answer** command in the modem resource. Then enter the following subcommands:
 
-* **enabled** â€“ Turns on the applianceâ€™s answering feature (**required**) 
+* **enabled** - Turns on the appliance's answering feature (**required**) 
 * **init "" \d\d\d+++\d\d\dATH&F OK AT&K0+CBST=71,0,1**
 	* This Iridium initialization string is **required** for proper operation.
-* **allow all** â€“ Since Iridium does not support Caller ID, the appliance must be instructed to accept all incoming calls (**required**)
-* **rings 1** â€“ Instructs the Local Manager to answer incoming calls after 1 ring.
-* **number** â€“ Stores the phone number of the Iridium modem.
+* **allow all** - Since Iridium does not support Caller ID, the appliance must be instructed to accept all incoming calls (**required**)
+* **rings 1** - Instructs the Local Manager to answer incoming calls after 1 ring.
+* **number** - Stores the phone number of the Iridium modem.
 	* If using SMS to activate PPP, this should be the phone number of the voice line.
-* **domain** â€“ For use with SMS-initiated PPP, this should be set to msg.iridium.com. Not required for any other features.
+* **domain** - For use with SMS-initiated PPP, this should be set to msg.iridium.com. Not required for any other features.
 
 For example:
 
@@ -133,7 +133,7 @@ For example:
 
 # Configuring for dial-out access (Generic PPP)
 
-To configure PPP settings, use the **config ppp** command in the modem resource. You will need your service providerâ€™s phone number and username/password if required.
+To configure PPP settings, use the **config ppp** command in the modem resource. You will need your service provider's phone number and username/password if required.
 
 ```
 [admin@UplogixLM (modem)]# config ppp
@@ -217,4 +217,4 @@ The rule can be edited to generate alerts or take additional actions.
 
 # A Note About Timing
 
-After clicking Schedule on the Control Center, the instruction to activate PPP must pass through your specified SMTP server, Iridiumâ€™s E-mail to SMS gateway, and the Iridium network. Once it is delivered, the sms monitor may not run for an additional thirty seconds. After PPP is activated, an out of band path will be created. Once a route is available to the Control Center, it may be an additional thirty seconds before the appliance heartbeats. 
+After clicking Schedule on the Control Center, the instruction to activate PPP must pass through your specified SMTP server, Iridium's E-mail to SMS gateway, and the Iridium network. Once it is delivered, the sms monitor may not run for an additional thirty seconds. After PPP is activated, an out of band path will be created. Once a route is available to the Control Center, it may be an additional thirty seconds before the appliance heartbeats. 

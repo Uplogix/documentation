@@ -66,7 +66,7 @@ port1/4 - guest
 
 # Creating and editing user accounts
 
-The **config user** command opens an editor that allows you to create and edit user accounts. Information in the userâ€™s account may include password, account start and end dates, permissions, alert subscriptions and allowable times to receive alerts, and email address for receiving alerts.
+The **config user** command opens an editor that allows you to create and edit user accounts. Information in the user's account may include password, account start and end dates, permissions, alert subscriptions and allowable times to receive alerts, and email address for receiving alerts.
  
 To edit a user account, use the **config user [username]** command. If the specified username does not exist, the Local Manager prompts you to create it.
 
@@ -82,7 +82,7 @@ User ajones does not exist. Create (y/n): y
 
 > Usernames are case-sensitive.
 
-Type **?** to see a list of configurable settings. Type **show** to view the userâ€™s current settings.
+Type **?** to see a list of configurable settings. Type **show** to view the user's current settings.
 
 ``` 
 [config user ajones]# ?
@@ -130,7 +130,7 @@ Users can change their own passwords with the **config password** command.
 
 SSH keys may be used instead of passwords. They are also used in place of locally cached passwords if remote authentication servers are unavailable.
 
-Multiple certificates may be added to the authorized keys field of a userâ€™s account, but each must be pasted in a single contiguous line.
+Multiple certificates may be added to the authorized keys field of a user's account, but each must be pasted in a single contiguous line.
 
 ```
 [config user ajones]# authorized keys 
@@ -143,7 +143,7 @@ Each key must be on its own line. Type 'exit' on a line by itself to exit
  
 Both RSA and DSA certificates can be used.
 
-Certificate format varies widely among SSH clients. Each vendorâ€™s documentation should be consulted to determine which key formats and encryption algorithms are available.
+Certificate format varies widely among SSH clients. Each vendor's documentation should be consulted to determine which key formats and encryption algorithms are available.
 
 ## Disabled
 
@@ -165,7 +165,7 @@ For example, to limit alerts to no more than one every 10 minutes, use the alert
 
 ## Time zone
 
-Time and date reporting can be customized for each user. The **timezone** subcommand takes a single argument that represents the userâ€™s time offset from UTC. The additional parameter **no dst** can be added if the userâ€™s location does not observe daylight savings time.
+Time and date reporting can be customized for each user. The **timezone** subcommand takes a single argument that represents the user's time offset from UTC. The additional parameter **no dst** can be added if the user's location does not observe daylight savings time.
 
     [config user ajones]# timezone -6
 
@@ -175,7 +175,7 @@ To receive alert messages, a user must have a valid email address set.
 
     [config user ajones]# email ajones@xyzco.com
 
-You can set more than one email address and you can specify when the Local Manager uses an address â€” only when the Local Manager is operating in-band or only when it is out-of-band.  If you do not specify in-band or out-of-band, the Local Manager uses the address in both situations.
+You can set more than one email address and you can specify when the Local Manager uses an address &mdash; only when the Local Manager is operating in-band or only when it is out-of-band.  If you do not specify in-band or out-of-band, the Local Manager uses the address in both situations.
 
 ```
 [config user ajones]# email ajones@xyzco.com in-band
@@ -245,7 +245,7 @@ Start and expire settings can be removed with the no modifier.
 
 ## Review a user account after making changes
 
-To verify a user accountâ€™s configuration, use the **show** subcommand while in the user editor. For this example, we have set this user's role to analyst on all resources.
+To verify a user account's configuration, use the **show** subcommand while in the user editor. For this example, we have set this user's role to analyst on all resources.
 
 ```
 [config user ajones]# show
@@ -313,7 +313,7 @@ To set a group email address, use the **email** subcommand.
 
 ## Roles and resources
 
-By default, groups have no privileges on any resource. Privileges are defined by roles, which are tables of permitted commands. Privileges are granted by assigning appropriate roles on the desired resources to define what the group can do on each resource. Users in a group inherit the groupâ€™s assigned privileges.
+By default, groups have no privileges on any resource. Privileges are defined by roles, which are tables of permitted commands. Privileges are granted by assigning appropriate roles on the desired resources to define what the group can do on each resource. Users in a group inherit the group's assigned privileges.
 
 The **config group** command allows group privileges to be customized. The first argument is the resource, followed by a role. The no modifier can precede the command to remove privileges.
 

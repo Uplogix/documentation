@@ -15,7 +15,7 @@ LMS offerings: All
 # Syntax 
 
 ```
-show role [â€œrole nameâ€]
+show role ["role name"]
 ```
 
 show role displays all roles.

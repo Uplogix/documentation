@@ -48,7 +48,7 @@ When entering an IP address, built-in validation keeps the octet below 255 at al
 
 For example, to change the number 180 to 240, you must change the second digit from 8 to 4 before you can change the first digit from 1 to 2. The validation will not allow an address 280, so the first character will toggle between 1 and 0 until you change the second character to keep the octet at or below 255.
 
-**(4)** Configure the Local Managerâ€™s subnet mask in the same manner:
+**(4)** Configure the Local Manager's subnet mask in the same manner:
 ```
 Netmask:
 >255.255.255.000
@@ -152,7 +152,7 @@ Ports 1/1-1/4 have dedicated Ethernet.
 
 # Assign an IP address
 
-The Local Manager is initially configured to use DHCP. You can use the **show system ip** command to display current management Ethernet network settings. To configure the Local Managerâ€™s network addressing, use the **config system ip** command. 
+The Local Manager is initially configured to use DHCP. You can use the **show system ip** command to display current management Ethernet network settings. To configure the Local Manager's network addressing, use the **config system ip** command. 
 
 The Local Manager displays the current settings and presents a prompt asking whether you want to make changes. 
 ```

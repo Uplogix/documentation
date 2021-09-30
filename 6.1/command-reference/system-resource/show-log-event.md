@@ -1,6 +1,6 @@
 <!-- 5.4 -->
 
-Displays the Uplogix Local Managerâ€™s log of automated events, user actions, and other threshold issues.
+Displays the Uplogix Local Manager's log of automated events, user actions, and other threshold issues.
 
 # Command availability 
 
@@ -17,10 +17,10 @@ LMS offerings: All
 # Syntax 
 
 ```
-show log event [-l <level>] [-m <â€œemailâ€>] [-n <#>]
+show log event [-l <level>] [-m <"email">] [-n <#>]
 ```
 **-l <level>** - Syslog level
-**-m <â€œemailâ€>** - Email address to send report
+**-m <"email">** - Email address to send report
 **-n <#>** - Max number of messages
 
 # Usage 

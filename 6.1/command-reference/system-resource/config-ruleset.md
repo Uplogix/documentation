@@ -13,20 +13,20 @@ LMS offerings: All
 # Syntax 
 
 ```
-config ruleset [no] <â€œruleset nameâ€>
+config ruleset [no] <"ruleset name">
 ```
 
 Using the no modifier with the config ruleset command deletes the rule set.
 
 # Subcommands 
 
-**description** â€“ Provide information about the rule set. This is a free text field of 255 characters.
+**description** - Provide information about the rule set. This is a free text field of 255 characters.
 
-**show** â€“ Display the rule setâ€™s current settings.
+**show** - Display the rule set's current settings.
 
-**rules** â€“ A list of rules applied either in series or in parallel. Rules separated by the pipe | character are evaluated in parallel. Rules separated by commas are evaluated sequentially; evaluation stops at the first match.
+**rules** - A list of rules applied either in series or in parallel. Rules separated by the pipe | character are evaluated in parallel. Rules separated by commas are evaluated sequentially; evaluation stops at the first match.
 
-**exit** â€“ Save the rule and exit the ruleset editor.
+**exit** - Save the rule and exit the ruleset editor.
 
 # Usage 
 

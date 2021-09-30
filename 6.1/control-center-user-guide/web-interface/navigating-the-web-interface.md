@@ -20,12 +20,12 @@ The information bar shown at the top of the screen displays the time and date as
 
 The navigation bar displays six tabs providing access to a set of related tasks and information.  The active area is indicated by the highlighted tab.
 
- - **Dashboard**â€”Displays brief summary information, alarms, and events for user selected Local Managers.
- - **Inventory**â€”Displays the organization of your Uplogix deployment, including inventory groups and individual Local Managers.
- - **Alarms**â€”Displays a summary of active alarms. 
- - **Schedule**â€”Use to define actions not triggered by rules. 
- - **Reports**â€”Provides access to create report assignments, view report files, and sort reports by label. 
- - **Administration**â€”Provides access to auditing, user administration, and configuration functions. 
+ - **Dashboard**&mdash;Displays brief summary information, alarms, and events for user selected Local Managers.
+ - **Inventory**&mdash;Displays the organization of your Uplogix deployment, including inventory groups and individual Local Managers.
+ - **Alarms**&mdash;Displays a summary of active alarms. 
+ - **Schedule**&mdash;Use to define actions not triggered by rules. 
+ - **Reports**&mdash;Provides access to create report assignments, view report files, and sort reports by label. 
+ - **Administration**&mdash;Provides access to auditing, user administration, and configuration functions. 
  
 # Contextual left navigation
 

@@ -20,17 +20,17 @@ Using the no modifier with the config rule command deletes the rule.
 
 # Subcommands 
 
-**no** â€“ used before subcommands to remove attributes or entries.
+**no** - used before subcommands to remove attributes or entries.
 
-**conditions** â€“ list of elements evaluated from collected data and evaluated using thresholds to determine if rule is true
+**conditions** - list of elements evaluated from collected data and evaluated using thresholds to determine if rule is true
 
-**description** â€“ Provide information about the rule. This is a free text field of 255 characters. Use the no modifier to clear an existing description.
+**description** - Provide information about the rule. This is a free text field of 255 characters. Use the no modifier to clear an existing description.
 
-**start** â€“ ruleâ€™s MMDDYYYYHHMMSS start time â€“ INACTIVE before
+**start** - rule's MMDDYYYYHHMMSS start time - INACTIVE before
 
-**expire** â€“ ruleâ€™s MMDDYYYYHHMMSS expiration time â€“ INACTIVE after
+**expire** - rule's MMDDYYYYHHMMSS expiration time - INACTIVE after
 
-**show** â€“ display current settings
+**show** - display current settings
 
 **action <action name> <parameters>** - may be any of the following:
 
@@ -72,7 +72,7 @@ Using the no modifier with the config rule command deletes the rule.
 
 Actions are executed in the order they are listed in the rule.
 
-**exit** â€“save the rule and exit the rule configuration editor.
+**exit** -save the rule and exit the rule configuration editor.
 
 # Usage 
 

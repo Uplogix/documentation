@@ -4,7 +4,7 @@
 
 All models of the Local Manager, except the 430, can measure temperature and humidity, providing constant and reliable environmental monitoring. The 500, 3200, and 5000 Local Managers require an optional temperature and humidity probe.
 
-The default temperature limit for Local Managers with sensing capability is 95Â° F (35Â° C), and the default humidity limit is 85%. If the temperature or humidity exceeds the defined threshold, an alarm is triggered. Alarms are not triggered if the relevant data is unavailableâ€”for example, if no sensor is installed.
+The default temperature limit for Local Managers with sensing capability is 95Â° F (35Â° C), and the default humidity limit is 85%. If the temperature or humidity exceeds the defined threshold, an alarm is triggered. Alarms are not triggered if the relevant data is unavailable&mdash;for example, if no sensor is installed.
 
 In addition to temperature and humidity, the environment settings allow you to specify which hardware resources are connected so that the Local Manager can report a failure/alarm when one exists. This includes indicators for all Ethernet interfaces and an indicator to alarm on power supply failure (for example, when both power supplies are connected on the Uplogix 5000).
 

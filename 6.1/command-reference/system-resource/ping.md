@@ -15,7 +15,7 @@ LMS offerings: All
 # Syntax
 
 ```
-ping <â€œip addressâ€ | -m>
+ping <"ip address" | -m>
 ping <ipv6 address>
 ```
 

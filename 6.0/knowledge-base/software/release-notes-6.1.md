@@ -42,17 +42,17 @@ ROMMON Recovery support has been added for:
 
 ### Improvement: OS Management of IOS-XE switch stack in Install mode
 
-When running IOS-XE version 16.x, upgrading an entire switch stack is now supported (Models 3850 and 93XX). â€œpackages.confâ€ is not pulled for storage on the Local Manager since it cannot be directly booted from. Candidate or standard OS .BIN file is promoted to Current upon successful push completion. IOS-XE release 16.X is officially supported.
+When running IOS-XE version 16.x, upgrading an entire switch stack is now supported (Models 3850 and 93XX). "packages.conf" is not pulled for storage on the Local Manager since it cannot be directly booted from. Candidate or standard OS .BIN file is promoted to Current upon successful push completion. IOS-XE release 16.X is officially supported.
 
 **Note:** initiate **push OS** command from the Local Manager port connected to stack master/active switch.
 
-**Note:** The booted file must be â€œpackages.confâ€ for this automated upgrade process to work correctly.
+**Note:** The booted file must be "packages.conf" for this automated upgrade process to work correctly.
 
 > **For switches with dedicated management ports:** It is important to note which port the switch will source file transfers from and configure the Local Manager accordingly. Use the IOS-XE command "ip (protocol) source-interface (interface)" to set the source interface on the switch.
 
 ### Improvement: OS Management of IOS-XE switch stack in Bundled mode
 
-Uplogix also supports upgrading Catalyst 9300 and 3850 series switches and stacks when running in â€œbundledâ€ mode. During a **push OS** sequence, the candidate OS .BIN is propagated to all switch stack members and all member file systems are cleaned. IOS-XE release 16.X is officially supported.
+Uplogix also supports upgrading Catalyst 9300 and 3850 series switches and stacks when running in "bundled" mode. During a **push OS** sequence, the candidate OS .BIN is propagated to all switch stack members and all member file systems are cleaned. IOS-XE release 16.X is officially supported.
 
 **Note:** initiate **push OS** command from the Local Manager port connected to stack master/active switch.
 
@@ -60,17 +60,17 @@ Uplogix also supports upgrading Catalyst 9300 and 3850 series switches and stack
 
 ## Other Changes and Updates
 
-* Support external USB Multi-tech CatM1 modem. It connects to the Local Managerâ€™s USB-A and C ports.
-* Resolved an issue where an IKEv2 VPN would fail to establish a connection due to a â€œraceâ€ condition, under certain circumstances.
+* Support external USB Multi-tech CatM1 modem. It connects to the Local Manager's USB-A and C ports.
+* Resolved an issue where an IKEv2 VPN would fail to establish a connection due to a "race" condition, under certain circumstances.
 * Implemented additional logging when an LTE modem is reset.
 * Uplogix devices now support RSA SHA2-256/512 SSH host keys.
 * Improved POST parsing for Catalyst 3800 series IOS XE stacked switches.
 * When a standard OS is defined but current OS is not defined for a managed device, OS recoveries for that device will utilize the standard OS file.
-* PING command refactored to match standard syntax. Issue â€œPING ?â€ for command options.
-* When running a PING device monitor against a Cisco IOS device, â€œvrf=\[vrfName\]â€ can be added after the IP address/hostname to specify which device VRF should be used during command execution.
+* PING command refactored to match standard syntax. Issue "PING ?" for command options.
+* When running a PING device monitor against a Cisco IOS device, "vrf=\[vrfName\]" can be added after the IP address/hostname to specify which device VRF should be used during command execution.
 * User information has been added to Local Manager generated SYSLOG messages.
 * A Local Manager issued reboot command of a Cisco 800 series router identifies and accounts for an embedded AP when detected.
-* The config init command, when run against the Local Managerâ€™s modem port, now supports selection of an external USB LTE modem.
+* The config init command, when run against the Local Manager's modem port, now supports selection of an external USB LTE modem.
 * Support added for Multitech CatM1 LTE USB modem.
 * Addressed the following Common Vulnerabilities and Exposures (CVEs):
 	* CVE-2020-10769
@@ -81,11 +81,11 @@ Uplogix also supports upgrading Catalyst 9300 and 3850 series switches and stack
 ### Improvement: Security
 * The operating system of the UCC has been upgraded from CentOS 6 to CentOS 8.
 * Uplogix Terminal Application upgraded for SSH improvements.  All non-AES cipher options have been dropped.  Public key algorithms rsa-sha2-256 and rsa-sha2-512 have been added.
-* Added support for Letâ€™s Encrypt certificates.  This improvement also applies to any certificate authority that uses the ACME certificate protocol.
+* Added support for Let's Encrypt certificates.  This improvement also applies to any certificate authority that uses the ACME certificate protocol.
 
 ### Improvement: Performance Enhancements
 * The Dashboard and Inventory pages have been significantly improved when there are large amounts of data backing them.
-* When upgrading a Local Manager either from the CLI or scheduled from the UCC, the file can transfer significantly faster (10x) than previously.  This improvement also applies to any operation using the â€œuccâ€ protocol to the UCC File Archive.
+* When upgrading a Local Manager either from the CLI or scheduled from the UCC, the file can transfer significantly faster (10x) than previously.  This improvement also applies to any operation using the "ucc" protocol to the UCC File Archive.
 * Improved performance of data cleanup during UCC boot.
 
 ### Improvement: New Reports

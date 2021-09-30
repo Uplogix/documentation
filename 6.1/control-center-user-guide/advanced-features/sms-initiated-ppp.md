@@ -13,7 +13,7 @@ To initiate contact:
 
   ![UCC - Schedule Task - SMS](http://uplogix.com/support/docs/img/6.0/ucc-schedule-sms-task.png)
 	
-3.	The SMS Message â€“ Parameters page opens. Click **Next** and the **ppp on** command is sent immediately by SMS message. It may take a few minutes before the Local Manager receives the SMS message and activates PPP to phone home.
+3.	The SMS Message - Parameters page opens. Click **Next** and the **ppp on** command is sent immediately by SMS message. It may take a few minutes before the Local Manager receives the SMS message and activates PPP to phone home.
 
   ![](http://uplogix.com/support/docs/img/6.0/ucc-schedule-sms-parameters.png)
  

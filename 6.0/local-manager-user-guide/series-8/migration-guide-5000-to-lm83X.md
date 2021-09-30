@@ -38,7 +38,7 @@ The LM83X supports the following expansion cards:
 * LCD and Keypad Module
 
 **Note:** Unlike the Uplogix 5000, the LM83X does not provide a 4-port Serial Expansion Module.
-# Migration Process â€“ Without a Control Center
+# Migration Process - Without a Control Center
 For a smooth transition from an Uplogix 5000 to an LM83X, ensure the following:
 
 * LM83X should contain the same types of expansion cards
@@ -57,7 +57,7 @@ Perform the following steps:
 7. Import the configuration onto the LM83X using the **config import** command.
 8. Verify configuration.
 
-# Migration Process â€“ With a Control Center
+# Migration Process - With a Control Center
 For a smooth transition from an Uplogix 5000 to an LM83X, ensure the following:
 
 * LM83X should contain the same types of expansion cards
@@ -77,7 +77,7 @@ Perform the following steps:
 8. Select the new LM83X from the dropdown list.
 9. Verify configuration.
 
-During the replace, the Local Manager will attempt to map the 5000â€™s ports to the LM83X.
+During the replace, the Local Manager will attempt to map the 5000's ports to the LM83X.
 
 * Since the 5000 does not have a port 1/7 or 1/8, those ports will remain in native mode on the LM83X.
 * If a corresponding slot on the LM83X is not available, the slot and ports will be ignored.

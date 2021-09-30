@@ -8,11 +8,11 @@ The purpose of this document is to detail the installation and configuration of 
 
 # Physical Connection
 
-Connect a free serial port on the Uplogix to the Checkpointâ€™s RS-232 console management port with a standard Cat-5 cable.
+Connect a free serial port on the Uplogix to the Checkpoint's RS-232 console management port with a standard Cat-5 cable.
 
 # Configuring the Port
 
-To configure the Uplogix LM for connection to a Checkpoint firewall, navigate to the port that the Checkpoint is connected to, run the command **config init**, and follow the prompts as below (substituting your Checkpointâ€™s IP address for 203.0.113.16):
+To configure the Uplogix LM for connection to a Checkpoint firewall, navigate to the port that the Checkpoint is connected to, run the command **config init**, and follow the prompts as below (substituting your Checkpoint's IP address for 203.0.113.16):
 
 ```
 [admin@UplogixLM (port1/4)]# config init
@@ -49,9 +49,9 @@ The default console settings for the Checkpoint firewall are 9600 bit rate, 8 se
 
 ## Backup Configuration 
 
-The Uplogix Local Manager can save up to twenty backup images on the LMâ€™s filesystem for use in restoring a configuration or pushing a configuration to a new Checkpoint.
+The Uplogix Local Manager can save up to twenty backup images on the LM's filesystem for use in restoring a configuration or pushing a configuration to a new Checkpoint.
 
-To save the Checkpointâ€™s configuration to the LM, navigate to the port that the Checkpoint is connected to, use the terminal command to connect to the console port of the Checkpoint, start the TFTP server with the command ~t, and then run the backup command on the checkpoint as in the example below (substituting the LMâ€™s IP address for 64.129.60.134). Once the backup has been transferred to the LM, use ~t and press 3 to save the uploaded backup. Verify the backup was saved to the LMâ€™s file system with the command **show directory**.
+To save the Checkpoint's configuration to the LM, navigate to the port that the Checkpoint is connected to, use the terminal command to connect to the console port of the Checkpoint, start the TFTP server with the command ~t, and then run the backup command on the checkpoint as in the example below (substituting the LM's IP address for 64.129.60.134). Once the backup has been transferred to the LM, use ~t and press 3 to save the uploaded backup. Verify the backup was saved to the LM's file system with the command **show directory**.
 
 ```
 [admin@UplogixLM]# port 2/7
@@ -150,12 +150,12 @@ OS
 current    backup_gw-50ed44_19_3_2014_14_51.tgz
 previous   backup_gw-50ed44_19_3_2014_13_16.tgz
 
-* additional archived versions are available. Execute show dir â€“v
+* additional archived versions are available. Execute show dir -v
 ```
 
 ## Restore Configuration
 
-To restore a backup image to a Checkpoint firewall, navigate to the port the Checkpoint is connected to, use the **terminal** command to connect to the Checkpointâ€™s CLI, and use ~t to stage the file to be used. Then run the set backup restore command on the Checkpoint, substituting the IP address of the LM being used for 64.129.60.134. Check the restore status with show backups, and when the Checkpoint is finished restoring restart with reboot.
+To restore a backup image to a Checkpoint firewall, navigate to the port the Checkpoint is connected to, use the **terminal** command to connect to the Checkpoint's CLI, and use ~t to stage the file to be used. Then run the set backup restore command on the Checkpoint, substituting the IP address of the LM being used for 64.129.60.134. Check the restore status with show backups, and when the Checkpoint is finished restoring restart with reboot.
 
 ```
 [admin@UplogixLM]# port 2/7
@@ -226,7 +226,7 @@ y
 
 ## Port Forwarding
 
-The Uplogix Local Manager can facilitate connections to the Checkpointâ€™s web interface using the port forwarding feature. Run configure protocol forward on the port the Checkpoint is connected to and add an entry as below: 
+The Uplogix Local Manager can facilitate connections to the Checkpoint's web interface using the port forwarding feature. Run configure protocol forward on the port the Checkpoint is connected to and add an entry as below: 
 
 ```
 [admin@UplogixLM (port2/7)]# config protocol forward
@@ -234,4 +234,4 @@ The Uplogix Local Manager can facilitate connections to the Checkpointâ€™s 
 [forward]# exit
 ```
 
-Users may now connect to the web interface through a SSH tunnel using the port forwarding feature. In the Uplogix CLI applet, click Terminal, then Forward. Select the Checkpointâ€™s port, enter 443 for the port number, and click Apply. Now, port 443 on 127.0.0.1 on your workstation will connect through the SSH tunnel created by the LM to the web interface on the Checkpoint.
+Users may now connect to the web interface through a SSH tunnel using the port forwarding feature. In the Uplogix CLI applet, click Terminal, then Forward. Select the Checkpoint's port, enter 443 for the port number, and click Apply. Now, port 443 on 127.0.0.1 on your workstation will connect through the SSH tunnel created by the LM to the web interface on the Checkpoint.

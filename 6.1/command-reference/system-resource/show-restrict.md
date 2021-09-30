@@ -13,7 +13,7 @@ LMS offerings: All
 # Syntax 
 
 ```
-show restrict <â€œactionNameâ€ | all> [â€œportâ€]
+show restrict <"actionName" | all> ["port"]
 ```
 
 # Usage 

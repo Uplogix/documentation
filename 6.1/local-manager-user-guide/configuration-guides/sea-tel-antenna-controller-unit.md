@@ -8,11 +8,11 @@ The purpose of this document is to detail the installation and configuration of 
 
 Acronyms and abbreviations used in this document:
 
-* ACU â€“ Antenna Controller Unit
-* DAC â€“ Digital Antenna Controller
-* DacRemP â€“ DAC Remote Panel
-* M&C â€“ Managing and Controlling 
-* PCU â€“ Pedestal Control Unit
+* ACU - Antenna Controller Unit
+* DAC - Digital Antenna Controller
+* DacRemP - DAC Remote Panel
+* M&C - Managing and Controlling 
+* PCU - Pedestal Control Unit
 
 # Physical Connection
 
@@ -29,7 +29,7 @@ The M&C port on the Sea Tel ACU can be connected to the Uplogix Local Manager wi
 A few important items to note prior to configuration: 
 * The default baud rate for the Sea Tel M&C port is 9600 on DAC 2202/2302/2200 series and 4800 on DAC 03/97 systems. The Uplogix appliance will need to be configured with the appropriate rate.
 * The default baud rate for the Sea Tel NMEA port is 4800. If this value has changed, the Uplogix appliance will need to be configured with the new rate.
-* The ACUâ€™s Serial M&C port does not require a username or password, although the initialization routine will ask for them. Bypass this prompt by hitting the return key.
+* The ACU's Serial M&C port does not require a username or password, although the initialization routine will ask for them. Bypass this prompt by hitting the return key.
 
 Once the Sea Tel ACU is properly connected to the Local Manager, take the following steps to configure the port:
 
@@ -71,7 +71,7 @@ running-config saved to archive as current.
 Console session started.
 ```
 
-If the port has been properly configured, you will be able to interact with the ACU using standard M&C commands (ie. â€œSâ€ immediately returns the Status). If you are not able to interact with the Sea Tel ACU using the appropriate command codes, ensure that the physical connection is correct and that the serial settings on the Uplogix appliance match those on the Sea Tel ACU. Use the escape sequence (~[enter]) to exit the terminal session with the ACU.
+If the port has been properly configured, you will be able to interact with the ACU using standard M&C commands (ie. "S" immediately returns the Status). If you are not able to interact with the Sea Tel ACU using the appropriate command codes, ensure that the physical connection is correct and that the serial settings on the Uplogix appliance match those on the Sea Tel ACU. Use the escape sequence (~[enter]) to exit the terminal session with the ACU.
 
 The NMEA port should be used if NMEA formatted GPS is distributed to various services such as location coordinates to a modem or a location tracking program. Use the **config init** command to configure the port for use with the NMEA on the Sea Tel. The make should be *SeaTel* and the OS *NMEA*. Model and OS version are optional fields and will be populated automatically as part of the **config init** process.
 
@@ -96,7 +96,7 @@ serial flow control [none]:
 use null modem (rolled cable to device)? (y/n) [y]: 
 Do you want to commit these changes? (y/n): y
 ```
-â€ƒ
+
 # Automated Functions
 
 Automated jobs are scheduled using the assigned default intervals during the config init process. For the Sea Tel ACU, these jobs include pullRunningConfig and deviceInfo.
@@ -128,13 +128,13 @@ running-config saved to archive as current.
 
 ## Configuration Rollback
 
-The Sea Tel ACU driver includes support for Surgical Rollbackâ„¢, but is disabled by default. When the **terminal** command is run, the LM will pull the device configuration before giving control to the user. After the terminal session is closed, the device configuration will be pulled again and compared to the original. If any changes are detected, they will be reported in the device changes log and displayed to the user.  If Surgical Rollback is enabled, uncommitted changes will be rolled back.
+The Sea Tel ACU driver includes support for Surgical Rollback, but is disabled by default. When the **terminal** command is run, the LM will pull the device configuration before giving control to the user. After the terminal session is closed, the device configuration will be pulled again and compared to the original. If any changes are detected, they will be reported in the device changes log and displayed to the user.  If Surgical Rollback is enabled, uncommitted changes will be rolled back.
 
 ## Configuring Monitors
 
 There are two monitors that are automatically scheduled when a port is configured as Sea Tel: 
 
-* gps: Collects latitude and longitude information from the PCUâ€™s integrated GPS (where available) from the M&C port. 
+* gps: Collects latitude and longitude information from the PCU's integrated GPS (where available) from the M&C port. 
 remotestate: Collects information on key antenna variables including heading, azimuth, relative azimuth, elevation, cross level, AGC, AGC threshold, and polarity angle. The monitors are scheduled to run at 30 second intervals by default. If you would like to change the monitor interval, simply reschedule the monitor with the appropriate delay. The syntax for scheduling a monitor is:
 	
 ```
@@ -175,8 +175,8 @@ To display scheduled monitors, use the **show monitors** command from the port.
 The result will display index number, time interval and mask, interface name, applied rules, and delay time.
 
 ```
-1: [Interval: 00:00:60 Mask: * * * * *] rulesMonitor gps none â€œâ€ 60
-2: [Interval: 00:00:30 Mask: * * * * *] rulesMonitor remotestate none â€œâ€ 30
+1: [Interval: 00:00:60 Mask: * * * * *] rulesMonitor gps none "" 60
+2: [Interval: 00:00:30 Mask: * * * * *] rulesMonitor remotestate none "" 30
 ```
 
 ## Displaying Monitor Results
@@ -270,9 +270,9 @@ The Sea Tel driver offers several advanced features for interacting with the Sea
 
 ## Upgrading a Sea Tel DAC, PCU and CommIF
 
-The Sea Tel advanced driver supports upgrades to the DAC, PCU, and CommIF module. CommIF upgrade requires CommIF software 1.12 or later to function. All components may be upgraded separately. Prior to upgrade, it is a best practice to stage the current working version of the ACU, PCU or CommIF code in the Uplogixâ€™ target port directory in the event that a recoveryis necessary.  A total of six named files can be stored per target port.
+The Sea Tel advanced driver supports upgrades to the DAC, PCU, and CommIF module. CommIF upgrade requires CommIF software 1.12 or later to function. All components may be upgraded separately. Prior to upgrade, it is a best practice to stage the current working version of the ACU, PCU or CommIF code in the Uplogix' target port directory in the event that a recoveryis necessary.  A total of six named files can be stored per target port.
 
-To upgrade, first stage the new operating system image(s) on the Local Manager. There are several methods to stage the operating system image. In the below example, the file â€œDAC-2202_606.s19â€ in category â€œOSâ€ is copied from the Uplogix Control Center â€œemsâ€ to the appliance file archive in the â€œosâ€ directory.
+To upgrade, first stage the new operating system image(s) on the Local Manager. There are several methods to stage the operating system image. In the below example, the file "DAC-2202_606.s19" in category "OS" is copied from the Uplogix Control Center "ems" to the appliance file archive in the "os" directory.
 
 ```
 [admin@UplogixLM (port1/3)]# copy ems OS/DAC-2202_606.s19 os DAC606
@@ -281,7 +281,7 @@ Retrieved 'DAC-2202_606.s19' from 172.30.50.60.
 copy succeeded
 ```
 
-After the copy is complete, the file will appear in the applianceâ€™s directory for that port which is viewable using the show directory command.
+After the copy is complete, the file will appear in the appliance's directory for that port which is viewable using the show directory command.
 
 ```
 [admin@UplogixLM (port1/3)]# show directory
@@ -465,11 +465,11 @@ L1511 @g
 
 ## DAC Remote Panel Access
 
-The DAC Remote Panel (DacRemP) remote access feature allows the user to utilize Sea Telâ€™s DacRemP program without physical access to the Sea Tel DAC. Use of this feature requires DacRemP software version 1.01 or later. There are two methods to utilize the appliance to populate the data required in DacRemP: Asynchronous modem connection and serial port forwarding. For both methods described, the workstationâ€™s TCP/IP loopback (127.0.0.1) interface is utilized. An available local port is presented and configured in DacRemP. The Asynchronous modem connection method is best used in deployments with an Uplogix Control Center whereas the serial port forwarding method requires no Control Center.
+The DAC Remote Panel (DacRemP) remote access feature allows the user to utilize Sea Tel's DacRemP program without physical access to the Sea Tel DAC. Use of this feature requires DacRemP software version 1.01 or later. There are two methods to utilize the appliance to populate the data required in DacRemP: Asynchronous modem connection and serial port forwarding. For both methods described, the workstation's TCP/IP loopback (127.0.0.1) interface is utilized. An available local port is presented and configured in DacRemP. The Asynchronous modem connection method is best used in deployments with an Uplogix Control Center whereas the serial port forwarding method requires no Control Center.
 
 ### Asynchronous Modem Connection
 
-In the asynchronous modem connection method, the Control Centerâ€™s CLI applet is utilized to forward a terminal session with the Sea Tel DAC to DacRemP. Once properly authenticated into the Uplogix appliance, the dashboard will display. Navigate to the port in with Sea Tel configured using the port command. 
+In the asynchronous modem connection method, the Control Center's CLI applet is utilized to forward a terminal session with the Sea Tel DAC to DacRemP. Once properly authenticated into the Uplogix appliance, the dashboard will display. Navigate to the port in with Sea Tel configured using the port command. 
 Then enter into a terminal session with the terminal command as shown in the example below: 
 
 ```
@@ -586,10 +586,10 @@ running-config saved to archive as current.
 Console session started. Press ~[ENTER] to exit.
 ```
 
-Now all interaction with the DAC M&C port is being forward to the workstationâ€™s localhost address (127.0.0.1). Next, launch the DacRemP software. On the CommPort menu select Properties. Set the IP Address to localhost (127.0.0.1) and enter the Port Number configured in during port forwarding setup. 
+Now all interaction with the DAC M&C port is being forward to the workstation's localhost address (127.0.0.1). Next, launch the DacRemP software. On the CommPort menu select Properties. Set the IP Address to localhost (127.0.0.1) and enter the Port Number configured in during port forwarding setup. 
 
 As DacRemP queries the DAC, the commands are displayed and logged in the terminal session window. As long as DacRemP is functioning, the port will not time out. If you would like to interact with the terminal session directly, simply close the port by clicking on the Port Status radio button in DacRemP. The radio button will change from green to red. You can then enter DAC command codes directly in the terminal session window. 
-â€ƒ
+
 # Custom Rules
 
 ## Native Ruleset

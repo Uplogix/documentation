@@ -1,6 +1,6 @@
 <!-- 5.4 -->
 
-Displays the Uplogix Local Managerâ€™s settings for data export. To configure export settings, run **config system export**. 
+Displays the Uplogix Local Manager's settings for data export. To configure export settings, run **config system export**. 
 
 # Command availability 
 

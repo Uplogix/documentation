@@ -2,7 +2,7 @@
 
 This section describes how to tailor Cisco NVRAM variables used by the Uplogix Cisco advanced driver when it needs to recover the OS image from ROMmon. More specifically, this allows you the ability to customize the variable settings used by the TFTPDNLD command when the Local Manager finds a router or switch in ROMmon and determines that the OS image needs to be recovered on the Cisco device.
 
-You can customize the following ROMmon variable settings relevant to TFTPDNLD: IP address, subnet mask, default gateway, Ethernet interface, Ethernet interface speed, and duplex settings that override derived and default settings used by the Uplogix driver. For more information on Ciscoâ€™s ROM Monitor and recovering a system image using TFTPDNLD, refer to Ciscoâ€™s Troubleshooting and Maintenance: Using the ROM Monitor documentation for the 1800/2800/3800 Series Integrated Services Routers or the 1900/2900/3900 Series Integrated Services Routers.
+You can customize the following ROMmon variable settings relevant to TFTPDNLD: IP address, subnet mask, default gateway, Ethernet interface, Ethernet interface speed, and duplex settings that override derived and default settings used by the Uplogix driver. For more information on Cisco's ROM Monitor and recovering a system image using TFTPDNLD, refer to Cisco's Troubleshooting and Maintenance: Using the ROM Monitor documentation for the 1800/2800/3800 Series Integrated Services Routers or the 1900/2900/3900 Series Integrated Services Routers.
 
 # Usage Notes
 
@@ -19,8 +19,8 @@ Customizing ROMmon variable settings adds value in the following situations:
 
 # Required Privileges
 
-* **config properties** â€” Configure properties on an Local Manager port.
-* **show properties** â€” View properties on an Local Manager port.
+* **config properties** &mdash; Configure properties on an Local Manager port.
+* **show properties** &mdash; View properties on an Local Manager port.
 
 # Configuring ROMmon Variable Settings
 
@@ -28,9 +28,9 @@ The Uplogix advanced driver recovery from ROMmon functionality only works on Cis
 
 The following ROMmon variables apply to all routers:
 
- 1. IP_ADDRESS â€” IP address of the router
- 2. IP_SUBNET_MASK â€” subnet mask of the router
- 3. DEFAULT_GATEWAY â€” default gateway of the router
+ 1. IP_ADDRESS &mdash; IP address of the router
+ 2. IP_SUBNET_MASK &mdash; subnet mask of the router
+ 3. DEFAULT_GATEWAY &mdash; default gateway of the router
 
 For routers with Fast Ethernet interfaces, the following ROMmon variables should be available to indicate which Fast Ethernet port should be used, as well as the speed and duplex setting for that interface:
 

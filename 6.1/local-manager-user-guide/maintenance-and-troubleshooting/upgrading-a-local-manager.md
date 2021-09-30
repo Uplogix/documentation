@@ -129,6 +129,6 @@ The upgrade will now continue on its own. While the software is transferred to t
 
 Log into the Local Manager.
 
-Run **config update usb upgrade.mnf**. If the filename is not specified, the appliance will attempt to discover this information via the MNF file.
+Run **config update usb upgrade_filename.bin**. If the filename is not specified, the appliance will attempt to discover this information via the MNF file.
 
 The Local Manager will then copy the file over, verify it, and begin the upgrade.

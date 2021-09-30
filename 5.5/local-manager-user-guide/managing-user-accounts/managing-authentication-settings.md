@@ -87,24 +87,24 @@ Use strong passwords: (y/n) [n]: y
           Minimum password length: [6]: 8
 ```
 
-**Require mixed case** â€” password must have both capital and lowercase characters. Valid password example: PassWord
+**Require mixed case** &mdash; password must have both capital and lowercase characters. Valid password example: PassWord
 
-**Require numbers and punctuation** â€” password must include at least one numeral and at least one symbol. Valid password example: P@ssW0rd
+**Require numbers and punctuation** &mdash; password must include at least one numeral and at least one symbol. Valid password example: P@ssW0rd
 
-**Reject variation of login id** â€” password must not be a simple variation of the login id
+**Reject variation of login id** &mdash; password must not be a simple variation of the login id
 
-**Reject word in dictionary and reject standard substitutions (@ for a, 3 for e, etc.)** â€” if both are selected, users may not set passwords such as p@$$w0rd. Valid password example: P&ssW*r#
+**Reject word in dictionary and reject standard substitutions (@ for a, 3 for e, etc.)** &mdash; if both are selected, users may not set passwords such as p@$$w0rd. Valid password example: P&ssW*r#
 
-**Reject sequences in numbers or letters** â€” users may not set passwords that consist of all the letters or numbers on one row of the keyboard, in sequence either from left to right or right to left, or a character string that contains such a sequence. Broken sequences such as abc!defg or qwerty12 may be used.
+**Reject sequences in numbers or letters** &mdash; users may not set passwords that consist of all the letters or numbers on one row of the keyboard, in sequence either from left to right or right to left, or a character string that contains such a sequence. Broken sequences such as abc!defg or qwerty12 may be used.
 
-**Reject previous password and number of previous passwords to check** â€” obvious variations on the previous password will be rejected. The following examples assume that the previous password was P@ssW0rd.
+**Reject previous password and number of previous passwords to check** &mdash; obvious variations on the previous password will be rejected. The following examples assume that the previous password was P@ssW0rd.
 
 * change of case only; p@SSw0rD will be rejected
 * reversed character sequence; dr0Wss@P will be rejected
 * doubled sequence; P@ssW0rdP@ssW0rd will be rejected
 * string containing the earlier password; myP@ssW0rd! will be rejected
 
-**Reject single character difference from previous password** â€” when changing a password, at least two characters must be changed.
+**Reject single character difference from previous password** &mdash; when changing a password, at least two characters must be changed.
 
 Once strong passwords are implemented, failed login attempts will extend the time between retries to defer dictionary attacks.
 
@@ -131,7 +131,7 @@ Configure authorization using the **config system authentication** command. Make
 * Set authentication type as tacacs.
 * For authentication method, enter pap, chap, or ms-chap, as appropriate.
 * Answer y to the Use TACACS Authorization prompt.
-* Usernames and attributes created on the Local Manager or UCC will be added to the specific groups for the userâ€™s session duration. If users are not defined in the Local Manager beforehand a successful authentication can create the account. Answer y to the Create users prompt.
+* Usernames and attributes created on the Local Manager or UCC will be added to the specific groups for the user's session duration. If users are not defined in the Local Manager beforehand a successful authentication can create the account. Answer y to the Create users prompt.
 * Optionally, answer y to the Cache Passwords prompt to persist TACACS created usernames and group membership. This will ensure that users will still receive the correct privileges if the TACACS server is offline during the next authentication/authorization.
 * Enter the IP address, port, and shared secret for each TACACS server. You may specify up to four servers.
 
@@ -157,7 +157,7 @@ Configure authorization using the **config system authentication** command. Make
 * Set authentication type as radius.
 * For authentication method, enter pap, chap, or ms-chap, as appropriate.
 * Answer y to the Use RADIUS Authorization prompt.
-* Usernames and attributes created on the Local Manager or UCC will be added to the specific groups for the userâ€™s session duration. If users are not defined in the Local Manager beforehand a successful authentication can create the account. Answer y to the Create users prompt.
+* Usernames and attributes created on the Local Manager or UCC will be added to the specific groups for the user's session duration. If users are not defined in the Local Manager beforehand a successful authentication can create the account. Answer y to the Create users prompt.
 * Optionally, answer y to the Cache passwords prompt to persist RADIUS created usernames and group membership. This will ensure that users will still receive the correct privileges if the RADIUS server is offline during the next authentication/authorization.
 * Enter the IP address, port, and shared secret for each RADIUS server. You may specify up to four servers.
 
@@ -190,7 +190,7 @@ Users will be added to the group each time a successful authentication occurs.
 
 ## Associate the ACL to users on the TACACS Server
 
-The example below demonstrates how to create new users or add the ACL to existing users. Refer to your TACACS administratorâ€™s guide for more specific examples of configuration required for this functionality.
+The example below demonstrates how to create new users or add the ACL to existing users. Refer to your TACACS administrator's guide for more specific examples of configuration required for this functionality.
 
 ### Creating a TACACS User
 

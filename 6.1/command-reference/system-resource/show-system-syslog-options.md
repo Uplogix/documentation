@@ -1,6 +1,6 @@
 <!-- 5.4 -->
 
-Displays the parameters used to send the Uplogix Local Managerâ€™s own logs to a syslog server.
+Displays the parameters used to send the Uplogix Local Manager's own logs to a syslog server.
 
 # Command availability 
 

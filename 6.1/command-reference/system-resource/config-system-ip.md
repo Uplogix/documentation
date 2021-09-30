@@ -1,4 +1,4 @@
-Configures the Local Managerâ€™s network addressing.
+Configures the Local Manager's network addressing.
 
 A Local Manager is initially configured to use DHCP. You can use the **show system ip** command to display current management Ethernet network settings. 
 

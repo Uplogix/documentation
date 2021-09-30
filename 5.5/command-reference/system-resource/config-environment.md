@@ -18,7 +18,7 @@ config environment
 
 # Usage 
 
-32-port Uplogix Local Managers ship with an external 1-WireÂ® temperature sensor; older 4-port Local Managers have a temperature and humidity sensor built in. 
+32-port Uplogix Local Managers ship with an external 1-Wire&#8482; temperature sensor; older 4-port Local Managers have a temperature and humidity sensor built in. 
 
 Exceeding temperature or humidity thresholds (if applicable) will trigger alarms. If environmental data is unavailable - for example, if the sensor has not been connected - the corresponding alarm(s) will not be triggered.
 

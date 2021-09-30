@@ -1,6 +1,6 @@
 <!-- 5.4 -->
 
-Initializes the rule logging for a particular port. Once configured, a log will be created that displays the Uplogix systemâ€™s rule processing. Rule logging is automatically disabled when the Local Manager reboots.
+Initializes the rule logging for a particular port. Once configured, a log will be created that displays the Uplogix system's rule processing. Rule logging is automatically disabled when the Local Manager reboots.
 
 This task places a significant drain on resources and should be used only for debugging rule execution.
 

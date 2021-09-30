@@ -2,7 +2,7 @@
 
 Uplogix Local Managers can monitor temperature and humidity via an optional environmental sensor probe.
 
-The default temperature threshold for Local Managers with sensing capability is 95Â° F (35Â° C), and the default humidity threshold is 85%. If the temperature or humidity exceeds the defined threshold, an alarm is triggered. **Alarms are not triggered if the relevant data is unavailable**â€”for example, if no sensor is installed.
+The default temperature threshold for Local Managers with sensing capability is 95Â° F (35Â° C), and the default humidity threshold is 85%. If the temperature or humidity exceeds the defined threshold, an alarm is triggered. **Alarms are not triggered if the relevant data is unavailable**&mdash;for example, if no sensor is installed.
 
 > The values listed here are recommended thresholds. The actual environmental operating limits will vary per hardware model.
 

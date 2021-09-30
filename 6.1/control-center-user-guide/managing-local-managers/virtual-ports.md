@@ -22,10 +22,10 @@ Virtual ports that terminate on the managed device (i.e., VTY/IP connection wher
 - xmodem and ymodem file transfers	
 
 The following privileges are required to configure virtual ports:
-- **config system slot** â€“ Configure a virtual slot and virtual ports.
-- **show system slot** â€“ View virtual slot/port configuration.
-- **config system clear slot** â€“ Clear virtual slot configuration.
-- **config system clear port** â€“ Clear port/virtual port data from the database.
+- **config system slot** - Configure a virtual slot and virtual ports.
+- **show system slot** - View virtual slot/port configuration.
+- **config system clear slot** - Clear virtual slot configuration.
+- **config system clear port** - Clear port/virtual port data from the database.
 
 From the Local Manager page, create a virtual port by clicking Virtual Slots under the System configuration menu.
 
@@ -42,14 +42,14 @@ Perform the following steps to configure a virtual port:
 4.	**TCP Port**: Enter the TCP port for this virtual port connection (e.g., **22** for a SSH virtual port connection).
 5.	**Protocol**: Select **ssh-vty** to have the Local Manager SSH directly to the managed device. Select **ssh** or **telnet** when the Local Manager connects to the end device through a console server.
 6.	**Route over Management Ethernet**: Leave this box checked if the virtual port connection should always route out the primary/in-band management Ethernet connection, even when the Local Manager brings up an out-of-band connection.
-7.	**Username**: Secure (SSH) virtual ports must authenticate to the end device in order to build the virtual port connectionâ€”this requires either a username/password combination or providing a username and then importing the Local Manager public key into the managed device for that user to use key authentication in lieu of password authentication for the user.
-8.	**Password**: Enter the supplied usernameâ€™s password for the managed device when configuring a secure virtual port. This can be omitted if SSH key authentication is being configured on the managed device.
+7.	**Username**: Secure (SSH) virtual ports must authenticate to the end device in order to build the virtual port connection&mdash;this requires either a username/password combination or providing a username and then importing the Local Manager public key into the managed device for that user to use key authentication in lieu of password authentication for the user.
+8.	**Password**: Enter the supplied username's password for the managed device when configuring a secure virtual port. This can be omitted if SSH key authentication is being configured on the managed device.
 9.	**Host Key**: Optional if not running in FIPS mode. The Local Manager uses the host key to validate the identity of the managed device to which the virtual port is connecting. If left blank, the Local Manager will save the one it receives from the managed device when it connects for the first time.
 10.	Click **Save** to add the virtual port.
 
 # Modify a virtual port
 
-To modify an existing virtual port definition on the Local Manager Virtual Slot configuration page, click on the **port number** (e.g., Port 4/1) hyperlink in the virtual port tableâ€”this will populate the virtual port form at the top of the configuration page with the current settings for the virtual port. Next, modify any of the virtual port settings in the form and then click **Save** to save the virtual port definition.
+To modify an existing virtual port definition on the Local Manager Virtual Slot configuration page, click on the **port number** (e.g., Port 4/1) hyperlink in the virtual port table&mdash;this will populate the virtual port form at the top of the configuration page with the current settings for the virtual port. Next, modify any of the virtual port settings in the form and then click **Save** to save the virtual port definition.
 
 # Delete a virtual port
 

@@ -16,7 +16,7 @@ LMS offerings: Advanced
 # Syntax 
 
 ```
-show slv test <â€œtestNameâ€ | *>
+show slv test <"testName" | *>
 ```
 
 # Usage 

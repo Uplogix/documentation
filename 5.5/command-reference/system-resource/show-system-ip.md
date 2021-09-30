@@ -1,6 +1,6 @@
 <!-- 5.4 -->
 
-Displays the Uplogix Local Managerâ€™s current management address, Ethernet speed, and hostname.
+Displays the Uplogix Local Manager's current management address, Ethernet speed, and hostname.
 
 # Command availability 
 

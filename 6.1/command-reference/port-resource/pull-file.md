@@ -34,7 +34,7 @@ Add **dedicated** to use dedicated ethernet
 
 # Usage 
 
-The command used to tftp the file FROM the managed device is sent inside the quotes. If no version is specified it will be stored in â€œCurrentâ€.
+The command used to tftp the file FROM the managed device is sent inside the quotes. If no version is specified it will be stored in "Current".
 
 
 ```

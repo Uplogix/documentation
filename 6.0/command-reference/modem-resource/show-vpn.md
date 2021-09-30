@@ -1,6 +1,6 @@
 <!-- 5.4 -->
 
-Displays the Uplogix Local Managerâ€™s VPN configuration.
+Displays the Uplogix Local Manager's VPN configuration.
 
 # Command availability 
 

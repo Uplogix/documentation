@@ -60,7 +60,7 @@ To remove a port use the [no] modifier before the port number
 
 4.4 - This command was introduced.
 
-4.5 â€“ Slot 4 option added for Hardware Local Managers
+4.5 - Slot 4 option added for Hardware Local Managers
 
 # Related commands 
 

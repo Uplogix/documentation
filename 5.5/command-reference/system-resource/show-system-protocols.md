@@ -1,6 +1,6 @@
 <!-- 5.4 -->
 
-Displays the Uplogix Local Managerâ€™s inbound connectivity configuration, including Telnet, SSH, IP address filtering, and DHCP base address. 
+Displays the Uplogix Local Manager's inbound connectivity configuration, including Telnet, SSH, IP address filtering, and DHCP base address. 
 
 # Command availability 
 
@@ -15,7 +15,7 @@ LMS offerings: All
 show system protocols [-s]
 ```
 
-**-s** â€“ displays filter statistics
+**-s** - displays filter statistics
 
 # Usage 
 Protocol changes take effect after restart. This command shows the current settings; however, if the system has not been restarted, the settings may not be in effect.
@@ -55,7 +55,7 @@ Allow: diffie-hellman-group14-sha1
 
 3.4 - This command was introduced to replace show envoy protocols. DHCP information was added.
 
-3.5 â€“ Command output was expanded to show configurable ssh options.
+3.5 - Command output was expanded to show configurable ssh options.
 
 # Related commands 
 

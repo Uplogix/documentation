@@ -1,6 +1,6 @@
 <!-- 5.4 -->
 
-Interactive command for changing account passwords. This allows an administrator to reset a userâ€™s password without knowing the previous password. If a Local Manager is managed by a UCC, this functionality is disabled for all but the admin user.
+Interactive command for changing account passwords. This allows an administrator to reset a user's password without knowing the previous password. If a Local Manager is managed by a UCC, this functionality is disabled for all but the admin user.
 
 # Command availability 
 
@@ -13,13 +13,13 @@ LMS offerings: All
 # Syntax 
 
 ```
-config password [â€œusernameâ€]
+config password ["username"]
 
 ```
 
 # Usage
 
-If you use the command **config password** without including a username, this allows you to change your own password. The **config password â€œusernameâ€** command allows you to change the password for the specified user account without supplying the current password. You must have the appropriate privileges to change another user's password.
+If you use the command **config password** without including a username, this allows you to change your own password. The **config password "username"** command allows you to change the password for the specified user account without supplying the current password. You must have the appropriate privileges to change another user's password.
 
 ```
 [admin@UplogixLM]# config password

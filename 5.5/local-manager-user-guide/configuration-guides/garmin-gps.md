@@ -54,7 +54,7 @@ device. NMEA-183 data should be streaming to the console in periods of 1 to 30 s
 # Collecting Data
 
 The LM uses monitors to collect GPS data from the device at specified intervals. This data is
-stored in the LMâ€™s local database and used for events, alarms, and actions as well as longterm
+stored in the LM's local database and used for events, alarms, and actions as well as longterm
 analysis.
 
 # Data Collected
@@ -122,7 +122,7 @@ For example, a simple rule could check to see whether the LM is in the Northern 
 ```
 
 The above example will generate an event whenever the gps.latitudeHemisphere field is equal to
-â€œNâ€ for at least 2 minutes. To schedule a monitor for this rule, use the **config monitor gps**
+"N" for at least 2 minutes. To schedule a monitor for this rule, use the **config monitor gps**
 command:
 
 ```

@@ -1,6 +1,6 @@
 <!-- 5.4 -->
 
-Displays settings for collection of a deviceâ€™s log.
+Displays settings for collection of a device's log.
 
 # Command availability
 

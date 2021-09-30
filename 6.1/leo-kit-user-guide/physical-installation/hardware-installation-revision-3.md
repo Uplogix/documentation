@@ -54,7 +54,7 @@ The connection between the BDU and Uplogix appliance will require:
 * ADU to BDU Communications cable, Mutlti RJ-45 to DB9 (included)
 	* **12"**/CAT5e cable with <span style="color:blue">**BLUE**</span> boot <--> Serial port on the Uplogix appliance
 	* **36"**/CAT5e cable with <span style="color:blue">**BLUE**</span> boot <--> RS232: GPS port on BDU
-	* **36"**/CAT5e cable with <span style="color:black">**BLACK**</span> boot <--> RS232: Local port on BDUâ€ƒ
+	* **36"**/CAT5e cable with <span style="color:black">**BLACK**</span> boot <--> RS232: Local port on BDU
 
 ## Prepare the Above Deck Unit (ADU)
 
@@ -141,5 +141,5 @@ Use the ADU to BDU Communications cable to connect the Local RS-232 ports of the
 
 ### 3. Connect BDU to power
 
-Use the included power supply and power cord to connect the BDUâ€™s 24VDC power port to an electrical outlet. If power is configured correctly, the activity and traffic LEDs on the BDU will light up.
+Use the included power supply and power cord to connect the BDU's 24VDC power port to an electrical outlet. If power is configured correctly, the activity and traffic LEDs on the BDU will light up.
 

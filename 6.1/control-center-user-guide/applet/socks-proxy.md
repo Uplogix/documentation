@@ -1,7 +1,7 @@
 <!-- 5.4 -->
 <div class='ucc' />Inventory > Local Manager Summary Page > Network > Proxy</div>
 
-The Control Centerâ€™s CLI applet supports the use of a SOCKS Proxy server when accessing Uplogix devices. Setting up a SOCKS Proxy allows users to access devices through a proxy to bypass routing and firewall limitations and configure proxy servers for groups and/or individual devices.
+The Control Center's CLI applet supports the use of a SOCKS Proxy server when accessing Uplogix devices. Setting up a SOCKS Proxy allows users to access devices through a proxy to bypass routing and firewall limitations and configure proxy servers for groups and/or individual devices.
 
 A properly configured SOCKS Proxy server is required to use this feature. Uplogix Control Centers come pre-installed with the SS5 SOCKS Proxy Server. See [SS5 SOCKS Proxy](http://uplogix.com/docs/control-center-user-guide/managing-the-control-center/ss5-socks-proxy) to configure this service.
 

@@ -60,7 +60,7 @@ While using the terminal pass-through application, the following commands are av
 
 * **~**  Exit Terminal
 
-Availability of commands is determined by the userâ€™s authorization.
+Availability of commands is determined by the user's authorization.
 
 ## New for 5.4
 

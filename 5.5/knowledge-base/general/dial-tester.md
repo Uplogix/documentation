@@ -74,7 +74,7 @@ SSH into the Control Center, become root using the following command
 
     sudo su
 
-Edit the test file generation script and replace the â€œadminâ€ username with â€œLOGIN_IS_DISABLEDâ€ using the following commands
+Edit the test file generation script and replace the "admin" username with "LOGIN_IS_DISABLED" using the following commands
 
     cd /uplogix/embassy/scripts/support
     vi makeDialinTesterCsv.sh
@@ -83,7 +83,7 @@ Execute the test file script using the following command
 
     ./makeDialinTesterCsv.sh
 
-Copy the newly created CSV file using the following command (replace x.x.x.x with your Control Center IP and the yyy-mm-dd todayâ€™s date) â€“ **dialin/dialin are username/password**
+Copy the newly created CSV file using the following command (replace x.x.x.x with your Control Center IP and the yyy-mm-dd today's date) - **dialin/dialin are username/password**
 
     scp/tmp/UplogixDialinTester-2015-01-27.csv dialin@x.x.x.x:/home/dialin/list.csv
 
@@ -112,9 +112,9 @@ To run the job once to confirm activity issue the following command
 # Viewing Dial Tester results
 
 1.	Browse to IP address of the Dial Tester VM
-2.	Click on the â€˜Dialinâ€™ hyperlink
-3.	Click on the â€˜archiveâ€™ hyperlink
+2.	Click on the â€˜Dialin' hyperlink
+3.	Click on the â€˜archive' hyperlink
 4.	Click on the most recent entry 
-5.	Click on the â€˜batch.log.csvâ€™ hyperlink
+5.	Click on the â€˜batch.log.csv' hyperlink
 6.	Either open or save the file to your local PC
 7.	Open the batch.log.csv file into Excel, look at column H for any Result other than logout, i.e. timeout, busy

@@ -11,7 +11,7 @@ The purpose of this document is to detail the installation and configuration of 
 
 The Local Manager must have a route to the Telnet interface of the KNS over the LAN. 
 
-To configure the virtual port for the KNS, run the following commands on the system level of the Local Manager CLI, replacing 203.0.113.16 with the IP address of the KNS, and 2502 with the TCP port of the KNSâ€™s Telnet interface (2502 is the default).
+To configure the virtual port for the KNS, run the following commands on the system level of the Local Manager CLI, replacing 203.0.113.16 with the IP address of the KNS, and 2502 with the TCP port of the KNS's Telnet interface (2502 is the default).
 
 ```
 [admin@UplogixLM]# config system slot 4 

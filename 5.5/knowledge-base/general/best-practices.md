@@ -14,11 +14,11 @@ This document contains best practices, tips, and tricks for the Uplogix product 
 
 # Security
 
-* Disable the â€œadminâ€ user
-* Disable the â€œadministratorâ€ user
+* Disable the "admin" user
+* Disable the "administrator" user
 * Assign privileges to groups, not to individual users
-* Keep the default â€œdeny use system authâ€ permission to ensure users authenticate with managed devices.
-* When creating roles, subtract permissions from the default â€œadminâ€ role instead of building a new role from scratch
+* Keep the default "deny use system auth" permission to ensure users authenticate with managed devices.
+* When creating roles, subtract permissions from the default "admin" role instead of building a new role from scratch
 * If using third-party AAA:
 	* Cache passwords
 	* Enable failover to local passwords when the network is down
@@ -26,7 +26,7 @@ This document contains best practices, tips, and tricks for the Uplogix product 
 
 # Control Center Configuration
 
-* Change emsadminâ€™s password
+* Change emsadmin's password
 	* Changing the root password is NOT recommended. It cannot be recovered if it is lost / forgotten. (The root user is not allowed to log in via SSH.)
 * Configure NTP
 * Enable echo service
@@ -52,5 +52,5 @@ This document contains best practices, tips, and tricks for the Uplogix product 
 
 # Reports
 
-* Subscribe to the â€œno heartbeatâ€ report to stay informed of LMs that have gone offline
-* Subscribe to the â€œFailed Loginsâ€ report; this will show you if someone is trying to break into your Local Managers
+* Subscribe to the "no heartbeat" report to stay informed of LMs that have gone offline
+* Subscribe to the "Failed Logins" report; this will show you if someone is trying to break into your Local Managers

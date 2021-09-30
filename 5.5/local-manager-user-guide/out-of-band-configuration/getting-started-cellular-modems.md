@@ -2,7 +2,7 @@
 <!-- Description: This document describes how to connect, provision, and configure the Uplogix Local Manager for use with external or embedded cellular modems for out-of-band (Outband) operations. -->
 
 This document describes how to connect, provision, and configure the Uplogix Local Manager for use with external or embedded cellular modems for out-of-band (Outband) operations.
-â€¯
+&nbsp;
 
 This guide answers the necessary pre-configuration questions chronologically and should be followed as written.
 
@@ -60,25 +60,25 @@ Uplogix LTE modems require a SIM card provisioned from an LTE carrier. The SIM c
 
 
 
-- Direct internet SSH â€“ The SIM should be provisioned with a static IP address that is world-routable.  The provider should provision the SIM for inbound SSH on port 22 (or the port your company has chosen for these protocols).
+- Direct internet SSH - The SIM should be provisioned with a static IP address that is world-routable.  The provider should provision the SIM for inbound SSH on port 22 (or the port your company has chosen for these protocols).
 
  
 
 
 
-- Dedicated APN â€“ If a private APN that will restrict usage to an approved list of SIM ICCIDs is configured, the SIM addressing can be public OR private and has options to attach to customer MPLS or VPN. Cost is usually a one time fee of $500-$2000 USD.
+- Dedicated APN - If a private APN that will restrict usage to an approved list of SIM ICCIDs is configured, the SIM addressing can be public OR private and has options to attach to customer MPLS or VPN. Cost is usually a one time fee of $500-$2000 USD.
 
  
 
 
 
-- Reverse SSH â€“ The SIM should be provisioned for static IP address OR dynamic addressing with a carrier NAT address. TCP port 8443 and 2222 (or the ports your company has chosen for these protocols) should be exposed from the UCCâ€™s configured DNS or IP address so that a reverse SSH tunnel can be formed and used to connect end users. The management IP or DNS address the Local Manager uses for TLS (Heartbeat) must be resolve-able externally.
+- Reverse SSH - The SIM should be provisioned for static IP address OR dynamic addressing with a carrier NAT address. TCP port 8443 and 2222 (or the ports your company has chosen for these protocols) should be exposed from the UCC's configured DNS or IP address so that a reverse SSH tunnel can be formed and used to connect end users. The management IP or DNS address the Local Manager uses for TLS (Heartbeat) must be resolve-able externally.
 
  
 
 
 
-- IPSEC Remote Access VPN â€“ The SIM should be provisioned for static IP address OR dynamic addressing with a carrier NAT address.  After the IP layer is established an IKEv2 IPSEC VPN is applied to force all traffic to the VPN endpoint, usually on the Customer DMZ.  Uplogix has reference designs for Cisco ASA and IOS VPNs for this purpose. 
+- IPSEC Remote Access VPN - The SIM should be provisioned for static IP address OR dynamic addressing with a carrier NAT address.  After the IP layer is established an IKEv2 IPSEC VPN is applied to force all traffic to the VPN endpoint, usually on the Customer DMZ.  Uplogix has reference designs for Cisco ASA and IOS VPNs for this purpose. 
 
 
 

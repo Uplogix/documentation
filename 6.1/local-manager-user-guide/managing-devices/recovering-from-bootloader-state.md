@@ -1,6 +1,6 @@
 <!-- 5.4 -->
 
-Local Managers can recover devices that have entered a boot loader state such as Ciscoâ€™s ROMmon state. While the process varies among vendors and models, the Local Manager delivers standardized operations that require low-level boot loader and operating system configuration recovery steps in an efficient, rapid manner.
+Local Managers can recover devices that have entered a boot loader state such as Cisco's ROMmon state. While the process varies among vendors and models, the Local Manager delivers standardized operations that require low-level boot loader and operating system configuration recovery steps in an efficient, rapid manner.
 
 The recovery process is automatic and does not require any immediate user attention to initiate or complete.
 
@@ -10,7 +10,7 @@ You must have copies of the device OS and startup configuration files in order t
 
 The **config init** command schedules periodic collection of these files. The OS files are transferred using the FTP and TFTP protocols, so you must have a working network connection from the Local Manager's management Ethernet interface to an Ethernet interface on the device in question.
 
-If the deviceâ€™s operating system does not offer this ability, the files can be obtained from the vendor and stored on the Local Manager in the event they are needed.
+If the device's operating system does not offer this ability, the files can be obtained from the vendor and stored on the Local Manager in the event they are needed.
 
 After the **pull os** command is successful, the Local Manager will have a copy of the device's OS image stored locally. The stored image is relevant only for the device connected to the Local Manager's console port. If you prefer to use a previously collected OS file from one port for another port, reference the copy command.
 

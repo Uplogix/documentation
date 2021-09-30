@@ -68,7 +68,7 @@ Logged Out: Still logged in
 > You have been idle for 150 seconds. Your session will end in 150 seconds.
 > 
 ------------------------------------------------------------
---DONEâ€”
+--DONE&mdash;
 ```
 
 If the Local Manager is managed by a Control Center, user sessions can be viewed through the Uplogix web interface: Inventory > Local Manager page > Session Logs

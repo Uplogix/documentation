@@ -14,12 +14,12 @@ LMS offerings: All
 # Syntax 
 
 ```
-copy <â€œsourceâ€> <â€œdestinationâ€>
+copy <"source"> <"destination">
 ```
 Copy from one port to another port:  
 
 ```
-copy <[â€œportâ€]<â€œtypeâ€> <â€œversionâ€>> <[â€œportâ€] <â€œversionâ€>>
+copy <["port"]<"type"> <"version">> <["port"] <"version">>
 ```
 
 Port is assumed to be this port if not specified.
@@ -27,18 +27,18 @@ Port is assumed to be this port if not specified.
 Copy from this port to remote host:  
 
 ```
-copy <<â€œtypeâ€> <â€œversionâ€>> <scp | ftp> <â€œuserName@IP[:file]â€>
+copy <<"type"> <"version">> <scp | ftp> <"userName@IP[:file]">
 copy <"type"> <"version"> Control Center category/file
 ```
 
 Copy from remote host to this port:  
 
 ```
-copy <<scp | ftp> <â€œuserName@IP:fileâ€>> <<â€œtypeâ€> <â€œversionâ€>>
+copy <<scp | ftp> <"userName@IP:file">> <<"type"> <"version">>
 copy Control Center <category/file> <"type"> <"version">
 ```
 
-â€œsourceâ€ and â€œdestinationâ€ parameters are made up of the following choices:
+"source" and "destination" parameters are made up of the following choices:
 
 - **type** = &lt;os | running-config | startup-config | tech | post&gt;
 - **version** = &lt;candidate | current | previous | &lt;user ver&gt; | archive #&gt;
@@ -46,7 +46,7 @@ User versions can include A-Z, a-z, 0-9, and _,  1 to 9 characters.
 - **port** = port #
             
 # Usage 
-Only file types relevant to the device type are supported and are placed in the deviceâ€™s file system on the Uplogix system.
+Only file types relevant to the device type are supported and are placed in the device's file system on the Uplogix system.
 
 ```
 [admin@UplogixLM (port1/1)]# copy os current port 1/2 candidate
@@ -75,7 +75,7 @@ copy succeeded
 
 1.4 - Ability to copy tech, post, and archive files added.
 
-3.4 â€“ Added Control Center category/file as a source/destination.
+3.4 - Added Control Center category/file as a source/destination.
 
 # Related commands 
 --

@@ -40,7 +40,7 @@ PPP is turned on
 
 2.5 - This command was introduced.
 
-4.2 â€“ Cycle keyword added
+4.2 - Cycle keyword added
 
 # Related commands 
 

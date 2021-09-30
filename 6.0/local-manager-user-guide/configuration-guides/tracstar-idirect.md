@@ -8,13 +8,13 @@ The purpose of this document is to detail the installation and configuration of 
 
 # Physical Connection
 
-Connect the Tracstar and iDirect serially to available ports on the Uplogix Local Manager. The iDirectâ€™s console connection is used to interactively manage the iDirect, monitor the state of the modem, and provide it with GPS data. The Tracstarâ€™s modem connection is used to collect GPS information from the ACU. Both connections will be used to pass RX SNR data between the Tracstar and iDirect.
+Connect the Tracstar and iDirect serially to available ports on the Uplogix Local Manager. The iDirect's console connection is used to interactively manage the iDirect, monitor the state of the modem, and provide it with GPS data. The Tracstar's modem connection is used to collect GPS information from the ACU. Both connections will be used to pass RX SNR data between the Tracstar and iDirect.
 
-Connect the Uplogix to the Tracstarâ€™s modem port (MOD) with a DB9 to RJ45 straight cable.
+Connect the Uplogix to the Tracstar's modem port (MOD) with a DB9 to RJ45 straight cable.
 
 ![](http://uplogix.com/support/docs/img/configuration-guides/tracstar-image001.png)
   
-Connect the Uplogix to the iDirectâ€™s console port with a RJ45 to RJ45 straight cable.
+Connect the Uplogix to the iDirect's console port with a RJ45 to RJ45 straight cable.
 
 ![](http://uplogix.com/support/docs/img/configuration-guides/tracstar-image002.png) 
 
@@ -67,7 +67,7 @@ running-config saved to archive as current.
 Console session started.
 ```
 
-If the port has been properly configured, you will be able to see the Tracstar requesting RX SNR information. If you are not able to see the Tracstarâ€™s requests, ensure that the physical connection is correct and that the serial settings on the Uplogix Local Manager match those on the Tracstar ACU. Use the escape sequence (~[Enter]) to exit the terminal session with the ACU.
+If the port has been properly configured, you will be able to see the Tracstar requesting RX SNR information. If you are not able to see the Tracstar's requests, ensure that the physical connection is correct and that the serial settings on the Uplogix Local Manager match those on the Tracstar ACU. Use the escape sequence (~[Enter]) to exit the terminal session with the ACU.
 
 ## Scheduling Tracstar Monitors
 
@@ -136,7 +136,7 @@ running-config saved to archive as current.
 Console session started.
 ```
 
-If the port has been properly configured, you will be able to see the iDirectâ€™s command prompt and interact with the modemâ€™s command line interface. If you are not able to interact with the iDirect, ensure that the physical connection is correct and that the serial settings on the Uplogix Local Manager match those on the iDirect. Use the escape sequence (~[Enter]) to exit the terminal session with the iDirect.
+If the port has been properly configured, you will be able to see the iDirect's command prompt and interact with the modem's command line interface. If you are not able to interact with the iDirect, ensure that the physical connection is correct and that the serial settings on the Uplogix Local Manager match those on the iDirect. Use the escape sequence (~[Enter]) to exit the terminal session with the iDirect.
 
 ## Scheduling iDirect Monitors
 

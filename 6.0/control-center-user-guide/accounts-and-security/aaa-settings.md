@@ -85,8 +85,8 @@ When making changes on the *Administration > AAA* page, apply them in three ways
 
 When making changes at the inventory group level from the Authentication page, apply them without changing settings on Local Managers currently in the group or overwrite the Local Managers' authentication settings.
 
-* Update AAA settings for the group without changing settings on Local Managers currently in the inventoryâ€”click *Save*.
-* Update AAA settings for the group, overwriting existing settings on all Local Managers in the group and its child groupsâ€”select *Force updates on children*, then click *Save*.
+* Update AAA settings for the group without changing settings on Local Managers currently in the inventory&mdash;click *Save*.
+* Update AAA settings for the group, overwriting existing settings on all Local Managers in the group and its child groups&mdash;select *Force updates on children*, then click *Save*.
  
 ![AAA Force Update](http://uplogix.com/support/docs/img/6.0/aaa-force-update.png)
 

@@ -16,7 +16,7 @@ config date
 
 # Usage 
 
-To maintain accurate timestamps across time zones, use the current UTC time for this setting and rely on the userâ€™s time zone setting for offset. If NTP is configured - for example, if the Local Manager is managed by an Uplogix Control Center, the current configuration shows this.
+To maintain accurate timestamps across time zones, use the current UTC time for this setting and rely on the user's time zone setting for offset. If NTP is configured - for example, if the Local Manager is managed by an Uplogix Control Center, the current configuration shows this.
 
 ```
 [admin@UplogixLM]# config date
@@ -28,7 +28,7 @@ Change these? (y/n) [n]:
 
 # History 
 
-1.3 - The userâ€™s time offset is displayed.
+1.3 - The user's time offset is displayed.
 
 3.5 - Command now warns if NTP is configured.
 

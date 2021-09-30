@@ -14,10 +14,10 @@ LMS offerings: All
 
 # Syntax 
 ```
-show interface <â€œinterface nameâ€> [-n <#>]
+show interface <"interface name"> [-n <#>]
 ```
 
-**-n <#>** â€“ number of records to display
+**-n <#>** - number of records to display
 
 # Usage 
 

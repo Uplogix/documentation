@@ -15,7 +15,7 @@ LMS offerings: All
 # Syntax
 
 ```
-device ping <â€œipv4 addressâ€>
+device ping <"ipv4 address">
 ```
 
 # Usage

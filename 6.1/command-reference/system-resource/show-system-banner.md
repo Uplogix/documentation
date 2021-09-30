@@ -1,6 +1,6 @@
 <!-- 5.4 -->
 
-Displays the current welcome and login banners â€“ lines of text displayed before and immediately after login, respectively.
+Displays the current welcome and login banners - lines of text displayed before and immediately after login, respectively.
 
 # Command availability 
 

@@ -1,6 +1,6 @@
 <!-- 5.4 -->
 
-Interactive command that steps you through the changes needed to update the Uplogix Local Managerâ€™s settings used to communicate with the network device. 
+Interactive command that steps you through the changes needed to update the Uplogix Local Manager's settings used to communicate with the network device. 
 
 # Command availability
  
@@ -62,20 +62,20 @@ Do you want to commit these changes? (y/n):
 
 ```
 
-**description** (optional) â€“ Used to identify the device if no hostname is found.
+**description** (optional) - Used to identify the device if no hostname is found.
 
-**make** (required) â€“ Type ? to see a list of supported devices. If your device is not listed, enter native.
+**make** (required) - Type ? to see a list of supported devices. If your device is not listed, enter native.
 
-**model** (optional) â€“ Automatically discovered during assimilation of supported devices.
+**model** (optional) - Automatically discovered during assimilation of supported devices.
 
 
-**os** (required in most cases) â€“ Type ? to see a list of supported OS types. This list is filtered based on the make.
+**os** (required in most cases) - Type ? to see a list of supported OS types. This list is filtered based on the make.
 
-**os version** (optional) â€“ Automatically discovered during assimilation of supported devices.
+**os version** (optional) - Automatically discovered during assimilation of supported devices.
 
-**management IP** â€“ Required if Ethernet-based functionality is desired. This is the regular IP address of the device and not related to the dedicated Ethernet between the Uplogix Local Manager and the device.
+**management IP** - Required if Ethernet-based functionality is desired. This is the regular IP address of the device and not related to the dedicated Ethernet between the Uplogix Local Manager and the device.
 
-**configure dedicated Ethernet port?** â€“ Required if dedicated Ethernet functionality is desired. This network must be unique across all device ports on the Local Manager.
+**configure dedicated Ethernet port?** - Required if dedicated Ethernet functionality is desired. This network must be unique across all device ports on the Local Manager.
 
 > **Note**: If you configure a dedicated Ethernet port on a switch, set the switch to use DHCP or configure the STP portfast feature on the layer 2 interface to improve performance.
 
@@ -83,19 +83,19 @@ Do you want to commit these changes? (y/n):
 
 > **Note**: If you configure the device to use DHCP, ensure that the Local Manager is configured to serve DHCP addresses to managed devices. Use the config system protocols DHCP command to change the default (169.254.100.x).
 
-**dedicated device IP** (required) â€“ IP address of the deviceâ€™s Ethernet interface.
+**dedicated device IP** (required) - IP address of the device's Ethernet interface.
 
-**dedicated port IP** (required) â€“ IP address of the portâ€™s Ethernet interface.
+**dedicated port IP** (required) - IP address of the port's Ethernet interface.
 
-**dedicated netmask** (required) â€“ Subnet mask for the dedicated Ethernet. Each port must be on its own subnet.
+**dedicated netmask** (required) - Subnet mask for the dedicated Ethernet. Each port must be on its own subnet.
 
-**speed/duplex** (optional) â€“ Defaults to auto but can be changed to suit your network.
+**speed/duplex** (optional) - Defaults to auto but can be changed to suit your network.
 
 # History 
 
-1.06 â€“ Ethernet Link negotiation was added.
+1.06 - Ethernet Link negotiation was added.
 
-2.5 â€“ Command now available on modem resource.
+2.5 - Command now available on modem resource.
 
 3.2 - Changed make "Generic" to "Native".
 

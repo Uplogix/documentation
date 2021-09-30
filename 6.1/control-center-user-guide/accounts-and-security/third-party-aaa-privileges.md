@@ -25,7 +25,7 @@ On the *Administration > AAA Settings* page, set up the Authentication Settings 
 6)	Optionally, select *Cache Passwords* to ensure that user accounts, passwords and privileges will still be available if the AAA server is offline during a future login authentication/authorization.
  
 ![](http://uplogix.com/support/docs/img/6.0/aaa-settings.png)
-â€ƒ
+
 When a user logs in to the Control Center with Cache Passwords enabled, the Control Center verifies the password with the authentication server and then updates the user account (caching) on the Control Center. Since the account is updated, this change gets pushed down to all the Local Managers, changing the user's password on Local Managers throughout the inventory.
 
 Using this method, the Control Center can be configured to use AAA, but the Local Managers don't have to. The Local Manager receives the user's new password via the Control Center and authenticates locally with the password received remotely. Although the user logs into the Local Manager with the account's TACACS password, the Local Manager is not really contacting the TACACS server.
@@ -44,7 +44,7 @@ Assign suitable roles to the group. Users are not able to log in until they have
 
 # Enable Authorization on an Existing TACACS User
 
-Once the user is created and is able to authenticate to the Local Manager, authorization can be added by adding an ACL under the â€œExecâ€ service in your user or group. In most Unix TACACS deployments, the users file can be edited and the following lines can be added to either the group or the user:
+Once the user is created and is able to authenticate to the Local Manager, authorization can be added by adding an ACL under the "Exec" service in your user or group. In most Unix TACACS deployments, the users file can be edited and the following lines can be added to either the group or the user:
 
 ```
 service = exec {

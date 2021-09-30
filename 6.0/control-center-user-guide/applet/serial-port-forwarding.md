@@ -43,5 +43,5 @@ Navigate to the desired port and use the **terminal forward** command to start f
 ![Uplogix Control Center - Applet Terminal Forward](http://uplogix.com/support/docs/img/5.4/uplogix-control-center-applet-terminal-forward-cli.png)
  
 Once the message *Console session forwarded* displays, connect to the forwarded session on your local machine. Navigate to 127.0.0.1 (localhost) on the port specified earlier using your workstation application such as a browser or element manager.
-â€ƒ
+
 Anything typed to the forwarded port will be displayed in the original terminal session.

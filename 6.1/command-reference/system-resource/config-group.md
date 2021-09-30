@@ -2,7 +2,7 @@
 
 Opens an editor that allows you to create and delete group accounts, add and remove users to group accounts, and alter authority for group accounts.
 
-> **Note:** This command cannot create new groups if the Local Manager is managed by a Uplogix Control Center. In this case, you must use the serverâ€™s web interface to configure group accounts. 
+> **Note:** This command cannot create new groups if the Local Manager is managed by a Uplogix Control Center. In this case, you must use the server's web interface to configure group accounts. 
 
 # Command availability 
 
@@ -15,7 +15,7 @@ LMS offerings: All
 # Syntax 
 
 ```
-config group [no] <â€œgroupnameâ€>
+config group [no] <"groupname">
 ```
 
 Use the **no** modifier to delete the group.
@@ -24,31 +24,31 @@ Account names must be unique. For example, if there is a user account called "sy
 
 # Subcommands 
 
-**description** â€“ information about the group. 255 alphanumeric characters.
+**description** - information about the group. 255 alphanumeric characters.
 
 **group** - an existing group that is to be included in this group.
 
-**user** â€“ a user to be associated with this group. Users can be added iteratively by repeating this command.
+**user** - a user to be associated with this group. Users can be added iteratively by repeating this command.
 
-**email [in-band | out-of-band] [terse]** â€“ Specify the email address that will receive administrative messages, optionally distinguishing between in-band and outband email addresses. You can add more than one email address by repeating this command. The terse parameter is an optional setting to send only the subject line, which is useful for pagers. The email subcommand is only used to send group related mail â€“ not alerts.
+**email [in-band | out-of-band] [terse]** - Specify the email address that will receive administrative messages, optionally distinguishing between in-band and outband email addresses. You can add more than one email address by repeating this command. The terse parameter is an optional setting to send only the subject line, which is useful for pagers. The email subcommand is only used to send group related mail - not alerts.
 
-**system <â€œroleâ€>** â€“ authority for the Uplogix Local Manager from defined roles. Authority is additive and multiple roles can be applied to a user by repeating the command.
+**system <"role">** - authority for the Uplogix Local Manager from defined roles. Authority is additive and multiple roles can be applied to a user by repeating the command.
 
-**start** â€“ groupâ€™s MMDDYYYYHHMMSS start time â€“ INACTIVE before.
+**start** - group's MMDDYYYYHHMMSS start time - INACTIVE before.
 
-**expire** â€“ groupâ€™s MMDDYYYYHHMMSS expiration time â€“ INACTIVE after.
+**expire** - group's MMDDYYYYHHMMSS expiration time - INACTIVE after.
 
 **modem <"role">** - authority for the modem from defined roles. Authority is additive and multiple roles can be applied by repeating the command.
 
-**port{1/1..n/n} <â€œroleâ€>** â€“ authority per port from defined roles. Authority is additive and multiple roles can be applied by repeating the command.
+**port{1/1..n/n} <"role">** - authority per port from defined roles. Authority is additive and multiple roles can be applied by repeating the command.
 
-**powercontrol <â€œroleâ€>** â€“ authority for the power controller from defined roles. Authority is additive and multiple roles can be applied by repeating the command.
+**powercontrol <"role">** - authority for the power controller from defined roles. Authority is additive and multiple roles can be applied by repeating the command.
 
-**show** â€“ display current settings.
+**show** - display current settings.
 
-**no** â€“ used before optional commands to remove attributes or entries.
+**no** - used before optional commands to remove attributes or entries.
 
-**exit** â€“ exit the group editor.
+**exit** - exit the group editor.
 
 # Usage 
 

@@ -6,18 +6,18 @@ Supports Palo Alto firewalls running PAN-OS version 7 or higher.
 
 #Physical Connection
 
-Connect a free serial port on the Local Manager to the Palo Altoâ€™s RS-232 console management port with a standard Cat-5 cable.
+Connect a free serial port on the Local Manager to the Palo Alto's RS-232 console management port with a standard Cat-5 cable.
 
 #Recommended Configuration
 
-For proactive monitoring of the Palo Altoâ€™s status, and to ensure the availability of backup configurations, it is recommended that:
+For proactive monitoring of the Palo Alto's status, and to ensure the availability of backup configurations, it is recommended that:
 - The Local Manager serial port connected to the Palo Alto is configured via the **config init** command
 - Automatic backup of the configuration is scheduled 
 - The paloAltoStatus ruleset is scheduled
 
 #Configuring the Port
 
-To configure the Local Manager for connection to a Palo Alto firewall, navigate to the port that the Palo Alto is connected to, run the command **config init**, and follow the prompts as below (substituting your Palo Altoâ€™s IP address):
+To configure the Local Manager for connection to a Palo Alto firewall, navigate to the port that the Palo Alto is connected to, run the command **config init**, and follow the prompts as below (substituting your Palo Alto's IP address):
 
 ```
 [admin@UplogixLM (port1/4)]# config init
@@ -56,7 +56,7 @@ The default console settings for the Palo Alto firewall are 9600 bit rate, 8 ser
 
 The Uplogix Local Manager can save up to twenty backup images on its file system for use in restoring a configuration or pushing a configuration to a new Palo Alto. The file can be transferred to the LM via TFTP or SCP.
 
-To save the Palo Altoâ€™s configuration to the LM, navigate to the port that the Palo Alto is connected to and run the either of the following commands, substituting the LMâ€™s IP address.
+To save the Palo Alto's configuration to the LM, navigate to the port that the Palo Alto is connected to and run the either of the following commands, substituting the LM's IP address.
 
 ```
 pull sftp -file running-config.xml "scp export configuration from running-config.xml to ${user}@${ip}:${path}" running-config current
@@ -93,7 +93,7 @@ First, navigate to the port the Palo Alto is connected to and stage the file to 
 [admin@UplogixLM (port1/4)]# copy running-config previous candidate
 ```
 
-Next, run one of the following commands, substituting the LMâ€™s IP address.
+Next, run one of the following commands, substituting the LM's IP address.
 
 ```
 push sftp -file running-config.xml "scp import configuration ${user}@${ip}:${path} \r configure \r load config from running-config.xml \r commit \r exit" running-config candidate
@@ -101,7 +101,7 @@ push sftp -file running-config.xml "scp import configuration ${user}@${ip}:${pat
 push tftp "tftp import configuration 10.0.1.2/running-config.xml \r configure \r load config from running-config.xml \r commit \r exit" running-config.xml running-config candidate
 ```
 
-Upon entering one of those commands, the LM will connect to the Palo Altoâ€™s CLI, transfer the candidate configuration, and apply the configuration.
+Upon entering one of those commands, the LM will connect to the Palo Alto's CLI, transfer the candidate configuration, and apply the configuration.
 
 #Monitoring Palo Alto Status
 
@@ -191,7 +191,7 @@ config monitor chassis PaloAltoChassisRules
 
 ##Port Forwarding
 
-The Local Manager can facilitate connections to the Palo Altoâ€™s web interface using the port forwarding feature. Run **configure protocol forward** on the port the Palo Alto is connected to and add an entry as below: 
+The Local Manager can facilitate connections to the Palo Alto's web interface using the port forwarding feature. Run **configure protocol forward** on the port the Palo Alto is connected to and add an entry as below: 
 
 ```
 [admin@UplogixLM (port1/4)]# config protocol forward
@@ -199,6 +199,6 @@ The Local Manager can facilitate connections to the Palo Altoâ€™s web inter
 [forward]# exit
 ```
 
-Users may now connect to the web interface through an SSH tunnel using the port forwarding feature. In the SSh applet on the Control Center, click *Terminal*, then *Forward*. Select the Palo Altoâ€™s port, enter 443 for the port number, and click *Apply*. Now, port 443 on 127.0.0.1 on your workstation will connect through the SSH tunnel created by the LM to the web interface on the Palo Alto.
+Users may now connect to the web interface through an SSH tunnel using the port forwarding feature. In the SSh applet on the Control Center, click *Terminal*, then *Forward*. Select the Palo Alto's port, enter 443 for the port number, and click *Apply*. Now, port 443 on 127.0.0.1 on your workstation will connect through the SSH tunnel created by the LM to the web interface on the Palo Alto.
 
 ![](http://www.uplogix.com/support/docs/img/PaloAlto/PortForwarding.png)

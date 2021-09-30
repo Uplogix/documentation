@@ -18,7 +18,7 @@ show environment
 
 # Usage 
 
-The Uplogix 3200 Local Manager is available with an optional external 1-WireÂ® temperature sensor. Older 4-port Uplogix Local Managers use an internal temperature sensor mounted at the air intake. The information returned by this command depends on which sensor (if any) is installed.
+The Uplogix 3200 Local Manager is available with an optional external 1-Wire&#8482; temperature sensor. Older 4-port Uplogix Local Managers use an internal temperature sensor mounted at the air intake. The information returned by this command depends on which sensor (if any) is installed.
 
 ```
 [admin@UplogixLM]# show environment

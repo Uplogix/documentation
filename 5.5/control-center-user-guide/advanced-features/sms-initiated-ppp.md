@@ -12,7 +12,7 @@ To initiate contact:
 2.	Click **Schedule Task** and from the list of tasks that may be scheduled, select **SMS Message** and click **Next**.
 
   ![](http://uplogix.com/support/docs/img/cc-user-guide/image163.png)
-3.	The SMS Message â€“ Parameters page opens. Click **Next** and the **ppp on** command is sent immediately by SMS message. It may take a few minutes before the Local Manager receives the SMS message and activates PPP to phone home.
+3.	The SMS Message - Parameters page opens. Click **Next** and the **ppp on** command is sent immediately by SMS message. It may take a few minutes before the Local Manager receives the SMS message and activates PPP to phone home.
 
   ![](http://uplogix.com/support/docs/img/cc-user-guide/image164.png)
  

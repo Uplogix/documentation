@@ -6,11 +6,11 @@ The Control Center uses Secure Shell (SSH) v2 software to provide secure remote 
 Supported Secure Shell clients include: 
 
 * PuTTY
-* SSHÂ® Tectiaâ„¢
-* VanDykeÂ® SecureCRTÂ®
+* SSH&#8482; Tectia
+* VanDyke&#8482; SecureCRT&#8482;
 * SSHTerm for Windows
 * iTerm for Macintosh OS X
-* UNIXâ€™s built-in ssh command
+* UNIX's built-in ssh command
 
 For example, from a UNIX command line, type:
 

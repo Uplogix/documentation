@@ -23,7 +23,7 @@ Robust and customizable reporting of event, alarm, and device statistics, networ
 
 ## Extensible Automation
 
-Simple interface for users to define custom actions for Uplogix Configuration Management & Recovery â€“ Archives and stores configuration files for all managed devices and can quickly restore good working configuration file to a managed device via the Uplogix Local Manager.
+Simple interface for users to define custom actions for Uplogix Configuration Management & Recovery - Archives and stores configuration files for all managed devices and can quickly restore good working configuration file to a managed device via the Uplogix Local Manager.
 
 ## Compliance Reporting
 

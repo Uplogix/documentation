@@ -41,7 +41,7 @@ The name and description of the root group and any inventory group you add can b
 
 Click *Edit* to modify the group name (required) and description (optional).
 
-> Use only printing characters when completing text fields. Spaces are considered printing characters.â€ƒ
+> Use only printing characters when completing text fields. Spaces are considered printing characters.
 
 # Adding an inventory group
 

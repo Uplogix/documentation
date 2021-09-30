@@ -1,6 +1,6 @@
 <!-- 5.4 -->
 
-Sends the Uplogix Local Managerâ€™s internal processing log. Useful mostly to the Uplogix support team, it requires the system's email settings to be set up (configured with **config system email**). It is encrypted and cannot be displayed to the screen. 
+Sends the Uplogix Local Manager's internal processing log. Useful mostly to the Uplogix support team, it requires the system's email settings to be set up (configured with **config system email**). It is encrypted and cannot be displayed to the screen. 
 
 # Command availability 
 
@@ -13,12 +13,12 @@ LMS offerings: All
 #Syntax 
 
 ```
-show log system [-m <â€œemailaddressâ€>] [-n <#>] [-s <â€œsubjectâ€>]
+show log system [-m <"emailaddress">] [-n <#>] [-s <"subject">]
 ```
 
-**-m <â€œemailaddressâ€>** â€“ Email the report to the address given.
+**-m <"emailaddress">** - Email the report to the address given.
 **-n <#>** - Specify the number of logs to include. Default is 20.
-**-s <â€œsubjectâ€>** - Specify the subject line of the email.
+**-s <"subject">** - Specify the subject line of the email.
 
 # Usage
 ```

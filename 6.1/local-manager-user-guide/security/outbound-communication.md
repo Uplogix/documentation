@@ -1,10 +1,10 @@
-Most of the Local Managerâ€™s communication is designed to be initiated by the Local Manager, reducing the number of potential security vulnerabilities. These operations are discussed in detail below.
+Most of the Local Manager's communication is designed to be initiated by the Local Manager, reducing the number of potential security vulnerabilities. These operations are discussed in detail below.
 
 # Archiving and exporting
 
 If the Local Manager is managed by a Control Center, the Local Manager periodically archives SLV statistics, user session log files, device files, and other data automatically to the Control Center using HTTPS over port 8443. Archiving uses high data compression to reduce the impact to the network. When operating out-of-band, archiving is suspended by default until the Local Manager returns to in-band communication. This functionality can be enabled to work when the Local Manager is communicating over its out-of-band connection.
 
-A Local Managerâ€™s configuration can be retrieved using the **config export** command to create an XML file of its config and send it to the IP address of your choice using SCP or FTP. Use the **config system export** command to archive collected device statistics to an external server using FTP or SCP.
+A Local Manager's configuration can be retrieved using the **config export** command to create an XML file of its config and send it to the IP address of your choice using SCP or FTP. Use the **config system export** command to archive collected device statistics to an external server using FTP or SCP.
 
 # Pulse
 
@@ -42,7 +42,7 @@ If a [third-party VPN](https://uplogix.com/docs/control-center-user-guide/accoun
 
 * **GRE** - TCP 1723 and Protocol 47. 
 
-* **IkeV1 IPSEC** - Cisco UDP - UDP port 10,000*, ESP (Protocol 50), NATT â€“ UDP port 500.
+* **IkeV1 IPSEC** - Cisco UDP - UDP port 10,000*, ESP (Protocol 50), NATT - UDP port 500.
 
 * **IkeV2 IPSEC** - UDP port 500.
 

@@ -12,7 +12,7 @@ config schedule <crontab> <job [job args]>
 Command parameter definitions: 
 
  - **Crontab**: Set the timing of when the job will run. The job can run once, run at a specific time and repeat with a delay, or run during an interval of time. The following formats are used: 
-  - **One time**: Schedule a job to run one time with the â€“o flag: <-o execution time>
+  - **One time**: Schedule a job to run one time with the -o flag: <-o execution time>
   - **Cron schedule**: Schedule a job to run at a specific time and repeat at a specific interval. Define the start time and interval time with the following flags: <[-m 0-59] [-h 0-23] [-D 1-31] [-M 1-12] [-W 0-6]> [-d delay]
   - **Interval schedule**: Schedule a job to run during a period of time with a specific delay between repetitions. Define the interval and delay with the following flags: [-s startTime] [-e endTime] <-d delay>
 

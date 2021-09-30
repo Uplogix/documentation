@@ -1,3 +1,5 @@
+<div class="danger">The process described in this document is not compatible with LMS 6.1 due to an operating system upgrade that includes freeradius3. Please contact Uplogix Support for more information.</div>
+
 # Overview
 
 To authenticate users against an LDAP server, such as Microsoft Active Directory, the Uplogix Control Center (UCC) or Uplogix Local Manager (LM) must connect through a RADIUS server, which brokers the connection to the LDAP server. This document explains how to configure the FreeRADIUS service to run on a UCC.
@@ -400,7 +402,7 @@ To configure the FreeRADIUS server to use an encrypted connection, the /etc/radd
 start_tls = yes
 ```
 
-The next line after â€œstart_tls = yesâ€ must be the following:
+The next line after "start_tls = yes" must be the following:
 
 ```
 tls_require_cert = "demand"
@@ -417,7 +419,7 @@ TLS_REQCERT DEMAND
 View the LDAP server certificate with the following command, selecting the CA certificate that signed the certificate that will be used by the LDAP server for encryption, and putting the certificate in the file listed above (ie - /etc/openldap/certs/WIN-243G5KGAVTH.pm.doc.uplogix.com.pem):
 
 ```
-openssl s_client -connect WIN-243G5KGAVTH.pm.doc.uplogix.com:636 â€“showcerts
+openssl s_client -connect WIN-243G5KGAVTH.pm.doc.uplogix.com:636 -showcerts
 ```
 
 ## Control Center AAA Settings Configuration

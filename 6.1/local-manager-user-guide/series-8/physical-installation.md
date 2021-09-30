@@ -79,7 +79,7 @@ Follow these steps to install the GPRS cellular modem:
 Follow these steps to install the CDMA cellular modem:
 
 1.	Power off the Local Manager.
-2.	Note the Electronic Serial Number (ESN) on the modem, as this will be needed in order to activate the modem on your carrierâ€™s network.
+2.	Note the Electronic Serial Number (ESN) on the modem, as this will be needed in order to activate the modem on your carrier's network.
 3.	Remove the option slot cover, align the modem carrier card with the internal rails, and slide the modem into place.
 4.	Feed wire into the option slot compartment, align modem cover plate with the option slot screw holes, and replace the screws.
 5.	Install antenna.

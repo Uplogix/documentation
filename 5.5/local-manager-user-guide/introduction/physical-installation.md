@@ -83,7 +83,7 @@ Follow these steps to install the GPRS cellular modem:
 Follow these steps to install the CDMA cellular modem:
 
 1.	Power off the Local Manager.
-2.	Note the Electronic Serial Number (ESN) on the modem, as this will be needed in order to activate the modem on your carrierâ€™s network.
+2.	Note the Electronic Serial Number (ESN) on the modem, as this will be needed in order to activate the modem on your carrier's network.
 3.	Remove the option slot cover, align the modem carrier card with the internal rails, and slide the modem into place.
 4.	Feed wire into the option slot compartment, align modem cover plate with the option slot screw holes, and replace the screws.
 5.	Install antenna.
@@ -194,8 +194,8 @@ A dimly lit keypad and dark display indicates that the unit has power applied. P
 | Description | Wire Color | Operating Voltage Range (Referenced to Earth Ground) | Operating Voltage Range (Referenced to Return) |
 | - | - | - | - |
 | Earth Ground | Green with Yellow Stripe | 0 V | N/A |
-| Positive Voltage	| Brown | 0 â€“ 60 V | 24 â€“ 60V |
-| Return | Blue | -60 â€“ 0 V | N/A |
+| Positive Voltage	| Brown | 0 - 60 V | 24 - 60V |
+| Return | Blue | -60 - 0 V | N/A |
 
 ## Uplogix 500
 
@@ -209,7 +209,7 @@ Connect the power supply to the DC connector on the back of the device.
 
 Connect the power cord to the power supply. Use either the provided power cord or one that is suitable for your location. The Uplogix Local Manager uses a power cord with a standard IEC-320-C13 female cord end.
  
-Connect the power cord to a power outlet. An amber light indicates that the unit has power applied. Power on the unit by pressing the power button. The system status LED (denoted with an â€˜iâ€™ label on the chassis) will blink while the Local Manager boots up and becomes a solid green light when the boot sequence is complete.
+Connect the power cord to a power outlet. An amber light indicates that the unit has power applied. Power on the unit by pressing the power button. The system status LED (denoted with an â€˜i' label on the chassis) will blink while the Local Manager boots up and becomes a solid green light when the boot sequence is complete.
 
 # Installation complete
 

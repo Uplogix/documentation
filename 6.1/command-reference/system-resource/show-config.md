@@ -1,6 +1,6 @@
 <!-- 5.4 -->
 
-Displays the Uplogix Local Managerâ€™s configuration in XML format. The configuration does not include scheduled jobs, device-specific files, or system IP address. To export this information as an XML file, use the **config backup** command.
+Displays the Uplogix Local Manager's configuration in XML format. The configuration does not include scheduled jobs, device-specific files, or system IP address. To export this information as an XML file, use the **config backup** command.
 
 # Command availability 
 

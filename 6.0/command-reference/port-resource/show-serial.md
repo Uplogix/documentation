@@ -1,6 +1,6 @@
 <!-- 5.4 -->
 
-Displays the deviceâ€™s serial console settings and current statistics. To display the Uplogix Local Managerâ€™s console port parameters, use the **show system serial** command.
+Displays the device's serial console settings and current statistics. To display the Uplogix Local Manager's console port parameters, use the **show system serial** command.
 
 # Command availability 
 

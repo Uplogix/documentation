@@ -1,6 +1,6 @@
 <!-- 5.4 -->
 
-When licensed for each Local Manager, the Service Level Verification (SLV) module ensures consistent, high levels of IT service by synthetically measuring the performance of critical network services and applications from the end-userâ€™s perspective and comparing the results to drive automation decisions.
+When licensed for each Local Manager, the Service Level Verification (SLV) module ensures consistent, high levels of IT service by synthetically measuring the performance of critical network services and applications from the end-user's perspective and comparing the results to drive automation decisions.
 
 You can use SLV to execute Voice over IP (VoIP) calls, web transactions, and TCP SYN/ACK handshakes to verify end-to-end network functionality.
 

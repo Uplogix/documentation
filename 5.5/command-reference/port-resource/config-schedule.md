@@ -15,7 +15,7 @@ LMS offerings: All
 # Syntax 
 
 ```
-config schedule <time> <â€œjobnameâ€ [â€œjob argsâ€]>
+config schedule <time> <"jobname" ["job args"]>
 ```
 
 **time** can be of one of the following formats:
@@ -27,14 +27,14 @@ Calendar-based using cron notation:
 - -h {0..23} hour range
 - -D {1..31} day of the month
 - -M {1..12} month range
-- -W {0..6} â€“ day of the week; 0 is Sunday.
-- -d <â€œdelayâ€> delay in seconds between 2 consecutive executions of the job
+- -W {0..6} - day of the week; 0 is Sunday.
+- -d <"delay"> delay in seconds between 2 consecutive executions of the job
 
 
 Interval-based: 
 
 **[-s startTime] [-e endTime] <-d delay>**
-- -d <â€œdelayâ€> delay in seconds between 2 consecutive executions of the job
+- -d <"delay"> delay in seconds between 2 consecutive executions of the job
 - -e <end time> end time after which the job is removed from the scheduler
 - -s <start time> start time for the job
 
@@ -48,11 +48,11 @@ Values for **&lt;start time&gt;**, **&lt;end time&gt;**, and **&lt;one time&gt;*
 
 The jobs that can be scheduled depend on the device. The following jobs are defined:
 
--   **assimilate** â€“ Assimilate a device. 
+-   **assimilate** - Assimilate a device. 
 - 	**certify** - Copies working directory contents to certified (Alcatel).
 - 	**clearCounters** - Clears all interface counters.
 - 	**clearServiceModule** - Clears the service module.
-- 	**deviceInfo** â€“ Collects device serial number, make, model, and OS information.
+- 	**deviceInfo** - Collects device serial number, make, model, and OS information.
 - 	**interfaceCycle** - Cycles the interface specified.
 - 	**interfaceOff** - Turns off the interface specified.
 - 	**interfaceOn** - Turns on the interface specified.
@@ -64,13 +64,13 @@ The jobs that can be scheduled depend on the device. The following jobs are defi
 - 	**pushOS** - Push an OS image to the specified device.
 - 	**pushRunningConfig** - Push a running config to the specified device.
 - 	**pushStartupConfig** - Push a startup config to the specified device.
-- 	**reboot** â€“ Reboot the device connected to this port. 
+- 	**reboot** - Reboot the device connected to this port. 
 - 	**rebootAll** - Reboot the stack to which this device belongs (Alcatel).
 - 	**rebootWorking** - Reboot the device from the working configuration (Alcatel).
-- 	**recoverPassword** â€“ Forces restore of last known startup.
+- 	**recoverPassword** - Forces restore of last known startup.
 - 	**restore** - Copies certified directory contents to working (Alcatel)
-- 	**showTech** â€“ Collect tech support information from the specified device.
-- 	**writememory** â€“ Saves running config. 
+- 	**showTech** - Collect tech support information from the specified device.
+- 	**writememory** - Saves running config. 
 
 # Usage 
 
@@ -96,7 +96,7 @@ executes clear counters every half hour in March.
 
 # History 
 
-3.4 â€“ Added actions that can be scheduled on Alcatel devices: certify, restore, rebootWorking, rebootAll.
+3.4 - Added actions that can be scheduled on Alcatel devices: certify, restore, rebootWorking, rebootAll.
 
 # Related commands 
 

@@ -13,28 +13,28 @@ LMS offerings: All
 # Syntax 
 
 ```
-config restrict [no] <â€œactionNameâ€> [â€œportâ€] [-i <#>] [-m <time>]
+config restrict [no] <"actionName"> ["port"] [-i <#>] [-m <time>]
 ```
 
 Options:
 
 **[no]** - remove existing restrictions on this action.
 
-**port#** â€“ restrict the action only on this port.
+**port#** - restrict the action only on this port.
 
-**-i** â€“ minimum interval in seconds before this action executes again.
+**-i** - minimum interval in seconds before this action executes again.
 
-**-m <time>** â€“ specifies when the action may execute, in cron format. For example, * * * * 6-0 restricts the specified action to occur only on Saturdays (day 6) and Sundays (day 0).
+**-m <time>** - specifies when the action may execute, in cron format. For example, * * * * 6-0 restricts the specified action to occur only on Saturdays (day 6) and Sundays (day 0).
 
 For information about using cron format, see About cron format 
 
 The jobs that can be restricted depend on what can be scheduled on the device. The following jobs are defined:
 
-- **assimilate** â€“ Assimilate a device. 
+- **assimilate** - Assimilate a device. 
 - **certify** - Copies working directory contents to certified (Alcatel).
 - **clearCounters** - Clears all interface counters.
 - **clearServiceModule** - Clears the service module.
-- **deviceInfo** â€“ Collects device serial number, make, model, and OS information.
+- **deviceInfo** - Collects device serial number, make, model, and OS information.
 - **interfaceCycle** - Cycles the interface specified.
 - **interfaceOff** - Turns off the interface specified.
 - **interfaceOn** - Turns on the interface specified.
@@ -46,13 +46,13 @@ The jobs that can be restricted depend on what can be scheduled on the device. T
 - **pushOS**  - Push an OS image to the specified device.
 - **pushRunningConfig** - Push a running config to the specified device.
 - **pushStartupConfig** - Push a startup config to the specified device.
-- **reboot** â€“ Reboot the device connected to this port. 
+- **reboot** - Reboot the device connected to this port. 
 - **rebootAll** - Reboot the stack to which this device belongs (Alcatel).
 - **rebootWorking** - Reboot the device from the working configuration (Alcatel).
-- **recoverPassword** â€“ Forces restore of last known startup.
+- **recoverPassword** - Forces restore of last known startup.
 - **restore** - Copies certified directory contents to working (Alcatel).
-- **showTech** â€“ Collect tech support information from the specified device.
-- **writememory** â€“ Saves running config. 
+- **showTech** - Collect tech support information from the specified device.
+- **writememory** - Saves running config. 
 
 # Usage 
 
@@ -62,7 +62,7 @@ This example restricts cycling power to no more than every 3 hours. The -i inter
 
 
 ```
-[admin@UplogixLM]# config restrict powerCycle â€“i 10800
+[admin@UplogixLM]# config restrict powerCycle -i 10800
 ```
 
 This example restricts rebooting port 1/4 except on weekends:

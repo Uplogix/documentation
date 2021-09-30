@@ -22,15 +22,15 @@ config system ipt
 
 # Subcommands 
 
-**[no] listen** â€“ enable or disable this feature. 
+**[no] listen** - enable or disable this feature. 
 
-**payload <harvardmale | harvardfemale | dtmf1â€¦dtmf9 | 1khz | 2khz | 3khz>** â€“ the recorded message to play
+**payload <harvardmale | harvardfemale | dtmf1â€¦dtmf9 | 1khz | 2khz | 3khz>** - the recorded message to play
 
-**[no] subinterface <#>** â€“ subinterface name to listen on 
+**[no] subinterface <#>** - subinterface name to listen on 
 
-**duration <#>** â€“ number of seconds the call should last 
+**duration <#>** - number of seconds the call should last 
 
-**endpoints <#>** â€“ restricts the number of callers.
+**endpoints <#>** - restricts the number of callers.
 
 **show** 
 
@@ -38,7 +38,7 @@ config system ipt
 
 **[no] deny **
 
-**exit** â€“ leave the IPT configuration editor.
+**exit** - leave the IPT configuration editor.
 
 # Usage 
 
@@ -61,7 +61,7 @@ payload harvardfemale
 
 3.4 - This command was introduced to replace config Local Manager ipt.
 
-4.4 â€“ Subinterface parameter added to define SLV routing
+4.4 - Subinterface parameter added to define SLV routing
 
 # Related commands 
 

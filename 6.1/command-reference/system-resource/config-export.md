@@ -1,4 +1,4 @@
-This command exports the Uplogix Local Managerâ€™s configuration to an external host. Using FTP or SCP, an XML representation of the systemâ€™s configuration can be stored for future imports to other Uplogix Local Managers. The XML file can be retrieved using the **config import** command.
+This command exports the Uplogix Local Manager's configuration to an external host. Using FTP or SCP, an XML representation of the system's configuration can be stored for future imports to other Uplogix Local Managers. The XML file can be retrieved using the **config import** command.
 
 You can use the **show config** command to view the information that will be exported.
 
@@ -23,6 +23,10 @@ ex. config export scp <userId@host:fileName>
 Export via USB
 ex. config export usb <fileName>
 ```
+
+NOTE:  You can add a alternate port to the URL by adding a colon and the port number to the command.
+
+ex. **config export scp <userId@host:Port:fileName>**
 
 # Usage 
 

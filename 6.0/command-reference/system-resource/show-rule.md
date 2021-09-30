@@ -13,7 +13,7 @@ LMS offerings: All
 # Syntax 
 
 ```
-show rule <â€œrulenameâ€ | *>
+show rule <"rulename" | *>
 ```
 
 Specify the name of a rule, or use the * character to show all rules defined on the system.

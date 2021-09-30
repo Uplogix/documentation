@@ -12,7 +12,7 @@ Click on the right arrow on the configuration menu to expand it.
 To change the Local Manager's configuration, select an option from the menu on the left. Enter the updated values and click **Save** to force the changes onto the Local Manager.
 
 Some options may be unavailable, depending on your privileges. The IPT option is available only if the Local Manager has a [Service Level Verification (SLV)](http://uplogix.com/docs/local-manager-user-guide/advanced-features/service-level-verification) license.
-â€ƒ
+
 # Configuration Menus
 
 ## Automation

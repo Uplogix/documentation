@@ -19,7 +19,7 @@ Reports start at the beginning of the specified time span. For example, a weekly
 ![Uplogix Control Center - View Report](http://uplogix.com/support/docs/img/6.0/uplogix-control-center-view-report.png)
 
 Once the time period of interest is specified, click *Display*, *Download PDF* or *Download CSV* as appropriate.
-â€ƒ
+
 # Local Manager Reports
 
 <div class='ucc' />Inventory > Local Manager Summary > Report</div>
@@ -33,7 +33,7 @@ Access Local Manager specific reports from the reports menu on the Local Manager
 Most reports are available on the Group Detail, Local Manager Summary, and Port Detail pages. However, reports can also be generated for custom labels. If labels have been created for managed devices, standard reports for each label are available on the Reports by Label page.
 
 ![](http://uplogix.com/support/docs/img/cc-user-guide/image135.png)
-â€ƒ
+
 # Report Files
 
 <div class='ucc' />Reports > Report Files</div>
@@ -58,8 +58,8 @@ Use the Report Assignments page to schedule any of the existing reports.
  
 To create a new report assignment: 
 
-- Choose the **scope**â€”this may be label, inventory group, system, or port.
-- Choose a **group**â€”this may be alarms, changes, events, logins, custom, or none.
+- Choose the **scope**&mdash;this may be label, inventory group, system, or port.
+- Choose a **group**&mdash;this may be alarms, changes, events, logins, custom, or none.
 - If there is at least one report in the group chosen within the selected scope (for example, alarm reports on inventory group pages), select the **offset**. This specifies the report's position in the list. An offset of 0 places the report first on the list.
 - Name the report, select the appropriate jrxml format file, and choose the frequency of report generation.
 In the following example, a weekly report of GPS events on managed devices is created. The report is available from inventory group pages under a custom report grouping.

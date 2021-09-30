@@ -1,0 +1,1 @@
+This section contains installation guides for secondary Uplogix products. Installation guides for the Local Manager and Control Center are available in their respective sections.

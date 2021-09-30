@@ -21,13 +21,13 @@ The LM80 and LM83X share the same base chassis.
 ## Communication Option Slot
 A modular communication option slot supports a number of secondary management network transports.
 
-* Cellular Modems â€“ multiple carrier options available
-* V.92 Modem â€“ for legacy POTS deployments
+* Cellular Modems - multiple carrier options available
+* V.92 Modem - for legacy POTS deployments
 * SFP (fiber) Card
-* RS-232 DB-9 Card â€“ for Iridium satellite modems and other external modems
+* RS-232 DB-9 Card - for Iridium satellite modems and other external modems
 
 ## Management Network Connectivity
-The Local Managerâ€™s management network operates in bonded mode by default and supports the following interfaces:
+The Local Manager's management network operates in bonded mode by default and supports the following interfaces:
 
 * 2x 10/100/1000 BaseT Ethernet 
 * 1x SFP (fiber)

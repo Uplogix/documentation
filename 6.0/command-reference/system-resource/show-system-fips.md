@@ -1,6 +1,6 @@
 <!-- 5.4 -->
 
-Displays the Uplogix Local Managerâ€™s FIPS information if FIPS is enabled.
+Displays the Uplogix Local Manager's FIPS information if FIPS is enabled.
 
 See the Uplogix FIPS 140-2 Security Policy Guide for additional reference.  
 

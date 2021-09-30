@@ -17,7 +17,7 @@ LMS offerings: All
 # Syntax 
 
 ```
-config removejob <â€œjobIDâ€ | -all>
+config removejob <"jobID" | -all>
 ```
 
 The -all option removes all jobs and monitors on the device.

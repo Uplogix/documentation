@@ -15,7 +15,7 @@ This feature requires the purchase of a virtual port license for each virtual po
 * **Uplogix 500** - 16 virtual ports supported
 * **Uplogix 5000** - 16 virtual ports supported
 
-To assure adequate performance on richly configured systems, Uplogix recommends that the sum of configured physical ports and virtual ports not exceed the total number of physical ports supported by the Uplogix platform. It is possible to exceed the recommended maximum port count and not experience degradation in performance â€“ performance will vary based on the amount of monitoring, automation and SLV tests that are configured, and based on the frequency of the monitors and the Local Managerâ€™s communication with the Control Center.
+To assure adequate performance on richly configured systems, Uplogix recommends that the sum of configured physical ports and virtual ports not exceed the total number of physical ports supported by the Uplogix platform. It is possible to exceed the recommended maximum port count and not experience degradation in performance - performance will vary based on the amount of monitoring, automation and SLV tests that are configured, and based on the frequency of the monitors and the Local Manager's communication with the Control Center.
 
 While all advanced drivers are configurable on virtual ports that terminate at a console server, Uplogix officially supports only the native, enhanced native, and Cisco IOS device drivers for virtual ports that terminate on the managed device (i.e., VTY/IP connection where no console server is involved).
 
@@ -31,10 +31,10 @@ Virtual ports that terminate on the managed device (i.e., VTY/IP connection wher
 
 The following privileges are required to configure virtual ports:
 
-* **config system slot** â€“ Configure a virtual slot and virtual ports.
-* **show system slot** â€“ View virtual slot/port configuration.
-* **config system clear slot** â€“ Clear virtual slot configuration.
-* **config system clear port** â€“ Clear port/virtual port data from the database.
+* **config system slot** - Configure a virtual slot and virtual ports.
+* **show system slot** - View virtual slot/port configuration.
+* **config system clear slot** - Clear virtual slot configuration.
+* **config system clear port** - Clear port/virtual port data from the database.
  
 # Configure a virtual port
 
@@ -145,7 +145,7 @@ config port 2
 **Command definitions:**
 
  * **show** Display the current virtual slot/port configuration.
- * **[no] port [number | range] [IP] [TCP port] [ssh | telnet] [-noroute]** Define virtual ports. Use the SSH option to use secure virtual ports. Only add the â€“noroute parameter if the virtual port traffic should be routed over the Local Managerâ€™s out-of-band network connection during an in-band network connectivity failure (not typically used, as most use cases call for always routing virtual port traffic over the LAN/in-band network connection on the Local Manager). Use the no option to remove virtual port(s) from the virtual slot.
+ * **[no] port [number | range] [IP] [TCP port] [ssh | telnet] [-noroute]** Define virtual ports. Use the SSH option to use secure virtual ports. Only add the -noroute parameter if the virtual port traffic should be routed over the Local Manager's out-of-band network connection during an in-band network connectivity failure (not typically used, as most use cases call for always routing virtual port traffic over the LAN/in-band network connection on the Local Manager). Use the no option to remove virtual port(s) from the virtual slot.
  * **config port [number]** Configure SSH authentication credentials for a secure virtual port.
  * **Exit** Exit the configuration editor.
 

@@ -8,6 +8,7 @@ The Deployment Overview page allows you to:
 * Download a list of all Local Managers in CSV format
 * Find Local Managers running lower versions of software
 * Find Local Managers that aren't heartbeating
+* Create a custom filter containing the currently displayed devices
 
 ![UCC Licenses Page](http://uplogix.com/support/docs/img/6.0/deployment-overview.png)
 

@@ -4,7 +4,7 @@ Configures the SSH port forwarding settings.
 
 SSH port forwarding enables access to network services running on the dedicated or management IP addresses of a managed device. Multiple users on multiple workstations can use SSH Port Forwarding concurrently.
 
-To use SSH port forwarding, the managed deviceâ€™s management or dedicated IP address must be configured on the Local Manager. This can be configured using **config init** or **config info**.
+To use SSH port forwarding, the managed device's management or dedicated IP address must be configured on the Local Manager. This can be configured using **config init** or **config info**.
 
 # Command availability 
 
@@ -32,7 +32,7 @@ config protocols forward
 
 
 
-Example: To enable traffic forwarding to port 80 on the managed deviceâ€™s management IP address:
+Example: To enable traffic forwarding to port 80 on the managed device's management IP address:
 ```
 [admin@UplogixLM (port1/1)]# config protocols forward
 [forward]# management 80
@@ -42,7 +42,7 @@ Example: To enable traffic forwarding to port 80 on the managed deviceâ€™s 
 
 - **[no] dedicated {port} [onconnect] [protocol]** - Enables forwarding to the dedicated IP address and the port specified. The no prefix will remove the forward.
 
-Example: To enable traffic forwarding to port 80 on the managed deviceâ€™s dedicated IP address: 
+Example: To enable traffic forwarding to port 80 on the managed device's dedicated IP address: 
 
 ```
 [admin@UplogixLM (port1/1)]# config protocols forward

@@ -4,8 +4,8 @@ Each port resource on the Local Manager comes with its own file system for stori
 
 Categories in the file system include:
 
- - Config â€“ Running
- - Config â€“ Startup
+ - Config - Running
+ - Config - Startup
  - OS
  - Post
  - Tech
@@ -63,9 +63,9 @@ There are a few situations where the Local Manager automatically creates a named
 
 A user must have a role with the following permissions in order to complete the operations described for this feature:
 
- - **show directory** â€” Displays stored files on a port resource
- - **copy** â€” Copies a stored file
- - **delete** â€” Deletes a stored file
+ - **show directory** &mdash; Displays stored files on a port resource
+ - **copy** &mdash; Copies a stored file
+ - **delete** &mdash; Deletes a stored file
  
 # Copying and Naming Files
 
@@ -80,7 +80,7 @@ User versions can include A-Z, a-z, 0-9, and _,  1 to 9 characters.
 Port = port #/#
 ```
 
-Example of copying the current running-config to a user-named running-config with the name â€œgoldenâ€:
+Example of copying the current running-config to a user-named running-config with the name "golden":
 
 ```
 [admin@UplogixLM (port1/3)]# copy running-config current golden

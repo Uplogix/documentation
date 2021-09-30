@@ -36,7 +36,7 @@ Mount the antenna in the desired location.
 
 **IMPORTANT**: Make sure to match up the correct holes when screwing into the antenna mount. The below pictures show which holes to use.  
 
-Mount the antenna using 4 each # 6-32 x Â¼â€ Stainless Steel screws (supplied). 
+Mount the antenna using 4 each # 6-32 x Â¼" Stainless Steel screws (supplied). 
 
 ![Mounting Screw Holes](https://uplogix.com/support/docs/img/hawk/Leo-Screw-Holes-01.jpg)
 

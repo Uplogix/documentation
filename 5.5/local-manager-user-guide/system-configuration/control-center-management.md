@@ -35,12 +35,12 @@ Do you want to commit these changes? (y/n): y
 
 Management server settings include:
 
-* **Automatically configure Management Server** â€“ If enabled, the Local Manager will attempt to discover the address of the Control Center through DNS. Requires DNS and an SRV (service) record name _uplogix._tcp.\* or an A (host) record named *uplogix-control-center*. <!-- Consider adding link to Zero Touch Deployment Overview -->
-* **IP** â€“ The IP address of the Control Center. Both IPv4 and IPv6 addresses are supported. Hostnames can be used if a DNS server has been specified in config system ip or config system ipv6.
-* **Port** â€“ The default port is 8443 (as configured on the Control Center).
-* **Heartbeat Interval** â€“ The default is 30 seconds. Values from 30 to 604,800 are supported. Higher heartbeat intervals reduce impact to the network and to Control Center resources.
-* **Heartbeat during** â€“ Specifies whether to heartbeat while in-band, out of band, or both.
-* **Always use minimal heartbeat** â€“ To further reduce network impact, the system can exchange minimal information with the Control Center during heartbeat. This feature is only configurable from the Control Center.
+* **Automatically configure Management Server** - If enabled, the Local Manager will attempt to discover the address of the Control Center through DNS. Requires DNS and an SRV (service) record name _uplogix._tcp.\* or an A (host) record named *uplogix-control-center*. <!-- Consider adding link to Zero Touch Deployment Overview -->
+* **IP** - The IP address of the Control Center. Both IPv4 and IPv6 addresses are supported. Hostnames can be used if a DNS server has been specified in config system ip or config system ipv6.
+* **Port** - The default port is 8443 (as configured on the Control Center).
+* **Heartbeat Interval** - The default is 30 seconds. Values from 30 to 604,800 are supported. Higher heartbeat intervals reduce impact to the network and to Control Center resources.
+* **Heartbeat during** - Specifies whether to heartbeat while in-band, out of band, or both.
+* **Always use minimal heartbeat** - To further reduce network impact, the system can exchange minimal information with the Control Center during heartbeat. This feature is only configurable from the Control Center.
 
 Once you save the settings, the Local Manager will automatically attempt to contact the Control Center. You can view heartbeat status with the **show system management** command. 
 
@@ -65,7 +65,7 @@ By default, archives are cached when operating out-of-band or during network fai
 
 System configuration can be performed via the CLI or Control Center. If a change is made on the CLI, the new setting will be pushed up to the Control Center during the next heartbeat. Similarly, changes made on the Control Center will transfer down and take effect on the system during the next heartbeat.
 
-To view the systemâ€™s current archive settings, use the **show system archive** command.
+To view the system's current archive settings, use the **show system archive** command.
 
 ```
 [admin@UplogixLM]# show system archive
@@ -75,7 +75,7 @@ Enable While Out-of-Band: false
 
 ```
 
-To edit the systemâ€™s archive settings, use the **config system archive** command.
+To edit the system's archive settings, use the **config system archive** command.
 
 ```
 [admin@UplogixLM]# config system archive

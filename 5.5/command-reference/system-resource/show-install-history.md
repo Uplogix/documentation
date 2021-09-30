@@ -1,6 +1,6 @@
 <!-- 5.4 -->
 
-Displays the Uplogix Local Managerâ€™s software upgrade history.
+Displays the Uplogix Local Manager's software upgrade history.
 
 # Command availability 
 

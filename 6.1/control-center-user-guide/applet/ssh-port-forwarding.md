@@ -6,7 +6,7 @@
 
 SSH port forwarding enables access to network services running on the dedicated or management IP addresses of a managed device. Multiple users on multiple workstations can use SSH Port Forwarding concurrently.
 
-Certain privileges are required to edit or view a portâ€™s forward configuration:
+Certain privileges are required to edit or view a port's forward configuration:
 
 * **show protocols forward** - Views the forwarding settings.
 * **config protocols forward** - Configures the forwarding settings.
@@ -14,15 +14,15 @@ Certain privileges are required to edit or view a portâ€™s forward configur
 
 The Local Manager will attempt to forward incoming TCP traffic regardless of whether the destination is configured properly or not. Ensure the managed device is configured to listen on the port specified.
 
-When using the SSH Applet on the Control Center, a Java Runtime Environment (JRE) must be installed on the userâ€™s workstation.
+When using the SSH Applet on the Control Center, a Java Runtime Environment (JRE) must be installed on the user's workstation.
 
 # Usage
 
 First, connect to the web interface of the Control Center and navigate to the Inventory page. Select a Local Manager from the Inventory tree to bring up its detail page. Launch the Control Center applet by clicking on the **SSH** button.
-â€ƒ
+
 # Configure IP Addresses
 
-The managed deviceâ€™s management or dedicated IP address must be configured on the Local Manager. This can be configured using **config init** or **config info**.
+The managed device's management or dedicated IP address must be configured on the Local Manager. This can be configured using **config init** or **config info**.
 
 ```
 [admin@UplogixLM (port1/1)]# config init
@@ -62,11 +62,11 @@ exit
 
 * **[no] management {port}** - Enables forwarding to the management IP address and the port specified. The **no** prefix will remove the forward.
 
- Example: To enable traffic forwarding to port 80 on the managed deviceâ€™s management IP address, use **management 80**.
+ Example: To enable traffic forwarding to port 80 on the managed device's management IP address, use **management 80**.
 
 * **[no] dedicated {port}** - Enables forwarding to the dedicated IP address and the port specified. The **no** prefix will remove the forward.
 
- Example: To enable traffic forwarding to port 80 on the managed deviceâ€™s dedicated IP address, use dedicated 80.
+ Example: To enable traffic forwarding to port 80 on the managed device's dedicated IP address, use dedicated 80.
 
 * **[no] events** - Turns on event logging for traffic forwarding. The **no** prefix will turn off event logging.
 * **show** - Displays the current configuration.

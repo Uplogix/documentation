@@ -13,9 +13,9 @@ LMS offerings: All
 # Syntax 
 
 ```
-show session [â€œsessionIDâ€]
+show session ["sessionID"]
 ```
-â€œsessionIDâ€ identifies the session to display. 
+"sessionID" identifies the session to display. 
 
 # Usage 
 

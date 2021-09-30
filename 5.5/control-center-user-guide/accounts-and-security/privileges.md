@@ -10,7 +10,7 @@ Permissions, roles, and privileges are defined as follows:
 
 > Some permissions, such as **config hierarchy**, are not associated with specific commands but provide override ability and should be used sparingly.
 
-The Control Center restricts access to features based on a userâ€™s privileges. For example, if a user does not have a role that includes permission to use the **config system ip** command, the IP configuration link is unavailable for that user on the Local Manager Summary page.
+The Control Center restricts access to features based on a user's privileges. For example, if a user does not have a role that includes permission to use the **config system ip** command, the IP configuration link is unavailable for that user on the Local Manager Summary page.
 
 All aspects of working with the Control Center and the equipment it manages are affected by account privileges. **By default, user and group accounts have no privileges.**
 
@@ -24,8 +24,8 @@ In this section:
 - Creating and customizing roles
 - Using TACACS to manage privileges
 - Creating a superuser
-- Limiting a userâ€™s access to one port on one system
-â€ƒ
+- Limiting a user's access to one port on one system
+
 # Adding Server Privileges to Accounts
 
 <div class='ucc' />Administration > Server Privileges</div>
@@ -43,17 +43,17 @@ Unlike Inventory privileges, server privileges only apply to one resource - the 
 Select a user or group from the User/Group list, select a role, and click *Add*. Groups are listed first, followed by users. An * after the group name indicates a group.
 
 As with Local Manager privileges, more than one role can be assigned to an account to tailor that account's privileges.
-â€ƒ
+
 # Adding Inventory Privileges to Accounts
 
 <div class='ucc' />Inventory > Group Detail > Security > Privileges</div>
 
-When a new user or group account is created, the account has no privileges. Set an accountâ€™s privileges to apply to all Local Managers in the inventory by assigning them at the root level or limit privileges to specific inventory groups.
+When a new user or group account is created, the account has no privileges. Set an account's privileges to apply to all Local Managers in the inventory by assigning them at the root level or limit privileges to specific inventory groups.
 
 To add Inventory privileges, select the appropriate Inventory group from the Inventory page and click *Privileges* under the Security menu.
 
 ![Uplogix Control Center - Group Privileges](http://uplogix.com/support/docs/img/5.4/uplogix-control-center-group-privileges.png)
-â€ƒ
+
 Use the Privilege page to assign privileges to accounts in the form of defined roles and to specify the resources where each role is applied: all, system, or modem. If labels have been created, these are available as resources also.
 
 Select a user or group from the *Principal* list, select a role, and click *Add*. Groups are listed first, followed by users. An * after the group name indicates a group.
@@ -63,12 +63,12 @@ More than one role can be assigned to an account and be given different roles on
 To remove privileges at the port level, select a Local Manager from the inventory and select Privileges from Security menu.
 
 Use the Local Manager's  Privilege List to add or delete user roles by individual resource. If the pre-configured standard roles do not meet your organization's needs, create roles to meet the specific requirements of your deployment. See Creating and customizing roles.
-â€ƒ
+
 # Viewing and Deleting User Privileges
 
 <div class='ucc' />Administration > Users</div>
 
-To view or edit a userâ€™s privileges, click the *User ID** and then select *Privileges* from the left menu.
+To view or edit a user's privileges, click the *User ID** and then select *Privileges* from the left menu.
 
 Use the *Privileges* page to see and delete specific privileges.
 

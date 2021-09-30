@@ -11,7 +11,7 @@ Read and understand the following instructions before using the Uplogix Local Ma
 
 ##AC Models
 
-- Use three wire electrical extension cords with a current rating equal to or greater than your Uplogix Local Managerâ€™s current rating.
+- Use three wire electrical extension cords with a current rating equal to or greater than your Uplogix Local Manager's current rating.
 - Only connect the Uplogix Local Manager to surge-protected power outlets.
 
 ##DC Models

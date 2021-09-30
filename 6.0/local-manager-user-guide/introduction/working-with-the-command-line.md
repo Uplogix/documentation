@@ -32,11 +32,11 @@ To open a CLI session over the network using SSH, open a Secure Shell (v2) conne
 
 * Control Center SSH Applet
 * PuTTY
-* SSHÂ® Tectiaâ„¢
-* VanDykeÂ® SecureCRTÂ®
+* SSH&#8482; Tectia
+* VanDyke&#8482; SecureCRT&#8482;
 * SSHTerm for Windows
 * iTerm for Macintosh OS X
-* UNIXâ€™s built-in ssh command
+* UNIX's built-in ssh command
 
 For example, in a UNIX command line, type **ssh admin@198.51.100.254**
 
@@ -79,7 +79,7 @@ The command line provides several ways to reduce the amount of typing required i
 
 ## Repeating commands
 
-Repeat the most recent commandâ€”and go back to earlier commands in reverse sequenceâ€”by pressing the up arrow key and then the Enter key. 
+Repeat the most recent command&mdash;and go back to earlier commands in reverse sequence&mdash;by pressing the up arrow key and then the Enter key. 
 
 ## Abbreviating commands
 
@@ -165,7 +165,7 @@ where username@host:path/to/file specifies the destination for the data.
 
 Need help using the pipe redirect? Enter **| ?** in the command line.
 
-For example, to send the contents of a port buffer to the support@uplogix.com email address as a file named â€œbuffer.logâ€, use the following syntax:
+For example, to send the contents of a port buffer to the support@uplogix.com email address as a file named "buffer.log", use the following syntax:
 
 ```
 [admin@UplogixLM] (port1/1)# show buffer | mailto support@uplogix.com:buffer.log
@@ -175,7 +175,7 @@ For example, to send the contents of a port buffer to the support@uplogix.com em
 
 Using the pipe character, you can redirect the output of a command to grep for parsing. The syntax is:
 ```
-<command> | grep â€œkeywordsâ€
+<command> | grep "keywords"
 ```
 For example, you can parse the output of **show user \*** to pull out email addresses:
 ```

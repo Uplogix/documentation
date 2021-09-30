@@ -11,7 +11,7 @@ If you are experiencing an issue with your Uplogix Local Manager and you suspect
 
 # Troubleshooting
 
-When you contact us for a suspected hardware problem, weâ€™ll first attempt to troubleshoot the issue remotely. Some troubleshooting can be done through email; other issues are better resolved over the phone, or even via a remote desktop session.
+When you contact us for a suspected hardware problem, we'll first attempt to troubleshoot the issue remotely. Some troubleshooting can be done through email; other issues are better resolved over the phone, or even via a remote desktop session.
 
 If an RMA is determined to be necessary, we will request the following:
 
@@ -25,9 +25,9 @@ If an RMA is determined to be necessary, we will request the following:
 
 > The software version is needed so we can load your replacement with the appropriate code.
 
-Once we have this information weâ€™ll send your replacement and follow up with a tracking number as it becomes available.
+Once we have this information we'll send your replacement and follow up with a tracking number as it becomes available.
 
-Before we process an RMA, we must check on the Local Managerâ€™s maintenance contract using the Serial Number. A typical maintenance contract lasts 1 year. In the event that your maintenance contract has expired, we will inform your sales representative to find a solution.
+Before we process an RMA, we must check on the Local Manager's maintenance contract using the Serial Number. A typical maintenance contract lasts 1 year. In the event that your maintenance contract has expired, we will inform your sales representative to find a solution.
 
 # Building the Replacement
 
@@ -41,12 +41,12 @@ Replacements will ship to the country on the original shipping order.
 
 # Returning the Defective Unit
 
-To return the defective unit, use the return labels included with your replacementâ€™s 
+To return the defective unit, use the return labels included with your replacement's 
 package.
 
 For international RMAs, return labels will often be sent via email to the contact email address provided.
 
-Use the replacementâ€™s packaging to return the defective unit.
+Use the replacement's packaging to return the defective unit.
 
 **The defective unit is due within 30 days of reception of the replacement**. However, exceptions can be made for Local Managers that are in remote locations such as ships, oil rigs, or other destinations that cannot be easily accessed.
 
@@ -114,7 +114,7 @@ On the Control Center, use the Replace button on the previous Local Manager befo
 
 # Using the REPLACE button
 
-Log into the Control Centerâ€™s web app and select the â€œInventory Tabâ€ at the upper left hand corner of the screen. The new Local Managerâ€™s serial number will appear under the â€œUnassignedâ€ group after a couple of heartbeats.
+Log into the Control Center's web app and select the "Inventory Tab" at the upper left hand corner of the screen. The new Local Manager's serial number will appear under the "Unassigned" group after a couple of heartbeats.
 
 Select the old Local Manager and click the Replace button in the upper left hand side of the screen.
 

@@ -16,9 +16,9 @@ LMS offerings: All
 config system properties
 ```
 
-Within the editor, properties are defined as **<â€œpropertynameâ€> <â€œvalueâ€>**.
+Within the editor, properties are defined as **<"propertyname"> <"value">**.
 
-Properties may be deleted using the command **no <â€œpropertynameâ€>**.
+Properties may be deleted using the command **no <"propertyname">**.
 
 Use the **exit** command to quit the editor.
 

@@ -20,7 +20,7 @@ config device logging
 
 # Usage 
 
-This setting may alter the network deviceâ€™s configuration, based on the userâ€™s choices at the next assimilation process.
+This setting may alter the network device's configuration, based on the user's choices at the next assimilation process.
 
 This setting does not remove current syslog configuration from network devices.
 

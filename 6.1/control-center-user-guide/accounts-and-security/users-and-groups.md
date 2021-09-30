@@ -41,7 +41,7 @@ Initially, user accounts have no privileges, so the new user cannot log into the
 Some users may need to receive alerts, reports, or audit other accounts. For information about setting up these functions, see Setting up email, auditing and report subscriptions.
 
 Several users can be created at once by importing a user file. See [Importing User, Groups, and Privileges](http://uplogix.com/docs/control-center-user-guide/accounts-and-security/importing-aaa).
-â€ƒ
+
 # Creating and Editing Groups
 
 <div class='ucc' />Administration > Groups</div>
@@ -73,7 +73,7 @@ Click *Save* to save the group. Initially, user groups are automatically inherit
 The group may need to receive alerts, reports, or audit other accounts. For information about setting up these functions, see [Auditing](http://uplogix.com/docs/control-center-user-guide/auditing/) for more information.
 
 Several groups can be created at once by importing a group file. See [Importing Users, Groups, and Privileges](http://uplogix.com/docs/control-center-user-guide/accounts-and-security/importing-aaa).
-â€ƒ
+
 # Disabling Users
 
 <div class='ucc' />Administration > Users</div>

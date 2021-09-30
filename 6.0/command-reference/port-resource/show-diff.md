@@ -15,7 +15,7 @@ LMS offerings: All
 # Syntax 
 
 ```
-show diff <running-config | startup-config | post> <â€œfile versionâ€> <â€œfile versionâ€>
+show diff <running-config | startup-config | post> <"file version"> <"file version">
 ```
 
 # Usage 

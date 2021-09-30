@@ -6,7 +6,7 @@ Local Manager device drivers have functionality that enables manual and automati
 
 The pull SFTP and pull TFTP features are used to transfer files from the managed device to the Local Manager. The push SFTP and push TFTP features are used to transfer files from the Local Manager to the managed device. These features can be initiated as a CLI command, a scheduled job, or an action in a rule.
 
-The SFTP command generates a temporary unique password to authenticate the SFTP transfer. Remember to allow outbound SSH connections from the deviceâ€™s console port since it is the underlying transport for SFTP. For example, on a Cisco device you should include the configuration:
+The SFTP command generates a temporary unique password to authenticate the SFTP transfer. Remember to allow outbound SSH connections from the device's console port since it is the underlying transport for SFTP. For example, on a Cisco device you should include the configuration:
 
 * line con 0
 * transport output ssh
@@ -17,19 +17,19 @@ There are several instances when it would be appropriate to apply the pull/push 
 * Back up OS image files from the managed device to the Local Manager.
 * Back up any file from a managed device to the Local Manager.
 * Automatically restore a golden configuration file to the managed device when certain conditions are met on the managed device using a monitor and the rules engine.
-* Locally stage and download managed device OS files from the Local Manager.â€ƒ
+* Locally stage and download managed device OS files from the Local Manager.
 
 To use pull and push SFTP or TFTP, a user must have the following privileges: 
 
-- **pull file** â€“ The define and initiate command to copy a file from the managed device to the Local Manager.
-- **push file** â€“ The define and initiate command to copy a file to the managed device from the Local Manager.
+- **pull file** - The define and initiate command to copy a file from the managed device to the Local Manager.
+- **push file** - The define and initiate command to copy a file to the managed device from the Local Manager.
 
 # Pull TFTP or SFTP Usage
 
 Use the following command at the Local Manager port prompt to transfer a file from a managed device to the Local Manager:
 
 ```
-pull tftp [dedicated] <â€œremote commandâ€> <xferFileName> <type> [version]
+pull tftp [dedicated] <"remote command"> <xferFileName> <type> [version]
 ```
 
 ```
@@ -69,9 +69,9 @@ Any of the local filesystem versions: candidate, current, previous, customVersio
 
 ## Variables
 
-For SFTP transfers, additional variable information is required. The SFTP variables are used in the deviceâ€™s syntax to place macros instead of hard coding names and addresses. The Local Manager will replace these at runtime with appropriate substitutes:
+For SFTP transfers, additional variable information is required. The SFTP variables are used in the device's syntax to place macros instead of hard coding names and addresses. The Local Manager will replace these at runtime with appropriate substitutes:
 
- - **${user}**: The macro to insert the port username into the deviceâ€™s file transfer command.
+ - **${user}**: The macro to insert the port username into the device's file transfer command.
  - **${pass}**: The macro to insert the temporary password available for file transfer to that port.
  - **${path}**: Temporary file name for transfer to the Local Manager.
  - **${ip}**: IP address on Uplogix to transfer the file to. Could be subinterface, dedicated or management.
@@ -130,7 +130,7 @@ Previous				show_tech.log.gz
 
 ## SFTP Example
 
-This example demonstrates pulling the self-signed certificate from a Cisco router using SFTP. Note the use of the variables to populate the routerâ€™s parameters with the Local Managerâ€™s information. Since the router needs a carriage return to execute, it is represented with a â€˜**\r**â€™ at the end of the remote command. We will place the certificate in a named OS object â€œCertâ€ since it is a binary file.
+This example demonstrates pulling the self-signed certificate from a Cisco router using SFTP. Note the use of the variables to populate the router's parameters with the Local Manager's information. Since the router needs a carriage return to execute, it is represented with a â€˜**\r**' at the end of the remote command. We will place the certificate in a named OS object "Cert" since it is a binary file.
 
 ```
 [admin@UplogixLM (port1/1)]# pull sftp -file IOS-Self-Sig#3737.cer "copy nvram:IOS-Self-Sig#3737.cer scp:\r${ip}\r${user}\r${path}\r${pass}\r" os  Cert
@@ -144,7 +144,7 @@ SFTP/SCP done
 Transfer complete
 ```
 
-The next example demonstrates pulling a text file from the routerâ€™s flash that maintains DHCP address information:
+The next example demonstrates pulling a text file from the router's flash that maintains DHCP address information:
 
 ```
 [admin@UplogixLM (port1/1)]# pull sftp -file dhcp "copy flash:dhcp-bindings.txt scp:\r${ip}\r${user}\r${path}\r${pass}\r" startup-config dhcp
@@ -234,9 +234,9 @@ Any of the local filesystem versions: candidate, current, previous, customVersio
 
 ## Variables
 
-For SFTP transfers, additional variable information is required. The SFTP variables are used in the deviceâ€™s syntax to place macros instead of hard coding names and addresses. The Local Manager will replace these at runtime with appropriate substitutes:
+For SFTP transfers, additional variable information is required. The SFTP variables are used in the device's syntax to place macros instead of hard coding names and addresses. The Local Manager will replace these at runtime with appropriate substitutes:
 
- - **${user}**: The macro to insert the port username into the deviceâ€™s file transfer command.
+ - **${user}**: The macro to insert the port username into the device's file transfer command.
  - **${pass}**: The macro to insert the temporary password available for file transfer to that port.
  - **${path}**: Temporary file name for transfer to the Local Manager.
  - **${ip}**: IP address on Uplogix to transfer the file to. Could be subinterface, dedicated or management.
@@ -270,7 +270,7 @@ Transfered summitX-12.4.5.3.xos
 This SFTP example demonstrates pushing a stored firewall configuration to a Linux system:
 
 ```
-[admin@UplogixLM (port1/5)]# push sftp â€“dedicated "scp ${user}@${ip}:${path} /etc/sysconfig/iptables" startup-config iptables
+[admin@UplogixLM (port1/5)]# push sftp -dedicated "scp ${user}@${ip}:${path} /etc/sysconfig/iptables" startup-config iptables
 Push startupConfig/custom ...
 SFTP/SCP service at 169.254.100.14:22
 Executing: scp ${user}@${ip}:${path} /etc/sysconfig/iptables

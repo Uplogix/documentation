@@ -15,7 +15,7 @@ LMS offerings: All
 # Syntax 
 
 ```
-off [â€œoutlet #â€]
+off ["outlet #"]
 ```
 
 # Usage 
